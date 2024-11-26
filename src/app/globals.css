@@ -1,21 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-poppins: "Poppins", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  background: #000612;
+  font-family: var(--font-poppins), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.gradient-background {
+  background: linear-gradient(
+    267.72deg,
+    #af85e3 -8.75%,
+    #8b94e2 24.5%,
+    #6ff2f2 65.76%,
+    #68e099 108.31%
+  );
+}
+
+.hero-background {
+  /* First layer: Complex dark gradient */
+  background: linear-gradient(
+    111.85deg,
+    #000612 -7.21%,
+    #181b1f 20.42%,
+    #000612 27.56%,
+    #181b1f 40.12%,
+    #020814 44.84%,
+    #171b25 52.83%,
+    #000612 75.39%,
+    #1f2229 81.83%,
+    #000611 89.72%,
+    #272c36 95.55%,
+    #000612 113.39%
+  );
+
+  /* Second layer: Vertical gradient with transparency */
+  background-image: linear-gradient(
+      180deg,
+      #000612 0%,
+      rgba(0, 6, 18, 0.5) 51.1%,
+      #000612 100%
+    ),
+    /* Actual dot pattern */
+      radial-gradient(rgba(255, 255, 255, 0.308) 1px, transparent 1.5px);
+
+  background-size: cover, /* First gradient */ 30px 30px; /* Dot size and spacing */
+
+  background-position: 0 0, /* First gradient */ 0 0; /* Dot pattern */
+
+  background-blend-mode: normal, /* First gradient */ overlay; /* Dot overlay */
+}
+
+@layer components {
+  .gradient-text-animation {
+    background: linear-gradient(
+      267.72deg,
+      #af85e3 1.07%,
+      #8b94e2 29.42%,
+      #6ff2f2 64.59%,
+      #68e099 100.87%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient-animation 7s ease 1 normal forwards;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      color: white;
+    }
+    100% {
+      color: transparent;
+    }
+  }
+}
+
+@layer components {
+  .gradient-border-animation {
+    animation: gradient-border 7s ease 1 normal forwards;
+  }
+
+  @keyframes gradient-border {
+    0% {
+      background: none;
+    }
+    100% {
+      background: linear-gradient(
+        150deg,
+        #af85e3 9.12%,
+        rgba(96, 73, 125, 0) 34.76%,
+        rgba(96, 73, 125, 0) 65.49%,
+        #68e099 95.14%
+      );
+    }
+  }
+}
+
+
+@layer components {
+  .gradient-bg-animation {
+    position: relative;
+    background-color: #000612;
+    animation: gradient-bg 1s ease 1 normal forwards;
+  }
+
+  .gradient-bg-animation::before {
+    content: "";
+    position: absolute;
+    top: -41px;
+    left: 5px;
+    width: 100%;
+    height: 150%;
+    background-image: 
+      radial-gradient(rgba(255, 255, 255, 0.308) 1px, transparent 1.5px),
+      radial-gradient(rgba(255, 255, 255, 0.308) 1px, transparent 1.5px);
+    background-size: 30px 30px;
+    background-position: 0 0;
+    opacity: 0.1;
+  }
+
+  @keyframes gradient-bg {
+    0% {
+      background: none;
+    }
+    100% {
+      background: #000612;
+    }
+  }
 }
