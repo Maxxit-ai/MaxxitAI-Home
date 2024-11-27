@@ -1,13 +1,13 @@
-import Image from "next/image";
+import About from "./components/About";
 import HeroSection from "./components/HeroSection";
-import CryptoConnector from "./components/ConnectorImage";
-import ConnectorImage from "./components/ConnectorImage";
+import SupportedChains from "./components/SupportedChains";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <ConnectorImage />
+      {/* <SupportedChains /> */}
+      {/* <About /> */}
     </>
   );
 }
