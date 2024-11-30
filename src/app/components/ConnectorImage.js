@@ -1,12 +1,12 @@
 import React from "react";
 
-import iconlogo from "../assets/iconlogo.svg";
-import icon1 from "../assets/icon1.svg";
-import icon2 from "../assets/icon2.svg";
-import icon3 from "../assets/icon3.svg";
-import icon4 from "../assets/icon4.svg";
-import icon5 from "../assets/icon5.svg";
-import icon6 from "../assets/icon6.svg";
+import iconlogo from "../assets/herosection svg/iconlogo.svg";
+import icon1 from "../assets/herosection svg/icon1.svg";
+import icon2 from "../assets/herosection svg/icon2.svg";
+import icon3 from "../assets/herosection svg/icon3.svg";
+import icon4 from "../assets/herosection svg/icon4.svg";
+import icon5 from "../assets/herosection svg/icon5.svg";
+import icon6 from "../assets/herosection svg/icon6.svg";
 import Image from "next/image";
 
 const ConnectorImage = () => {

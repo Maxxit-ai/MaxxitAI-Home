@@ -72,7 +72,7 @@ body {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 916px;
+  height: 820px;
 }
 
 /* gradient-text-animation */
@@ -309,7 +309,7 @@ body {
       width: 25px;
       height: 3px;
     }
-    50%{
+    50% {
       top: calc(47% + 43px);
       left: calc(67% + 40px);
       width: 25px;
@@ -410,4 +410,57 @@ body {
       height: 3px;
     }
   }
+}
+
+/* auto-scroll animation */
+@layer components {
+  .auto-scroll {
+    animation: loop-scroll 10s linear infinite;
+    /* Default state: animation plays */
+    transition: animation-play-state 0.3s ease;
+  }
+
+  .auto-scroll:hover {
+    /* Pause the animation when hovered */
+    animation-play-state: paused;
+  }
+
+  @keyframes loop-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-95%);
+    }
+  }
+}
+
+.bg-border-gradient1 {
+  background: linear-gradient(
+    130deg,
+    rgba(175, 133, 227, 1) 0%,
+    rgba(175, 133, 227, 0) 20%,
+    rgba(175, 133, 227, 0) 80%,
+    rgba(175, 133, 227, 1) 100%
+  );
+}
+
+.bg-border-gradient2 {
+  background: linear-gradient(
+    130deg,
+    rgba(111, 242, 242, 1) 0%,
+    rgba(111, 242, 242, 0) 20%,
+    rgba(111, 242, 242, 0) 80%,
+    rgba(111, 242, 242, 1) 100%
+  );
+}
+
+.bg-border-gradient3 {
+  background: linear-gradient(
+    130deg,
+    rgba(104, 224, 153, 1) 0%,
+    rgba(104, 224, 153, 0) 20%,
+    rgba(104, 224, 153, 0) 80%,
+    rgba(104, 224, 153, 1) 100%
+  );
 }

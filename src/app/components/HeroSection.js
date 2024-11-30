@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="hero-background w-full">
         <div className="w-[85%] mx-auto my-10">
           <Navbar />
-          <h1 className="text-7xl font-medium text-center my-20 flex items-center justify-center gap-3 flex-wrap w-full">
+          <h1 className="text-7xl font-medium text-center mb-10 mt-20 flex items-center justify-center gap-3 flex-wrap w-full">
             <span className="gradient-border-animation rounded-[40px] overflow-hidden p-[2px] flex ">
               <span className="gradient-bg-animation flex rounded-[40px] p-[2px]">
                 <span className="gradient-text-animation rounded-[40px] px-4 py-6 overflow-hidden">
@@ -28,7 +28,7 @@ const HeroSection = () => {
             making cross-chain token transfers as effortless as same-chain
             transfers.
           </p>
-          <div className="flex items-center justify-center gap-7 mx-auto my-5">
+          <div className="flex items-center justify-center gap-7 mx-auto my-8">
             <button className="text-[#000612] font-semibold gradient-background rounded-[15px] px-[26px] py-[16px] w-auto">
               Get Started
             </button>
