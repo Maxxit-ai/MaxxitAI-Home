@@ -75,6 +75,24 @@ body {
   height: 820px;
 }
 
+.usecase-background{
+  background-image: url("/usecasebg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+}
+
+.getstarted-background{
+  background-image: url("/getstarted.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 800px;
+}
+
 /* gradient-text-animation */
 @layer components {
   .gradient-text-animation {
@@ -134,8 +152,8 @@ body {
   .gradient-bg-animation::before {
     content: "";
     position: absolute;
-    top: -41px;
-    left: 5px;
+    top: -39.6px;
+    left: 12.7px;
     width: 100%;
     height: 150%;
     background-image: radial-gradient(
@@ -463,4 +481,168 @@ body {
     rgba(104, 224, 153, 0) 80%,
     rgba(104, 224, 153, 1) 100%
   );
+}
+
+/* flowline design2 line 2 */
+@layer components {
+  .flow2 {
+    background: linear-gradient(
+      267.72deg,
+      #af85e3 -8.75%,
+      #8b94e2 24.5%,
+      #6ff2f2 65.76%,
+      #68e099 108.31%
+    );
+
+    animation: flow2-animation 6s infinite;
+  }
+
+  @keyframes flow2-animation {
+    0% {
+      left: calc(10% + 280px);
+    }
+    100% {
+      left: calc(51%);
+    }
+  }
+}
+
+/* flowline design2 line 1 */
+@layer components {
+  .flow1 {
+    background: linear-gradient(
+      180deg,
+      #af85e3 -8.75%,
+      #8b94e2 24.5%,
+      #6ff2f2 65.76%,
+      #68e099 108.31%
+    );
+
+    animation: flow1-animation 6s 2s infinite;
+  }
+
+  @keyframes flow1-animation {
+    0% {
+      bottom: 59%;
+    }
+    90% {
+      bottom: 76.5%;
+    }
+    100% {
+      bottom: 73.5%;
+      opacity: 0;
+    }
+  }
+}
+
+@layer components {
+  .flow1curvedown {
+    animation: curve1 6s 1s infinite;
+  }
+
+  @keyframes curve1 {
+    0% {
+      border-color: #af85e3;
+    }
+    10% {
+      border-color: #68e099;
+    }
+    25% {
+      border-color: #9c9c9ccc;
+    }
+    100% {
+      border-color: #9c9c9ccc;
+    }
+  }
+}
+
+@layer components {
+  .flow1curveup {
+    animation: curve2 6s 4.9s infinite;
+  }
+
+  @keyframes curve2 {
+    0% {
+      border-color: #af85e3;
+    }
+    10% {
+      border-color: #af85e3;
+    }
+    51% {
+      border-color: #9c9c9ccc;
+    }
+    100% {
+      border-color: #9c9c9ccc;
+    }
+  }
+}
+
+/* flowline design2 line 3 */
+@layer components {
+  .flow3 {
+    background: linear-gradient(
+      360deg,
+      #af85e3 -8.75%,
+      #8b94e2 24.5%,
+      #6ff2f2 65.76%,
+      #68e099 108.31%
+    );
+
+    animation: flow3-animation 6s 1.5s infinite;
+  }
+
+  @keyframes flow3-animation {
+    0% {
+      bottom: 36%;
+    }
+    90% {
+      bottom: 20%;
+    }
+    100% {
+      bottom: 20%;
+      opacity: 0;
+    }
+  }
+}
+
+@layer components {
+  .flow3curveup {
+    animation: curve-1 6s 1s infinite;
+  }
+
+  @keyframes curve-1 {
+    0% {
+      border-color: #af85e3;
+    }
+    10% {
+      border-color: #68e099;
+    }
+    25% {
+      border-color: #9c9c9ccc;
+    }
+    100% {
+      border-color: #9c9c9ccc;
+    }
+  }
+}
+
+@layer components {
+  .flow3curvedown {
+    animation: curve-2 6s 4.9s infinite;
+  }
+
+  @keyframes curve-2 {
+    0% {
+      border-color: #af85e3;
+    }
+    10% {
+      border-color: #af85e3;
+    }
+    51% {
+      border-color: #9c9c9ccc;
+    }
+    100% {
+      border-color: #9c9c9ccc;
+    }
+  }
 }

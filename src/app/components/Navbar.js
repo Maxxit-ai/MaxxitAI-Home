@@ -25,8 +25,10 @@ const Navbar = () => {
         </div>
 
         {/* launch button */}
-        <div className="gradient-background rounded-[15px] p-[2px] pb-[1.5px] pl-[1.5px] flex items-center justify-center overflow-hidden">
-          <button className="bg-[#000612] hover:bg-transparent hover:text-black font-semibold flex items-center justify-center rounded-[14px] px-4 py-[13px] tracking-wider">Launch App</button>
+        <div className="gradient-background rounded-[15px] p-[2px] flex items-center justify-center overflow-hidden">
+          <button className="bg-[#000612] hover:bg-transparent hover:text-black font-semibold flex items-center justify-center rounded-[14px] px-4 py-[13px] tracking-wider">
+            Launch App
+          </button>
         </div>
       </div>
     </nav>

@@ -1,7 +1,8 @@
 import About from "./components/About";
+import GetStarted from "./components/GetStarted";
 import HeroSection from "./components/HeroSection";
 import SupportedChains from "./components/SupportedChains";
-import UseCaseConnector from "./components/UseCaseConnector";
+import Usecase from "./components/Usecase";
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       <HeroSection />
       <SupportedChains />
       <About />
-      <UseCaseConnector />
+      <Usecase />
+      <GetStarted />
     </>
   );
 }

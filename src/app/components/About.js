@@ -50,6 +50,7 @@ const About = () => {
                   <Image
                     src={about.gif}
                     alt={about.heading}
+                    unoptimized
                     className="h-[300px] w-auto"
                   ></Image>
                 </div>
