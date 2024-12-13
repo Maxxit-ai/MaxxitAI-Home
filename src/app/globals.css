@@ -87,10 +87,19 @@ body {
 .getstarted-background{
   background-image: url("/getstarted.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   width: 100%;
-  height: 600px;
+  /* height: 800px; */
+}
+
+.walkthrough-bg{
+  background-image: url("/walkthroughbg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 900px;
 }
 
 /* gradient-text-animation */

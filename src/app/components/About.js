@@ -39,7 +39,7 @@ const About = () => {
         <p className="my-6 text-md font-light tracking-wide">
           SmartDisperse leverages CCIP to enhance cross-chain interoperability
         </p>
-        <div className="flex w-[85%] items-center justify-center gap-3 my-10">
+        <div className="flex w-[85%] items-center justify-center gap-4 my-10">
           {about.map((about, index) => (
             <div
               key={index}

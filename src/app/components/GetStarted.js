@@ -26,17 +26,17 @@ const getstarted = [
 
 const GetStarted = () => {
   return (
-    <div className="w-full relative">
-      <div className="getstarted-background h-[600px] absolute top-0 z-10"></div>
-      <div className="bg-gradient-to-b from-[#00061280] to-[#000612] w-full h-[600px] absolute top-[10%] left-0 z-20"></div>
-      <h2 className="text-4xl font-medium tracking-wide my-5 text-center bg-gradient-to-r from-[#999999] via-white to-[#999999] bg-clip-text text-transparent relative z-30">
+    <div className="w-full relative h-[720px] overflow-hidden">
+      <div className="getstarted-background h-[800px] absolute top-[-10%] z-10"></div>
+      <div className="bg-gradient-to-b from-[#00061280] to-[#000612] w-full h-[800px] absolute top-[-10%] left-0 z-20"></div>
+      <h2 className="text-4xl font-medium tracking-wide my-10 text-center bg-gradient-to-r from-[#999999] via-white to-[#999999] bg-clip-text text-transparent relative z-30">
         Get Started Now
       </h2>
       <div className="flex w-[85%] items-center justify-center gap-3 my-16 mx-auto z-30 relative">
         {getstarted.map((item, index) => (
           <div
             key={index}
-            className="rounded-2xl w-[350px] h-[370px] overflow-hidden bg-gradient-to-b bg-[#050E21] p-4 flex items-center justify-center"
+            className="rounded-2xl w-[350px] h-[370px] overflow-hidden bg-gradient-to-b bg-[#050E21] p-4 flex items-center justify-center mt-8"
           >
             <div className={`w-full h-full rounded-2xl ${item.gradient} p-[0.8px] flex items-center justify-center`}>
               <div className="w-full h-full rounded-2xl bg-[#050E21] p-6 flex flex-col items-center justify-center">

@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <>
       <div className="hero-background w-full">
-        <div className="w-[85%] mx-auto my-10">
+        <div className="w-[85%] mx-auto my-16">
           <Navbar />
           <h1 className="text-7xl font-medium text-center mb-10 mt-20 flex items-center justify-center gap-3 flex-wrap w-full">
             <span className="gradient-border-animation rounded-[40px] overflow-hidden p-[2px] flex ">
