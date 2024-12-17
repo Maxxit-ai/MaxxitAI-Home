@@ -16,17 +16,17 @@ const Navbar = () => {
 
         {/* nav links */}
         <div className="flex items-center space-x-10 text-lg tracking-wider">
-          <Link href="/">
-            <span>Milestone</span>
+          <Link href="/" className="relative group">
+            <span className="hover-effect hover:font-medium">Milestone</span>
           </Link>
-          <Link href="/">
-            <span>Docs</span>
+          <Link href="/" className="relative group">
+            <span className="hover-effect hover:font-medium">Docs</span>
           </Link>
         </div>
 
         {/* launch button */}
         <div className="gradient-background rounded-[15px] p-[2px] flex items-center justify-center overflow-hidden">
-          <button className="bg-[#000612] hover:bg-transparent hover:text-black font-semibold flex items-center justify-center rounded-[14px] px-4 py-[13px] tracking-wider">
+          <button className="bg-[#000612] hover:bg-transparent hover:text-black font-semibold flex items-center justify-center rounded-[14px] px-4 py-[13px] tracking-wider hover:scale-105 hover:shadow-[0px_4px_20px_rgba(0,255,255,0.6)]  transition-all duration-300 ease-out">
             Launch App
           </button>
         </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import ConnectorImage from "./ConnectorImage";
+import { FaChevronRight } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
@@ -28,13 +29,21 @@ const HeroSection = () => {
             making cross-chain token transfers as effortless as same-chain
             transfers.
           </p>
+
           <div className="flex items-center justify-center gap-7 mx-auto my-8">
-            <button className="text-[#000612] font-semibold gradient-background rounded-[15px] px-[26px] py-[16px] w-auto">
-              Get Started
+            <button className="text-[#000612] font-semibold gradient-background rounded-[15px] w-[170px] py-[16px] px-[17px] flex items-center justify-evenly group">
+              <FaChevronRight className="hidden group-hover:inline-block right-arrow" />
+              <span className="transition-all duration-1000 ease-in-out group-hover:translate-x-[2px]">
+                Get Started
+              </span>
             </button>
+
             <div className="gradient-background rounded-[15px] p-[1px] pb-[1.5px] pl-[1.5px] flex items-center justify-center overflow-hidden w-max">
-              <button className="bg-[#000612] font-semibold flex items-center justify-center rounded-[14px] px-[22px] py-[14px] tracking-wider">
-                Learn More
+              <button className="bg-[#000612] font-semibold rounded-[14px] w-[160px] px-[15px] py-[14px] tracking-wider flex items-center justify-evenly group">
+                <FaChevronRight className="hidden group-hover:inline-block right-arrow" />
+                <span className="transition-all duration-1000 ease-in-out group-hover:translate-x-[2px]">
+                  Learn More
+                </span>
               </button>
             </div>
           </div>

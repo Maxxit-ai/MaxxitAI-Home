@@ -75,7 +75,7 @@ body {
   height: 820px;
 }
 
-.usecase-background{
+.usecase-background {
   background-image: url("/usecasebg.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -84,7 +84,7 @@ body {
   height: 600px;
 }
 
-.getstarted-background{
+.getstarted-background {
   background-image: url("/getstarted.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,7 +93,7 @@ body {
   /* height: 800px; */
 }
 
-.walkthrough-bg{
+.walkthrough-bg {
   background-image: url("/walkthroughbg.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,12 +131,69 @@ body {
 /* gradient-border-animation */
 @layer components {
   .gradient-border-animation {
-    animation: gradient-border 7s ease 1 normal forwards;
+    animation: gradient-border 1.5s ease-in-out 1 normal forwards;
   }
 
   @keyframes gradient-border {
     0% {
       background: none;
+    }
+    10%{
+      background: none;
+    }
+    20%{
+      background: none;
+    }
+    30%{
+      background: none;
+    }
+    40%{
+      background: none;
+    }
+    50% {
+      background: linear-gradient(
+        30deg,
+        #af85e3 9.12%,
+        rgba(96, 73, 125, 0) 34.76%,
+        rgba(96, 73, 125, 0) 65.49%,
+        #68e099 95.14%
+      );
+    }
+    60%{
+      background: linear-gradient(
+        60deg,
+        #af85e3 9.12%,
+        rgba(96, 73, 125, 0) 34.76%,
+        rgba(96, 73, 125, 0) 65.49%,
+        #68e099 95.14%
+      );
+    }
+    70%{
+      background: linear-gradient(
+        90deg,
+        #af85e3 9.12%,
+        rgba(96, 73, 125, 0) 34.76%,
+        rgba(96, 73, 125, 0) 65.49%,
+        #68e099 95.14%
+      );
+    }
+    80%{
+      background: linear-gradient(
+        120deg,
+        #af85e3 9.12%,
+        rgba(96, 73, 125, 0) 34.76%,
+        rgba(96, 73, 125, 0) 65.49%,
+        #68e099 95.14%
+      );
+    }
+    90%{
+      background: linear-gradient(
+        150deg,
+        #af85e3 9.12%,
+        rgba(96, 73, 125, 0) 34.76%,
+        rgba(96, 73, 125, 0) 65.49%,
+        #68e099 95.14%
+      );
     }
     100% {
       background: linear-gradient(
@@ -161,10 +218,10 @@ body {
   .gradient-bg-animation::before {
     content: "";
     position: absolute;
-    top: -39.6px;
-    left: 12.7px;
+    top: -39px;
+    left: 6px;
     width: 100%;
-    height: 150%;
+    height: 130%;
     background-image: radial-gradient(
         rgba(255, 255, 255, 0.308) 1px,
         transparent 1.5px
@@ -652,6 +709,51 @@ body {
     }
     100% {
       border-color: #9c9c9ccc;
+    }
+  }
+}
+
+/* navbar line animation */
+.hover-effect {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-effect::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background: linear-gradient(
+    267.72deg,
+    #af85e3 -8.75%,
+    #8b94e2 24.5%,
+    #6ff2f2 65.76%,
+    #68e099 108.31%
+  );
+  transition: all 0.4s ease-out;
+  transform: translateX(-50%); /* Start from center */
+}
+
+.hover-effect:hover::after {
+  width: 100%; /* Expand to full width */
+}
+
+/* home section button hover animation */
+@layer components {
+  .right-arrow {
+    display: inline-block; /* Ensures the element takes space */
+    animation: slide-in-left 0.5s forwards; /* Animation triggers when hovered */
+  }
+
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-10px); /* Start off-screen */
+    }
+    100% {
+      transform: translateX(0); /* Slide into position */
     }
   }
 }
