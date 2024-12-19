@@ -65,17 +65,17 @@ const ConnectorImage = () => {
       </div>
 
       {/* icon1 to logo */}
-      <div className="flow-line1 w-[3px] h-[25px] absolute"></div>
+      <div className="flow-line1 absolute"></div>
       {/* icon2 to logo */}
-      <div className="flow-line2 w-[3px] h-[25px] absolute"></div>
+      <div className="flow-line2 absolute"></div>
       {/* icon3 to logo */}
-      <div className="flow-line3 w-[3px] h-[25px] absolute"></div>
+      <div className="flow-line3 absolute"></div>
       {/* icon4 to logo */}
-      <div className="flow-line4 w-[3px] h-[25px] absolute"></div>
+      <div className="flow-line4 absolute"></div>
       {/* icon5 to logo */}
-      <div className="flow-line5 w-[3px] h-[25px] absolute"></div>
+      <div className="flow-line5 absolute"></div>
       {/* icon6 to logo */}
-      <div className="flow-line6 w-[3px] h-[25px] absolute"></div>
+      <div className="flow-line6 absolute"></div>
 
       {/* icons */}
       <div className="absolute top-[10%] left-[27%] w-[90px] h-auto">

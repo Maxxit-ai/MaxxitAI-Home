@@ -93,6 +93,37 @@ body {
   /* height: 800px; */
 }
 
+/* usecase component */
+.bg-border-gradient1 {
+  background: linear-gradient(
+    130deg,
+    rgba(175, 133, 227, 1) 0%,
+    rgba(175, 133, 227, 0) 20%,
+    rgba(175, 133, 227, 0) 80%,
+    rgba(175, 133, 227, 1) 100%
+  );
+}
+
+.bg-border-gradient2 {
+  background: linear-gradient(
+    130deg,
+    rgba(111, 242, 242, 1) 0%,
+    rgba(111, 242, 242, 0) 20%,
+    rgba(111, 242, 242, 0) 80%,
+    rgba(111, 242, 242, 1) 100%
+  );
+}
+
+.bg-border-gradient3 {
+  background: linear-gradient(
+    130deg,
+    rgba(104, 224, 153, 1) 0%,
+    rgba(104, 224, 153, 0) 20%,
+    rgba(104, 224, 153, 0) 80%,
+    rgba(104, 224, 153, 1) 100%
+  );
+}
+
 .walkthrough-bg {
   background-image: url("/walkthroughbg.svg");
   background-repeat: no-repeat;
@@ -100,6 +131,33 @@ body {
   background-position: center;
   width: 100%;
   height: 900px;
+}
+
+.gradient-1 {
+  background: linear-gradient(
+      318.89deg,
+      #6ff2f2 12.35%,
+      rgba(111, 242, 242, 0) 32.35%
+    ),
+    linear-gradient(133.75deg, #6ff2f2 13.61%, rgba(111, 242, 242, 0) 33.42%);
+}
+
+.gradient-2 {
+  background: linear-gradient(
+      318.89deg,
+      #af85e3 12.35%,
+      rgba(96, 73, 125, 0) 32.35%
+    ),
+    linear-gradient(133.75deg, #af85e3 13.61%, rgba(96, 73, 125, 0) 33.42%);
+}
+
+.gradient-3 {
+  background: linear-gradient(
+      318.89deg,
+      #68e099 12.35%,
+      rgba(104, 224, 153, 0) 32.35%
+    ),
+    linear-gradient(133.75deg, #68e099 13.61%, rgba(104, 224, 153, 0) 33.42%);
 }
 
 /* gradient-text-animation */
@@ -138,16 +196,16 @@ body {
     0% {
       background: none;
     }
-    10%{
+    10% {
       background: none;
     }
-    20%{
+    20% {
       background: none;
     }
-    30%{
+    30% {
       background: none;
     }
-    40%{
+    40% {
       background: none;
     }
     50% {
@@ -159,7 +217,7 @@ body {
         #68e099 95.14%
       );
     }
-    60%{
+    60% {
       background: linear-gradient(
         60deg,
         #af85e3 9.12%,
@@ -168,7 +226,7 @@ body {
         #68e099 95.14%
       );
     }
-    70%{
+    70% {
       background: linear-gradient(
         90deg,
         #af85e3 9.12%,
@@ -177,7 +235,7 @@ body {
         #68e099 95.14%
       );
     }
-    80%{
+    80% {
       background: linear-gradient(
         120deg,
         #af85e3 9.12%,
@@ -186,7 +244,7 @@ body {
         #68e099 95.14%
       );
     }
-    90%{
+    90% {
       background: linear-gradient(
         150deg,
         #af85e3 9.12%,
@@ -251,10 +309,8 @@ body {
       #af85e3 1.2%,
       #8b94e2 22.17%,
       #6ff2f2 57.97%,
-      #68e099 77.02%,
-      #3e3e3f 94.9%
+      #68e099 77.02%
     );
-
     animation: flow-line1-animation 8s infinite;
   }
 
@@ -263,25 +319,25 @@ body {
       top: calc(10% + 90px);
       left: calc(27% + 44px);
       width: 3px;
-      height: 25px;
+      height: 50px;
     }
-    50% {
-      top: calc(47% + 25px);
+    31.25% {
+      top: calc(47%);
       left: calc(27% + 44px);
       width: 3px;
-      height: 25px;
+      height: 50px;
     }
-    51% {
-      top: calc(47% + 43px);
+    35% {
+      top: calc(47% + 45px);
       left: calc(27% + 44px);
-      width: 25px;
-      height: 3px;
+      width: 3px;
+      height: 0px;
     }
     100% {
-      top: calc(47% + 43px);
-      left: calc(47% - 25px);
-      width: 25px;
-      height: 3px;
+      top: calc(47% + 45px);
+      left: calc(27% + 44px);
+      width: 3px;
+      height: 0px;
     }
   }
 }
@@ -295,10 +351,8 @@ body {
       #af85e3 1.2%,
       #8b94e2 22.17%,
       #6ff2f2 57.97%,
-      #68e099 77.02%,
-      #3e3e3f 94.9%
+      #68e099 77.02%
     );
-
     animation: flow-line2-animation 8s infinite;
   }
 
@@ -307,25 +361,25 @@ body {
       top: calc(15% + 90px);
       left: calc(67% + 44px);
       width: 3px;
-      height: 25px;
+      height: 50px;
     }
-    50% {
-      top: calc(47% + 25px);
+    31.25% {
+      top: calc(47%);
       left: calc(67% + 44px);
       width: 3px;
-      height: 25px;
+      height: 50px;
     }
-    51% {
-      top: calc(47% + 43px);
-      left: calc(67% + 30px);
-      width: 25px;
-      height: 3px;
+    35% {
+      top: calc(47% + 45px);
+      left: calc(67% + 44px);
+      width: 3px;
+      height: 0px;
     }
     100% {
-      top: calc(47% + 43px);
-      left: calc(47% + 90px);
-      width: 25px;
-      height: 3px;
+      top: calc(47% + 45px);
+      left: calc(67% + 44px);
+      width: 3px;
+      height: 0px;
     }
   }
 }
@@ -335,12 +389,11 @@ body {
   .flow-line3 {
     background: linear-gradient(
       90deg,
-      #3e3e3f -6.68%,
       #af85e3 1.2%,
       #8b94e2 22.17%,
       #6ff2f2 57.97%,
       #68e099 77.02%,
-      #3e3e3f 94.9%
+      #68e099 94.9%
     );
 
     animation: flow-line3-animation 8s infinite;
@@ -350,21 +403,26 @@ body {
     0% {
       top: calc(47% + 43px);
       left: calc(7% + 90px);
-      width: 25px;
+      width: 50px;
       height: 3px;
     }
 
-    50% {
+    31.25% {
       top: calc(47% + 43px);
-      left: calc(27% + 29px);
-      width: 25px;
+      left: calc(27% - 4px);
+    }
+
+    90% {
+      top: calc(47% + 43px);
+      left: calc(47% - 50px);
+      width: 50px;
       height: 3px;
     }
 
     100% {
       top: calc(47% + 43px);
-      left: calc(47% - 22px);
-      width: 25px;
+      left: calc(47%);
+      width: 0px;
       height: 3px;
     }
   }
@@ -374,13 +432,12 @@ body {
 @layer components {
   .flow-line4 {
     background: linear-gradient(
-      90deg,
-      #3e3e3f -6.68%,
+      270deg,
       #af85e3 1.2%,
       #8b94e2 22.17%,
       #6ff2f2 57.97%,
       #68e099 77.02%,
-      #3e3e3f 94.9%
+      #68e099 94.9%
     );
 
     animation: flow-line4-animation 8s infinite;
@@ -390,19 +447,23 @@ body {
     0% {
       top: calc(47% + 43px);
       left: calc(87% - 25px);
-      width: 25px;
+      width: 50px;
       height: 3px;
     }
-    50% {
+    31.25% {
       top: calc(47% + 43px);
-      left: calc(67% + 40px);
-      width: 25px;
+      left: calc(67% + 45px);
+    }
+    90% {
+      top: calc(47% + 43px);
+      left: calc(47% + 90px);
+      width: 50px;
       height: 3px;
     }
     100% {
       top: calc(47% + 43px);
       left: calc(47% + 90px);
-      width: 25px;
+      width: 0px;
       height: 3px;
     }
   }
@@ -412,13 +473,13 @@ body {
 @layer components {
   .flow-line5 {
     background: linear-gradient(
-      179.16deg,
+      360deg,
       #3e3e3f -6.68%,
       #af85e3 1.2%,
       #8b94e2 22.17%,
       #6ff2f2 57.97%,
-      #68e099 77.02%,
-      #3e3e3f 94.9%
+      #68e099 87.02%,
+      #68e099 94.9%
     );
 
     animation: flow-line5-animation 8s infinite;
@@ -426,28 +487,28 @@ body {
 
   @keyframes flow-line5-animation {
     0% {
-      top: calc(85% - 25px);
+      top: calc(85% - 50px);
       left: calc(27% + 44px);
       width: 3px;
-      height: 25px;
+      height: 50px;
     }
-    50% {
+    31.25% {
       top: calc(47% + 43px);
       left: calc(27% + 44px);
       width: 3px;
-      height: 25px;
+      height: 50px;
     }
-    51% {
+    35% {
       top: calc(47% + 43px);
       left: calc(27% + 44px);
-      width: 25px;
-      height: 3px;
+      width: 3px;
+      height: 0px;
     }
     100% {
       top: calc(47% + 43px);
-      left: calc(47% - 25px);
-      width: 25px;
-      height: 3px;
+      left: calc(27% + 44px);
+      width: 3px;
+      height: 0px;
     }
   }
 }
@@ -456,13 +517,13 @@ body {
 @layer components {
   .flow-line6 {
     background: linear-gradient(
-      179.16deg,
+      360deg,
       #3e3e3f -6.68%,
       #af85e3 1.2%,
       #8b94e2 22.17%,
       #6ff2f2 57.97%,
-      #68e099 77.02%,
-      #3e3e3f 94.9%
+      #68e099 87.02%,
+      #68e099 94.9%
     );
 
     animation: flow-line6-animation 8s infinite;
@@ -473,25 +534,25 @@ body {
       top: calc(90% - 25px);
       left: calc(67% + 44px);
       width: 3px;
-      height: 25px;
+      height: 50px;
     }
-    50% {
+    31.25% {
       top: calc(47% + 43px);
       left: calc(67% + 44px);
       width: 3px;
-      height: 25px;
+      height: 50px;
     }
-    51% {
+    35% {
       top: calc(47% + 43px);
-      left: calc(67% + 30px);
-      width: 25px;
-      height: 3px;
+      left: calc(67% + 44px);
+      width: 3px;
+      height: 0px;
     }
     100% {
       top: calc(47% + 43px);
-      left: calc(47% + 90px);
-      width: 25px;
-      height: 3px;
+      left: calc(67% + 44px);
+      width: 3px;
+      height: 0px;
     }
   }
 }
@@ -514,50 +575,21 @@ body {
       transform: translateX(0);
     }
     to {
-      transform: translateX(-95%);
+      transform: translateX(-80%);
     }
   }
-}
-
-.bg-border-gradient1 {
-  background: linear-gradient(
-    130deg,
-    rgba(175, 133, 227, 1) 0%,
-    rgba(175, 133, 227, 0) 20%,
-    rgba(175, 133, 227, 0) 80%,
-    rgba(175, 133, 227, 1) 100%
-  );
-}
-
-.bg-border-gradient2 {
-  background: linear-gradient(
-    130deg,
-    rgba(111, 242, 242, 1) 0%,
-    rgba(111, 242, 242, 0) 20%,
-    rgba(111, 242, 242, 0) 80%,
-    rgba(111, 242, 242, 1) 100%
-  );
-}
-
-.bg-border-gradient3 {
-  background: linear-gradient(
-    130deg,
-    rgba(104, 224, 153, 1) 0%,
-    rgba(104, 224, 153, 0) 20%,
-    rgba(104, 224, 153, 0) 80%,
-    rgba(104, 224, 153, 1) 100%
-  );
 }
 
 /* flowline design2 line 2 */
 @layer components {
   .flow2 {
     background: linear-gradient(
-      267.72deg,
-      #af85e3 -8.75%,
-      #8b94e2 24.5%,
-      #6ff2f2 65.76%,
-      #68e099 108.31%
+      270deg,
+      #af85e3 1.2%,
+      #8b94e2 22.17%,
+      #6ff2f2 57.97%,
+      #68e099 77.02%,
+      #68e09a00 94.9%
     );
 
     animation: flow2-animation 6s infinite;
@@ -568,7 +600,7 @@ body {
       left: calc(10% + 280px);
     }
     100% {
-      left: calc(51%);
+      left: calc(54.5%);
     }
   }
 }
@@ -578,10 +610,11 @@ body {
   .flow1 {
     background: linear-gradient(
       180deg,
-      #af85e3 -8.75%,
-      #8b94e2 24.5%,
-      #6ff2f2 65.76%,
-      #68e099 108.31%
+      #af85e3 1.2%,
+      #8b94e2 22.17%,
+      #6ff2f2 57.97%,
+      #68e099 77.02%,
+      #68e099 94.9%
     );
 
     animation: flow1-animation 6s 2s infinite;
@@ -591,17 +624,23 @@ body {
     0% {
       bottom: 59%;
     }
-    90% {
-      bottom: 76.5%;
+    75% {
+      bottom: 70.5%;
+      height: 70px;
+    }
+    83% {
+      bottom: calc(70.5% + 70px);
+      height: 0;
     }
     100% {
-      bottom: 73.5%;
-      opacity: 0;
+      bottom: calc(70.5% + 70px);
+      height: 0;
     }
   }
 }
 
 @layer components {
+  /* bottomside curve */
   .flow1curvedown {
     animation: curve1 6s 1s infinite;
   }
@@ -613,16 +652,17 @@ body {
     10% {
       border-color: #68e099;
     }
-    25% {
-      border-color: #9c9c9ccc;
+    50% {
+      border-color: transparent;
     }
     100% {
-      border-color: #9c9c9ccc;
+      border-color: transparent;
     }
   }
 }
 
 @layer components {
+  /* holderside curve */
   .flow1curveup {
     animation: curve2 6s 4.9s infinite;
   }
@@ -631,14 +671,14 @@ body {
     0% {
       border-color: #af85e3;
     }
-    10% {
+    30% {
       border-color: #af85e3;
     }
-    51% {
-      border-color: #9c9c9ccc;
+    61% {
+      border-color: transparent;
     }
     100% {
-      border-color: #9c9c9ccc;
+      border-color: transparent;
     }
   }
 }
@@ -648,10 +688,11 @@ body {
   .flow3 {
     background: linear-gradient(
       360deg,
-      #af85e3 -8.75%,
-      #8b94e2 24.5%,
-      #6ff2f2 65.76%,
-      #68e099 108.31%
+      #af85e3 1.2%,
+      #8b94e2 22.17%,
+      #6ff2f2 57.97%,
+      #68e099 77.02%,
+      #68e099 94.9%
     );
 
     animation: flow3-animation 6s 1.5s infinite;
@@ -659,14 +700,19 @@ body {
 
   @keyframes flow3-animation {
     0% {
-      bottom: 36%;
+      bottom: 34%;
     }
-    90% {
-      bottom: 20%;
+    75% {
+      bottom: 22.5%;
+      height: 70px;
+    }
+    83% {
+      bottom: calc(22.5%);
+      height: 0;
     }
     100% {
-      bottom: 20%;
-      opacity: 0;
+      bottom: calc(22.5%);
+      height: 0;
     }
   }
 }
@@ -713,7 +759,177 @@ body {
   }
 }
 
-/* navbar line animation */
+/* footer line animation */
+/* footer-line-top to bottom of top */
+@layer components {
+  .footer-line-1 {
+    background: linear-gradient(
+      180deg,
+      #af85e3 1.2%,
+      #8b94e2 22.17%,
+      #6ff2f2 57.97%,
+      #68e099 77.02%,
+      #68e099 94.9%
+    );
+    animation: move1 3s infinite;
+  }
+
+  @keyframes move1 {
+    0% {
+      top: calc(0% + 140px);
+    }
+    100% {
+      top: calc(0% - 40px);
+    }
+  }
+}
+
+/* footer-line-bottom to top of top */
+@layer components {
+  .footer-line-2 {
+    background: linear-gradient(
+      180deg,
+      #af85e3 1.2%,
+      #8b94e2 22.17%,
+      #6ff2f2 57.97%,
+      #68e099 77.02%,
+      #68e099 94.9%
+    );
+    animation: move2 3s infinite;
+  }
+
+  @keyframes move2 {
+    0% {
+      top: calc(0% - 40px);
+    }
+    90% {
+      top: calc(0% + 140px);
+      height: 40px;
+    }
+    100% {
+      top: calc(0% + 180px);
+      height: 0px;
+    }
+  }
+}
+
+/* footer line of side left */
+@layer components {
+  .footer-line-3 {
+    background: linear-gradient(
+      90deg,
+      #af85e3 1.2%,
+      #8b94e2 22.17%,
+      #6ff2f2 57.97%,
+      #68e099 77.02%,
+      #68e099 94.9%
+    );
+    animation: move3 3s infinite;
+  }
+
+  @keyframes move3 {
+    0% {
+      left: 140px;
+    }
+    90% {
+      left: calc(0%);
+      width: 40px;
+    }
+    100% {
+      left: calc(0%-40px);
+      width: 0px;
+    }
+  }
+}
+
+/* footer line of side right */
+@layer components {
+  .footer-line-4 {
+    background: linear-gradient(
+      90deg,
+      #af85e3 1.2%,
+      #8b94e2 22.17%,
+      #6ff2f2 57.97%,
+      #68e099 77.02%,
+      #68e099 94.9%
+    );
+    animation: move4 3s infinite;
+  }
+
+  @keyframes move4 {
+    0% {
+      right: calc(-40px);
+    }
+    90% {
+      right: calc(140px);
+      width: 40px;
+    }
+    100% {
+      right: calc(0% + 180px);
+      width: 0px;
+    }
+  }
+}
+
+/* footer-line-top to bottom of bottom */
+@layer components {
+  .footer-line-5 {
+    background: linear-gradient(
+      180deg,
+      #af85e3 1.2%,
+      #8b94e2 22.17%,
+      #6ff2f2 57.97%,
+      #68e099 77.02%,
+      #68e099 94.9%
+    );
+    animation: move5 3s infinite;
+  }
+
+  @keyframes move5 {
+    0% {
+      bottom: calc(0% + 140px);
+    }
+    90% {
+      bottom: calc(0%);
+      height: 40px;
+    }
+    100% {
+      bottom: calc(0% - 40px);
+      height: 0;
+    }
+  }
+}
+
+/* footer-line-bottom to top of bottom */
+@layer components {
+  .footer-line-6 {
+    background: linear-gradient(
+      180deg,
+      #af85e3 1.2%,
+      #8b94e2 22.17%,
+      #6ff2f2 57.97%,
+      #68e099 77.02%,
+      #68e099 94.9%
+    );
+    animation: move6 3s infinite;
+  }
+
+  @keyframes move6 {
+    0% {
+      bottom: calc(0%);
+    }
+    90% {
+      bottom: calc(0% + 140px);
+      height: 40px;
+    }
+    100% {
+      bottom: calc(0% + 180px);
+      height: 0;
+    }
+  }
+}
+
+/* navbar line hover animation */
 .hover-effect {
   position: relative;
   display: inline-block;
@@ -733,7 +949,7 @@ body {
     #6ff2f2 65.76%,
     #68e099 108.31%
   );
-  transition: all 0.4s ease-out;
+  transition: all 0.2s ease-out;
   transform: translateX(-50%); /* Start from center */
 }
 

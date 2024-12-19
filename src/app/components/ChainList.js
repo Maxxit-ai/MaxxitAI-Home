@@ -10,27 +10,27 @@ const chains = [
   {
     name: "Optimism",
     img: optimism,
-    color: "#D00505",
+    // color: "#D00505",
   },
   {
     name: "Ethereum",
     img: ethereum,
-    color: "#5594E5",
+    // color: "#5594E5",
   },
   {
     name: "Base",
     img: base,
-    color: "#0B59FF",
+    // color: "#0B59FF",
   },
   {
     name: "Mode",
     img: mode,
-    color: "#DFFE00",
+    // color: "#DFFE00",
   },
   {
     name: "Scroll",
     img: scroll,
-    color: "#EBC28E",
+    // color: "#EBC28E",
   },
 ];
 
@@ -38,10 +38,11 @@ const ChainList = () => {
   return (
     <div className="flex my-16 w-[100%] justify-between gap-[64px] px-[32px]">
       {chains.map((chain, index) => (
-        <div key={index} className="flex items-center justify-center w-[200px] filter grayscale hover:grayscale-0 transition-all duration-300">
+        // <div key={index} className="flex items-center justify-center w-[200px] filter grayscale hover:grayscale-0 transition-all duration-300">
+        <div key={index} className="flex items-center justify-center w-[200px]">
           <Image src={chain.img} alt={chain.name} className="w-24 h-24"></Image>
           <p
-            className="text-nowrap text-lg italic"
+            className="text-nowrap text-lg italic text-white"
             style={{ color: chain.color }}
           >
             {chain.name}

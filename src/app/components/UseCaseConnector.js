@@ -11,30 +11,30 @@ const UseCaseConnector = () => {
   return (
     <div className="w-full h-[1000px] relative">
       {/* line 1 */}
-      <div className="absolute top-[calc(3%+140px)] left-[calc(43%-4px)] border-[2.5px] border-r-0 border-b-0 rounded-b-none rounded-e-none border-[#9C9C9CCC] w-[100px] h-[60px] rounded-[200px]"></div>
-      <div className="absolute top-[calc(3%+140px)] left-[calc(43%-4px)] border-[2.5px] border-r-0 border-b-0 rounded-b-none rounded-e-none border-[#9C9C9CCC] w-[100px] h-[60px] rounded-[200px] flow1curveup"></div>
+      <div className="absolute top-[calc(3%+140px)] left-[calc(43%-4px)] border-[5px] border-r-0 border-b-0 rounded-b-none rounded-e-none border-[#9C9C9CCC] w-[100px] h-[60px] rounded-[200px]"></div>
+      <div className="absolute top-[calc(3%+140px)] left-[calc(43%-4px)] border-[5px] border-r-0 border-b-0 rounded-b-none rounded-e-none w-[100px] border-transparent h-[60px] rounded-[200px] flow1curveup"></div>
       
-      <div className="absolute top-[calc(3%+200px)] left-[calc(43%-4px)] bg-[#9C9C9CCC] w-[2.5px] h-[17.3%]"></div>
-      <div className="absolute left-[calc(43%-4px)] w-[2.5px] h-[40px] flow1"></div>
+      <div className="absolute top-[calc(3%+200px)] left-[calc(43%-4px)] bg-[#9C9C9CCC] w-[5px] h-[17.5%]"></div>
+      <div className="absolute left-[calc(43%-4px)] w-[5px] h-[70px] flow1"></div>
       
-      <div className="absolute top-[calc(50%-97.5px)] left-[calc(43%-101px)] border-[2.5px] border-l-0 border-t-0 rounded-t-none rounded-s-none border-[#9C9C9CCC] w-[100px] h-[100px] rounded-[300px]"></div>
-      <div className="absolute top-[calc(50%-97.5px)] left-[calc(43%-101px)] border-[2.5px] border-l-0 border-t-0 rounded-t-none rounded-s-none border-[#9C9C9CCC] w-[100px] h-[100px] rounded-[300px] flow1curvedown"></div>
+      <div className="absolute top-[calc(50%-96px)] left-[calc(43%-99px)] border-[5px] border-l-0 border-t-0 rounded-t-none rounded-s-none border-[#9C9C9CCC] w-[100px] h-[100px] rounded-[300px]"></div>
+      <div className="absolute top-[calc(50%-96px)] left-[calc(43%-99px)] border-[5px] border-l-0 border-t-0 rounded-t-none rounded-s-none w-[100px] border-transparent h-[100px] rounded-[300px] flow1curvedown"></div>
 
 
       {/* line 2 */}
-      <div className="absolute top-[50%] left-[calc(10%+280px)] bg-[#9C9C9CCC] w-[26%] h-[2.5px]"></div>
-      <div className="absolute top-[50%] w-[50px] h-[2.5px] flow2"></div>
+      <div className="absolute top-[49.9%] left-[calc(10%+280px)] bg-[#9C9C9CCC] w-[26%] h-[5px]"></div>
+      <div className="absolute top-[49.9%] w-[70px] h-[5px] flow2"></div>
 
 
       {/* line 3 */}
-      <div className="absolute top-[calc(50%)] left-[calc(43%-101px)] border-[2.5px] border-l-0 border-b-0 rounded-s-none rounded-b-none border-[#9C9C9CCC] w-[100px] h-[100px] rounded-[300px]"></div>
-      <div className="absolute top-[calc(50%)] left-[calc(43%-101px)] border-[2.5px] border-l-0 border-b-0 rounded-s-none rounded-b-none border-[#9C9C9CCC] w-[100px] h-[100px] rounded-[300px] flow3curveup"></div>
+      <div className="absolute top-[calc(50%-1px)] left-[calc(43%-99px)] border-[5px] border-l-0 border-b-0 rounded-s-none rounded-b-none border-[#9C9C9CCC] w-[100px] h-[100px] rounded-[300px]"></div>
+      <div className="absolute top-[calc(50%-1px)] left-[calc(43%-99px)] border-[5px] border-l-0 border-b-0 rounded-s-none rounded-b-none w-[100px] border-transparent h-[100px] rounded-[300px] flow3curveup"></div>
 
-      <div className="absolute top-[calc(50%+100px)] left-[calc(43%-4px)] bg-[#9C9C9CCC] w-[2.5px] h-[17.3%]"></div>
-      <div className="absolute left-[calc(43%-4px)] w-[2.5px] h-[40px] flow3"></div>
+      <div className="absolute top-[calc(50%+98.5px)] left-[calc(43%-4px)] bg-[#9c9c9ccc] w-[5px] h-[17.4%]"></div>
+      <div className="absolute left-[calc(43%-4px)] w-[5px] h-[70px] flow3"></div>
 
-      <div className="absolute top-[calc(87%-100px)] left-[calc(43%-4px)] border-[2.5px] border-r-0 border-t-0 rounded-t-none rounded-e-none border-[#9C9C9CCC] w-[100px] h-[60px] rounded-[200px]"></div>
-      <div className="absolute top-[calc(87%-100px)] left-[calc(43%-4px)] border-[2.5px] border-r-0 border-t-0 rounded-t-none rounded-e-none border-[#9C9C9CCC] w-[100px] h-[60px] rounded-[200px] flow3curvedown"></div>
+      <div className="absolute top-[calc(87%-100px)] left-[calc(43%-4px)] border-[5px] border-r-0 border-t-0 rounded-t-none rounded-e-none border-[#9C9C9CCC] w-[100px] h-[60px] rounded-[200px]"></div>
+      <div className="absolute top-[calc(87%-100px)] left-[calc(43%-4px)] border-[5px] border-r-0 border-t-0 rounded-t-none rounded-e-none w-[100px] border-transparent h-[60px] rounded-[200px] flow3curvedown"></div>
 
 
 
@@ -60,7 +60,7 @@ const UseCaseConnector = () => {
       </div>
 
       {/* side div1 */}
-      <div className="absolute top-[3%] left-[50%] w-[520px] h-[280px] rounded-3xl bg-[#050E21B2]"></div>
+      <div className="absolute top-[3%] left-[50%] w-[520px] h-[280px] rounded-3xl bg-[#050E21]"></div>
       <div className="absolute top-[calc(3%+20px)] left-[calc(50%+20px)] w-[480px] h-[240px] rounded-3xl bg-border-gradient1"></div>
       <div className="absolute top-[calc(3%+21px)] left-[calc(50%+21px)] w-[478px] h-[238px] rounded-3xl bg-[#050e21] flex flex-col justify-between py-5 px-7">
         <div className="flex items-center relative gap-5">
@@ -77,13 +77,13 @@ const UseCaseConnector = () => {
           swapping if necessary, saving time and fees.
         </p>
         <div className="bg-gradient-to-br from-[#4F4F4F] via-[#AF85E3] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
-          <button className="bg-[#050e21] font-light text-sm flex items-center justify-center gap-2 rounded-[14px] px-4 py-[6px] tracking-wider">
+          <button className="bg-[#050e21] font-light text-sm flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">
             Start Now <FaArrowRightLong className="text-xs mt-[1.5px]" />
           </button>
         </div>
       </div>
       {/* side div2 */}
-      <div className="absolute top-[calc(50%-140px)] left-[55%] w-[520px] h-[280px] rounded-2xl bg-[#050E21B2]"></div>
+      <div className="absolute top-[calc(50%-140px)] left-[55%] w-[520px] h-[280px] rounded-2xl bg-[#050E21]"></div>
       <div className="absolute top-[calc(50%-120px)] left-[calc(55%+20px)] w-[480px] h-[240px] rounded-3xl bg-border-gradient2"></div>
       <div className="absolute top-[calc(50%-119px)] left-[calc(55%+21px)] w-[478px] h-[238px] rounded-3xl bg-[#050e21] flex flex-col justify-between py-5 px-7">
         <div className="flex items-center relative gap-5">
@@ -98,13 +98,13 @@ const UseCaseConnector = () => {
           it from another chain, ensuring smooth transactions.
         </p>
         <div className="bg-gradient-to-br from-[#4F4F4F] via-[#6FF2F2] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
-          <button className="bg-[#050e21] font-light text-sm flex items-center justify-center gap-2 rounded-[14px] px-4 py-[6px] tracking-wider">
+          <button className="bg-[#050e21] font-light text-sm flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">
             Start Now <FaArrowRightLong className="text-xs mt-[1.5px]" />
           </button>
         </div>
       </div>
       {/* side div3 */}
-      <div className="absolute top-[calc(97%-280px)] left-[50%] w-[520px] h-[280px] rounded-2xl bg-[#050E21B2]"></div>
+      <div className="absolute top-[calc(97%-280px)] left-[50%] w-[520px] h-[280px] rounded-2xl bg-[#050E21]"></div>
       <div className="absolute top-[calc(97%-260px)] left-[calc(50%+20px)] w-[480px] h-[240px] rounded-3xl bg-border-gradient3"></div>
       <div className="absolute top-[calc(97%-259px)] left-[calc(50%+21px)] w-[478px] h-[238px] rounded-3xl bg-[#050e21] flex flex-col justify-between py-5 px-7">
         <div className="flex items-center relative gap-5">
@@ -122,7 +122,7 @@ const UseCaseConnector = () => {
           seamlessly.
         </p>
         <div className="bg-gradient-to-br from-[#4F4F4F] via-[#68E099] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
-          <button className="bg-[#050e21] font-light text-sm flex items-center justify-center gap-2 rounded-[14px] px-4 py-[6px] tracking-wider">
+          <button className="bg-[#050e21] font-light text-sm flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">
             Start Now <FaArrowRightLong className="text-xs mt-[1.5px]" />
           </button>
         </div>
