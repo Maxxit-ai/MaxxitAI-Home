@@ -13,18 +13,16 @@ const UseCaseConnector = () => {
       {/* line 1 */}
       <div className="absolute top-[calc(3%+140px)] left-[calc(43%-4px)] border-[5px] border-r-0 border-b-0 rounded-b-none rounded-e-none border-[#9C9C9CCC] w-[100px] h-[60px] rounded-[200px]"></div>
       <div className="absolute top-[calc(3%+140px)] left-[calc(43%-4px)] border-[5px] border-r-0 border-b-0 rounded-b-none rounded-e-none w-[100px] border-transparent h-[60px] rounded-[200px] flow1curveup"></div>
-      
+
       <div className="absolute top-[calc(3%+200px)] left-[calc(43%-4px)] bg-[#9C9C9CCC] w-[5px] h-[17.5%]"></div>
       <div className="absolute left-[calc(43%-4px)] w-[5px] h-[70px] flow1"></div>
-      
+
       <div className="absolute top-[calc(50%-96px)] left-[calc(43%-99px)] border-[5px] border-l-0 border-t-0 rounded-t-none rounded-s-none border-[#9C9C9CCC] w-[100px] h-[100px] rounded-[300px]"></div>
       <div className="absolute top-[calc(50%-96px)] left-[calc(43%-99px)] border-[5px] border-l-0 border-t-0 rounded-t-none rounded-s-none w-[100px] border-transparent h-[100px] rounded-[300px] flow1curvedown"></div>
-
 
       {/* line 2 */}
       <div className="absolute top-[49.9%] left-[calc(10%+280px)] bg-[#9C9C9CCC] w-[26%] h-[5px]"></div>
       <div className="absolute top-[49.9%] w-[70px] h-[5px] flow2"></div>
-
 
       {/* line 3 */}
       <div className="absolute top-[calc(50%-1px)] left-[calc(43%-99px)] border-[5px] border-l-0 border-b-0 rounded-s-none rounded-b-none border-[#9C9C9CCC] w-[100px] h-[100px] rounded-[300px]"></div>
@@ -35,8 +33,6 @@ const UseCaseConnector = () => {
 
       <div className="absolute top-[calc(87%-100px)] left-[calc(43%-4px)] border-[5px] border-r-0 border-t-0 rounded-t-none rounded-e-none border-[#9C9C9CCC] w-[100px] h-[60px] rounded-[200px]"></div>
       <div className="absolute top-[calc(87%-100px)] left-[calc(43%-4px)] border-[5px] border-r-0 border-t-0 rounded-t-none rounded-e-none w-[100px] border-transparent h-[60px] rounded-[200px] flow3curvedown"></div>
-
-
 
       {/* circle on left side */}
       <div className="absolute top-[calc(50%-140px)] left-[10%] w-[280px] h-[280px] rounded-full bg-[#68E09978] border border-[#DFDFDF] shadow-[inset_0px_0px_48.59px_0.91px_#FFFFFFB2] opacity-50"></div>
@@ -73,8 +69,8 @@ const UseCaseConnector = () => {
           </div>
         </div>
         <p className="font-normal text-sm tracking-wider">
-          SmartDisperse sends prizes to multiple addresses in preferred tokens,
-          swapping if necessary, saving time and fees.
+          SmartDisperse distributes prizes to multiple addresses in preferred
+          tokens, swapping if necessary, saving both time and fees.
         </p>
         <div className="bg-gradient-to-br from-[#4F4F4F] via-[#AF85E3] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
           <button className="bg-[#050e21] font-light text-sm flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">
@@ -94,8 +90,8 @@ const UseCaseConnector = () => {
           </div>
         </div>
         <p className="font-normal text-sm tracking-wider">
-          If an address lacks gas for ERC-20 tokens, SmartDisperse helps acquire
-          it from another chain, ensuring smooth transactions.
+          If an address lacks gas for ERC-20 tokens, SmartDisperse ensures gas
+          availability from another chain, enabling smooth transactions.
         </p>
         <div className="bg-gradient-to-br from-[#4F4F4F] via-[#6FF2F2] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
           <button className="bg-[#050e21] font-light text-sm flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">
@@ -117,9 +113,8 @@ const UseCaseConnector = () => {
           </div>
         </div>
         <p className="font-normal text-sm tracking-wider">
-          Easily send funds to multiple wallets at once, effectively
-          streamlining transactions and catering to a diverse range of use cases
-          seamlessly.
+          Send funds to multiple wallets at once, streamlining transactions and
+          efficiently catering to diverse use cases.
         </p>
         <div className="bg-gradient-to-br from-[#4F4F4F] via-[#68E099] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
           <button className="bg-[#050e21] font-light text-sm flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">

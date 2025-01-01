@@ -23,10 +23,11 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="text-center w-[80%] mx-auto text-lg tracking-wide">
-            Smart-Disperse Powerd by CCIP revolutionizes token transfers with
-            advanced features for seamless cross-chain interoperability. Our
-            solution reduces gas fees, saves time, and simplifies operations,
-            making cross-chain token transfers as effortless as same-chain
+            SmartDisperse, now powered by Superchain Interop, redefines token
+            transfers with cutting-edge features for seamless cross-chain
+            interoperability within the superchain ecosystem. Our solution
+            minimizes gas fees, saves time, and streamlines operations, making
+            cross-chain token transfers as simple and efficient as same-chain
             transfers.
           </p>
 

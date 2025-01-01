@@ -9,7 +9,7 @@ export default function Loading() {
           width="100%"
           height="100%"
           src="https://embed.figma.com/proto/NDjX9V8pYFOL3SPal0Orvx/Smart-Disperse-Redesign?node-id=2-446&node-type=frame&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A446&show-proto-sidebar=1&embed-host=share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
     </div>

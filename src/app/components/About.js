@@ -9,21 +9,21 @@ const about = [
     gif: fast,
     heading: "Fast",
     paragraph:
-      "Store preferred chains and tokens on the blockchain, reducing effort and ensuring beneficial, frequent token transfers.",
+      "Store preferred chains and tokens on the blockchain, reducing effort and enabling frequent, efficient token transfers.",
     gradient: "bg-gradient-to-b from-[#ffffff00] via-[#ffffff00] to-[#AF85E3]",
   },
   {
     gif: secure,
     heading: "Secure",
     paragraph:
-      "Built on CCIP, SmartDisperse inherits robust security features, ensuring comprehensive support and assistance in case of any issues",
+      "Built on Superchain Interop, SmartDisperse inherits robust security features, ensuring reliable support and assistance in case of any issues.",
     gradient: "bg-gradient-to-b from-[#ffffff00] via-[#ffffff00] to-[#6FF2F2]",
   },
   {
     gif: friendly,
     heading: "User Friendly",
     paragraph:
-      "SmartDisperse prioritizes speed and efficiency by analyzing and selecting the best possible routes for your token transfers across chains.",
+      "SmartDisperse prioritizes speed and efficiency by leveraging the superchain's advanced interop features to optimize your token transfers.",
     gradient: "bg-gradient-to-b from-[#ffffff00] via-[#ffffff00] to-[#8B94E2]",
   },
 ];
@@ -37,8 +37,7 @@ const About = () => {
           About SmartDisperse
         </h2>
         <p className="my-6 text-base font-light tracking-wide">
-          SmartDisperse leverages CCIP to enhance cross-chain interoperability
-        </p>
+        SmartDisperse leverages Superchain Interop to enable seamless cross-chain interoperability within the superchain ecosystem.        </p>
         <div className="flex w-[85%] items-center justify-center gap-8 my-10">
           {about.map((about, index) => (
             <div

@@ -2,8 +2,9 @@ import React from "react";
 import optimism from "../assets/chains svg/optimism.svg";
 import ethereum from "../assets/chains svg/ethereum.svg";
 import base from "../assets/chains svg/base.svg";
-import mode from "../assets/chains svg/mode.svg";
-import scroll from "../assets/chains svg/scroll.svg";
+import unichain from "../assets/chains svg/unichain.svg";
+import worldcoin from "../assets/chains svg/worldcoin.svg";
+import zora from "../assets/chains svg/zora.svg";
 import Image from "next/image";
 
 const chains = [
@@ -23,13 +24,18 @@ const chains = [
     // color: "#0B59FF",
   },
   {
-    name: "Mode",
-    img: mode,
+    name: "Unichain",
+    img: unichain,
     // color: "#DFFE00",
   },
   {
-    name: "Scroll",
-    img: scroll,
+    name: "Worldcoin",
+    img: worldcoin,
+    // color: "#DFFE00",
+  },
+  {
+    name: "Zora",
+    img: zora,
     // color: "#EBC28E",
   },
 ];
