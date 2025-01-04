@@ -40,7 +40,6 @@ const Footer = () => {
       <div className="absolute bg-[#252525CC] w-[3px] h-[180px] bottom-0 left-[66%]"></div>
       <div className="absolute w-[3px] h-[40px] left-[66%] footer-line-6"></div>
 
-
       <div className="flex items-center justify-center space-x-10 text-lg tracking-wider my-8">
         <Link href="/" className="relative group">
           <span className="hover-effect hover:font-medium">Milestone</span>
@@ -50,7 +49,7 @@ const Footer = () => {
         </Link>
       </div>
 
-      <div
+      {/* <div
         className="w-full h-[200px] flex items-center justify-center mx-auto relative overflow-hidden group"
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setIsHovering(true)}
@@ -83,6 +82,10 @@ const Footer = () => {
         >
           Smart Disperse
         </p>
+      </div> */}
+
+      <div className="parent-div">
+        <p className="footer-text text-[8.5vw] font-semibold tracking-wide" data-text="Smart Disperse">Smart Disperse</p>
       </div>
 
       <div className="flex justify-between items-center w-[85%] mx-auto my-8">

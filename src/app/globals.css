@@ -943,11 +943,11 @@ body {
   width: 0;
   height: 2px; /* Thickness of the underline */
   background: linear-gradient(
-    267.72deg,
-    #af85e3 -8.75%,
-    #8b94e2 24.5%,
-    #6ff2f2 65.76%,
-    #68e099 108.31%
+    90deg,
+      #af85e3 1.2%,
+      #8b94e2 22.17%,
+      #6ff2f2 57.97%,
+      #68e099 77.02%
   );
   transition: all 0.2s ease-out;
   transform: translateX(-50%); /* Start from center */
@@ -971,5 +971,59 @@ body {
     100% {
       transform: translateX(0); /* Slide into position */
     }
+  }
+}
+
+.parent-div {
+  background: linear-gradient(
+    267.72deg,
+    #af85e3 -8.75%,
+    #8b94e2 24.5%,
+    #6ff2f2 65.76%,
+    #68e099 108.31%
+  );
+}
+
+.footer-text {
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  margin: 0;
+  position: relative;
+  color: #0a0b1b;
+  background: #000612;
+}
+
+.footer-text::before {
+  content: attr(data-text);
+  position: absolute;
+  background: linear-gradient(
+    267.72deg,
+    #af85e3 -8.75%,
+    #8b94e2 24.5%,
+    #6ff2f2 65.76%,
+    #68e099 108.31%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  clip-path: ellipse(280px 134px at -20% 50%);
+  animation: swing 8s infinite;
+  animation-direction: alternate;
+  pointer-events: none;
+}
+
+@keyframes swing {
+  0% {
+    -webkit-clip-path: ellipse(280px 134px at -10% 50%);
+    clip-path: ellipse(280px 134px at -10% 50%);
+  }
+  100% {
+    -webkit-clip-path: ellipse(280px 134px at 110.62% 50%);
+    clip-path: ellipse(280px 134px at 110.62% 50%);
   }
 }
