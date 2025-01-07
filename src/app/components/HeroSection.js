@@ -7,9 +7,9 @@ const HeroSection = () => {
   return (
     <>
       <div className="hero-background w-full">
-        <div className="w-[85%] mx-auto my-16">
+        <div className="w-[85%] mx-auto my-10 sm:my-16">
           <Navbar />
-          <h1 className="text-[8vw] sm:text-4xl bw:text-5xl lg:text-6xl xl:text-7xl font-medium text-center mb-5 sm:mb-10 mt-20 flex items-center justify-center gap-3 flex-wrap w-full">
+          <h1 className="text-[8vw] sm:text-4xl bw:text-5xl lg:text-6xl xl:text-7xl font-medium text-center mb-5 sm:mb-10 mt-14 sm:mt-20 flex items-center justify-center gap-3 flex-wrap w-full">
             <span className="gradient-border-animation rounded-[30px] sm:rounded-[40px] overflow-hidden p-[2px] flex ">
               <span className="gradient-bg-animation flex rounded-[30px] sm:rounded-[40px] p-[2px]">
                 <span className="gradient-text-animation rounded-[30px] sm:rounded-[40px] px-3 sm:px-4 py-3 sm:py-6 overflow-hidden">
