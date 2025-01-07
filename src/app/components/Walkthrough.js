@@ -109,7 +109,7 @@ const Walkthrough = () => {
   }, []);
 
   return (
-    <div className="w-full h-[900px] relative walkthrough-container">
+    <div className="w-full h-[1000px] relative walkthrough-container">
       <div className="absolute top-0 left-0 walkthrough-bg w-full h-[900px] z-10"></div>
       <div className="flex flex-col items-center justify-center z-30 relative">
         <h2 className="text-[50px] mb-[50px] font-medium tracking-wide text-center bg-gradient-to-r from-[#999999] via-white to-[#999999] bg-clip-text text-transparent">
