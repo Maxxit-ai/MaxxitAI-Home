@@ -531,7 +531,7 @@ body {
 
   @keyframes flow-line6-animation {
     0% {
-      top: calc(90% - 25px);
+      top: calc(90% - 40px);
       left: calc(67% + 44px);
       width: 3px;
       height: 50px;

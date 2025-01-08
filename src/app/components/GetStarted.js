@@ -64,11 +64,11 @@ const GetStarted = () => {
             }}
           />
           <div className="w-full h-full rounded-2xl bg-[#050E21] p-3 bw:p-6 flex flex-col items-center justify-center relative">
-            <h1 className="font-medium text-[12px] md:text-[20px] lg:text-[22px] text-wrap tracking-wide text-left w-full mb-3 mt-0 xl:my-5">
+            <h1 className="font-medium text-[12px] md:text-[20px] lg:text-[22px] text-wrap tracking-wide text-center xs:text-left w-full mb-3 mt-0 xl:my-5">
               {item.heading}
             </h1>
             <div className={`w-full h-[1.3px] ${item.lineGradient} my-2 bw:my-7`}></div>
-            <p className="text-[9px] md:text-[13px] lg:text-[16px] tracking-wider text-left mt-3 mb-0 xl:my-4">
+            <p className="text-[9px] md:text-[13px] lg:text-[16px] tracking-wider text-center xs:text-left mt-3 mb-0 xl:my-4">
               {item.paragraph}
             </p>
             <div
