@@ -301,7 +301,6 @@ body {
 }
 
 /* flowline 1 */
-@layer components {
   .flow-line1 {
     background: linear-gradient(
       179.16deg,
@@ -317,33 +316,64 @@ body {
   @keyframes flow-line1-animation {
     0% {
       top: calc(10% + 90px);
-      left: calc(27% + 44px);
+      left: calc(27% + 45px);
       width: 3px;
       height: 50px;
     }
     31.25% {
       top: calc(47%);
-      left: calc(27% + 44px);
+      left: calc(27% + 45px);
       width: 3px;
       height: 50px;
     }
     35% {
       top: calc(47% + 45px);
-      left: calc(27% + 44px);
+      left: calc(27% + 45px);
       width: 3px;
       height: 0px;
     }
     100% {
       top: calc(47% + 45px);
-      left: calc(27% + 44px);
+      left: calc(27% + 45px);
       width: 3px;
       height: 0px;
     }
   }
-}
+
+  @media(max-width:1024px){
+    .flow-line1{
+      animation: flow-line1-animation-bw 8s infinite;
+    }
+  }
+
+  @keyframes flow-line1-animation-bw {
+    0% {
+      top: calc(10% + 90px);
+      left: calc(27% + 45px);
+      width: 3px;
+      height: 50px;
+    }
+    31.25% {
+      top: calc(47%);
+      left: calc(27% + 45px);
+      width: 3px;
+      height: 50px;
+    }
+    35% {
+      top: calc(47% + 45px);
+      left: calc(27% + 45px);
+      width: 3px;
+      height: 0px;
+    }
+    100% {
+      top: calc(47% + 45px);
+      left: calc(27% + 45px);
+      width: 3px;
+      height: 0px;
+    }
+  }
 
 /* flowline 2 */
-@layer components {
   .flow-line2 {
     background: linear-gradient(
       179.16deg,
@@ -359,33 +389,65 @@ body {
   @keyframes flow-line2-animation {
     0% {
       top: calc(15% + 90px);
-      left: calc(67% + 44px);
+      left: calc(67% + 45px);
       width: 3px;
       height: 50px;
     }
     31.25% {
       top: calc(47%);
-      left: calc(67% + 44px);
+      left: calc(67% + 45px);
       width: 3px;
       height: 50px;
     }
     35% {
       top: calc(47% + 45px);
-      left: calc(67% + 44px);
+      left: calc(67% + 45px);
       width: 3px;
       height: 0px;
     }
     100% {
       top: calc(47% + 45px);
-      left: calc(67% + 44px);
+      left: calc(67% + 45px);
       width: 3px;
       height: 0px;
     }
   }
-}
+
+  @media(max-width:1024px){
+    .flow-line3{
+      animation: flow-line3-animation-bw 8s infinite;
+    }
+  }
+
+  @keyframes flow-line3-animation-bw {
+    0% {
+      top: calc(47% + 40px);
+      left: calc(7% + 90px);
+      width: 50px;
+      height: 3px;
+    }
+
+    31.25% {
+      top: calc(47% + 40px);
+      left: calc(27% - 4px);
+    }
+
+    90% {
+      top: calc(47% + 40px);
+      left: calc(47% - 50px);
+      width: 50px;
+      height: 3px;
+    }
+
+    100% {
+      top: calc(47% + 40px);
+      left: calc(47%);
+      width: 0px;
+      height: 3px;
+    }
+  }
 
 /* flowline 3 */
-@layer components {
   .flow-line3 {
     background: linear-gradient(
       90deg,
@@ -401,35 +463,203 @@ body {
 
   @keyframes flow-line3-animation {
     0% {
-      top: calc(47% + 43px);
+      top: calc(47% + 44.5px);
       left: calc(7% + 90px);
       width: 50px;
       height: 3px;
     }
 
     31.25% {
-      top: calc(47% + 43px);
+      top: calc(47% + 44.5px);
       left: calc(27% - 4px);
     }
 
     90% {
-      top: calc(47% + 43px);
+      top: calc(47% + 44.5px);
       left: calc(47% - 50px);
       width: 50px;
       height: 3px;
     }
 
     100% {
-      top: calc(47% + 43px);
+      top: calc(47% + 44.5px);
       left: calc(47%);
       width: 0px;
       height: 3px;
     }
   }
-}
+
+  @media(max-width:1024px){
+    .flow-line3{
+      animation: flow-line3-animation-bw 8s infinite;
+    }
+  }
+
+  @keyframes flow-line3-animation-bw {
+    0% {
+      top: calc(47% + 40px);
+      left: calc(7% + 90px);
+      width: 50px;
+      height: 3px;
+    }
+
+    31.25% {
+      top: calc(47% + 40px);
+      left: calc(27% - 4px);
+    }
+
+    90% {
+      top: calc(47% + 40px);
+      left: calc(47% - 50px);
+      width: 50px;
+      height: 3px;
+    }
+
+    100% {
+      top: calc(47% + 40px);
+      left: calc(47%);
+      width: 0px;
+      height: 3px;
+    }
+  }
+
+  @media(max-width:900px){
+    .flow-line3{
+      animation: flow-line3-animation-md 8s infinite;
+    }
+  }
+
+  @keyframes flow-line3-animation-md {
+    0% {
+      top: calc(47% + 35px);
+      left: calc(7% + 70px);
+      width: 50px;
+      height: 3px;
+    }
+
+    31.25% {
+      top: calc(47% + 35px);
+      left: calc(27% - 4px);
+    }
+
+    90% {
+      top: calc(47% + 35px);
+      left: calc(47% - 50px);
+      width: 50px;
+      height: 3px;
+    }
+
+    100% {
+      top: calc(47% + 35px);
+      left: calc(47%);
+      width: 0px;
+      height: 3px;
+    }
+  }
+
+  @media(max-width:768px){
+    .flow-line3{
+      animation: flow-line3-animation-sm 8s infinite;
+    }
+  }
+
+  @keyframes flow-line3-animation-sm{
+    0% {
+      top: calc(47% + 30px);
+      left: calc(7% + 60px);
+      width: 50px;
+      height: 3px;
+    }
+
+    31.25% {
+      top: calc(47% + 30px);
+      left: calc(27% - 4px);
+    }
+
+    90% {
+      top: calc(47% + 30px);
+      left: calc(47% - 50px);
+      width: 50px;
+      height: 3px;
+    }
+
+    100% {
+      top: calc(47% + 30px);
+      left: calc(47%);
+      width: 0px;
+      height: 3px;
+    }
+  }
+
+  @media(max-width:640px){
+    .flow-line3{
+      animation: flow-line3-animation-xs 8s infinite;
+    }
+  }
+
+  @keyframes flow-line3-animation-xs{
+    0% {
+      top: calc(47% + 25px);
+      left: calc(7% + 54px);
+      width: 50px;
+      height: 3px;
+    }
+
+    31.25% {
+      top: calc(47% + 25px);
+      left: calc(27% - 4px);
+    }
+
+    90% {
+      top: calc(47% + 25px);
+      left: calc(47% - 50px);
+      width: 50px;
+      height: 3px;
+    }
+
+    100% {
+      top: calc(47% + 25px);
+      left: calc(47%);
+      width: 0px;
+      height: 3px;
+    }
+  }
+
+  @media(max-width:450px){
+    .flow-line3{
+      animation: flow-line3-animation-2xs 8s infinite;
+    }
+  }
+
+  @keyframes flow-line3-animation-2xs{
+    0% {
+      top: calc(47% + 23px);
+      left: calc(7% + 45px);
+      width: 20px;
+      height: 3px;
+    }
+
+    31.25% {
+      top: calc(47% + 23px);
+      left: calc(27% - 4px);
+    }
+
+    90% {
+      top: calc(47% + 23px);
+      left: calc(47% - 50px);
+      width: 20px;
+      height: 3px;
+    }
+
+    100% {
+      top: calc(47% + 23px);
+      left: calc(47%);
+      width: 0px;
+      height: 3px;
+    }
+  }
 
 /* flowline 4 */
-@layer components {
   .flow-line4 {
     background: linear-gradient(
       270deg,
@@ -445,32 +675,194 @@ body {
 
   @keyframes flow-line4-animation {
     0% {
-      top: calc(47% + 43px);
+      top: calc(47% + 44.5px);
       left: calc(87% - 50px);
       width: 50px;
       height: 3px;
     }
     31.25% {
-      top: calc(47% + 43px);
+      top: calc(47% + 44.5px);
       left: calc(67% + 45px);
     }
     90% {
-      top: calc(47% + 43px);
+      top: calc(47% + 44.5px);
       left: calc(47% + 90px);
       width: 50px;
       height: 3px;
     }
     100% {
-      top: calc(47% + 43px);
+      top: calc(47% + 44.5px);
       left: calc(47% + 90px);
       width: 0px;
       height: 3px;
     }
   }
-}
+
+  @media(max-width:1024px){
+    .flow-line4{
+      animation: flow-line4-animation-bw 8s infinite;
+    }
+  }
+
+  @keyframes flow-line4-animation-bw {
+    0% {
+      top: calc(47% + 40px);
+      left: calc(87% - 50px);
+      width: 50px;
+      height: 3px;
+    }
+    31.25% {
+      top: calc(47% + 40px);
+      left: calc(67% + 45px);
+    }
+    90% {
+      top: calc(47% + 40px);
+      left: calc(47% + 90px);
+      width: 50px;
+      height: 3px;
+    }
+    100% {
+      top: calc(47% + 40px);
+      left: calc(47% + 90px);
+      width: 0px;
+      height: 3px;
+    }
+  }
+
+  @media(max-width:900px){
+    .flow-line4{
+      animation: flow-line4-animation-md 8s infinite;
+    }
+  }
+
+  @keyframes flow-line4-animation-md {
+    0% {
+      top: calc(47% + 35px);
+      left: calc(87% - 50px);
+      width: 50px;
+      height: 3px;
+    }
+    31.25% {
+      top: calc(47% + 35px);
+      left: calc(67% + 25px);
+    }
+    90% {
+      top: calc(47% + 35px);
+      left: calc(47% + 75px);
+      width: 50px;
+      height: 3px;
+    }
+    100% {
+      top: calc(47% + 35px);
+      left: calc(47% + 75px);
+      width: 0px;
+      height: 3px;
+    }
+  }
+
+  @media(max-width:768px){
+    .flow-line4{
+      animation: flow-line4-animation-sm 8s infinite;
+    }
+  }
+
+  @keyframes flow-line4-animation-sm{
+    0% {
+      top: calc(47% + 30px);
+      left: calc(7% + 60px);
+      width: 50px;
+      height: 3px;
+    }
+
+    31.25% {
+      top: calc(47% + 30px);
+      left: calc(27% - 4px);
+    }
+
+    90% {
+      top: calc(47% + 30px);
+      left: calc(47% - 50px);
+      width: 50px;
+      height: 3px;
+    }
+
+    100% {
+      top: calc(47% + 30px);
+      left: calc(47%);
+      width: 0px;
+      height: 3px;
+    }
+  }
+
+  @media(max-width:640px){
+    .flow-line4{
+      animation: flow-line4-animation-xs 8s infinite;
+    }
+  }
+
+  @keyframes flow-line4-animation-xs{
+    0% {
+      top: calc(47% + 25px);
+      left: calc(7% + 54px);
+      width: 50px;
+      height: 3px;
+    }
+
+    31.25% {
+      top: calc(47% + 25px);
+      left: calc(27% - 4px);
+    }
+
+    90% {
+      top: calc(47% + 25px);
+      left: calc(47% - 50px);
+      width: 50px;
+      height: 3px;
+    }
+
+    100% {
+      top: calc(47% + 25px);
+      left: calc(47%);
+      width: 0px;
+      height: 3px;
+    }
+  }
+
+  @media(max-width:450px){
+    .flow-line4{
+      animation: flow-line4-animation-2xs 8s infinite;
+    }
+  }
+
+  @keyframes flow-line4-animation-2xs{
+    0% {
+      top: calc(47% + 23px);
+      left: calc(7% + 45px);
+      width: 20px;
+      height: 3px;
+    }
+
+    31.25% {
+      top: calc(47% + 23px);
+      left: calc(27% - 4px);
+    }
+
+    90% {
+      top: calc(47% + 23px);
+      left: calc(47% - 50px);
+      width: 20px;
+      height: 3px;
+    }
+
+    100% {
+      top: calc(47% + 23px);
+      left: calc(47%);
+      width: 0px;
+      height: 3px;
+    }
+  }
 
 /* flowline 5 */
-@layer components {
   .flow-line5 {
     background: linear-gradient(
       360deg,
@@ -488,33 +880,65 @@ body {
   @keyframes flow-line5-animation {
     0% {
       top: calc(85% - 50px);
-      left: calc(27% + 44px);
+      left: calc(27% + 45px);
       width: 3px;
       height: 50px;
     }
     31.25% {
       top: calc(47% + 43px);
-      left: calc(27% + 44px);
+      left: calc(27% + 45px);
       width: 3px;
       height: 50px;
     }
     35% {
       top: calc(47% + 43px);
-      left: calc(27% + 44px);
+      left: calc(27% + 45px);
       width: 3px;
       height: 0px;
     }
     100% {
       top: calc(47% + 43px);
-      left: calc(27% + 44px);
+      left: calc(27% + 45px);
       width: 3px;
       height: 0px;
     }
   }
-}
+
+  @media(max-width:1024px){
+    .flow-line3{
+      animation: flow-line3-animation-bw 8s infinite;
+    }
+  }
+
+  @keyframes flow-line3-animation-bw {
+    0% {
+      top: calc(47% + 40px);
+      left: calc(7% + 90px);
+      width: 50px;
+      height: 3px;
+    }
+
+    31.25% {
+      top: calc(47% + 40px);
+      left: calc(27% - 4px);
+    }
+
+    90% {
+      top: calc(47% + 40px);
+      left: calc(47% - 50px);
+      width: 50px;
+      height: 3px;
+    }
+
+    100% {
+      top: calc(47% + 40px);
+      left: calc(47%);
+      width: 0px;
+      height: 3px;
+    }
+  }
 
 /* flowline 6 */
-@layer components {
   .flow-line6 {
     background: linear-gradient(
       360deg,
@@ -532,30 +956,63 @@ body {
   @keyframes flow-line6-animation {
     0% {
       top: calc(90% - 40px);
-      left: calc(67% + 44px);
+      left: calc(67% + 45px);
       width: 3px;
       height: 50px;
     }
     31.25% {
       top: calc(47% + 43px);
-      left: calc(67% + 44px);
+      left: calc(67% + 45px);
       width: 3px;
       height: 50px;
     }
     35% {
       top: calc(47% + 43px);
-      left: calc(67% + 44px);
+      left: calc(67% + 45px);
       width: 3px;
       height: 0px;
     }
     100% {
       top: calc(47% + 43px);
-      left: calc(67% + 44px);
+      left: calc(67% + 45px);
       width: 3px;
       height: 0px;
     }
   }
-}
+
+  @media(max-width:1024px){
+    .flow-line3{
+      animation: flow-line3-animation-bw 8s infinite;
+    }
+  }
+
+  @keyframes flow-line3-animation-bw {
+    0% {
+      top: calc(47% + 40px);
+      left: calc(7% + 90px);
+      width: 50px;
+      height: 3px;
+    }
+
+    31.25% {
+      top: calc(47% + 40px);
+      left: calc(27% - 4px);
+    }
+
+    90% {
+      top: calc(47% + 40px);
+      left: calc(47% - 50px);
+      width: 50px;
+      height: 3px;
+    }
+
+    100% {
+      top: calc(47% + 40px);
+      left: calc(47%);
+      width: 0px;
+      height: 3px;
+    }
+  }
 
 /* auto-scroll animation */
 @layer components {

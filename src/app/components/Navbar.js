@@ -20,14 +20,14 @@ const Navbar = () => {
         </div>
 
         {/* nav links */}
-        <div className="hidden md:flex items-center space-x-10 text-base lg:text-lg tracking-wider">
+        {/* <div className="hidden md:flex items-center space-x-10 text-base lg:text-lg tracking-wider">
           <Link href="/" className="relative group">
             <span className="hover-effect hover:font-medium">Milestone</span>
           </Link>
           <Link href="/" className="relative group">
             <span className="hover-effect hover:font-medium">Docs</span>
           </Link>
-        </div>
+        </div> */}
 
         {/* launch button */}
         <div className="flex items-center justify-center gap-2 sm:gap-4">
@@ -38,17 +38,17 @@ const Navbar = () => {
           </div>
 
           {/* mobile menu icon */}
-          <div className="flex flex-col md:hidden items-center relative">
+          {/* <div className="flex flex-col md:hidden items-center relative">
             <button
               onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
               className="text-white text-[20px] sm:text-[30px] hover:scale-110 transition-transform duration-200"
             >
               {isMobileMenuOpen ? <CgClose /> : <TbMenu2 />}
             </button>
-          </div>
+          </div> */}
 
           {/* mobile menu */}
-          {isMobileMenuOpen && (
+          {/* {isMobileMenuOpen && (
             <div className="md:hidden absolute z-50 right-[10px] top-[130px] flex flex-col items-start justify-evenly text-[10px] min-[500px]:text-sm tracking-wider bg-[#000612] w-[180px] h-[60px] min-[500px]:w-[200px] min-[500px]:h-[100px] border border-[#1a202c] shadow-lg rounded-lg">
               <Link href="/" onClick={() => setMobileMenuOpen(false)}>
                 <div className="flex items-center justify-centerhover:font-medium hover:bg-[#1a202c] px-6 py-3 rounded-md transition-colors duration-200 w-[180px] min-[500px]:w-[200px] h-[30px] min-[500px]:h-[50px]">
@@ -61,7 +61,7 @@ const Navbar = () => {
                 </div>
               </Link>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </nav>

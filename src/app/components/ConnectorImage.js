@@ -11,12 +11,12 @@ import Image from "next/image";
 
 const ConnectorImage = () => {
   return (
-    <div className="relative bg-transparent w-[90%] xs:w-[90%] sm:w-[80%] md:w-[74%] lg:w-[70%] h-[600px] my-2 sm:my-4 md:my-6 bw:my-9 lg:my-10 mx-auto">
+    <div className="relative bg-transparent w-[90%] xs:w-[75%] sm:w-[80%] md:w-[74%] lg:w-[70%] h-[600px] my-0 lg:my-10 mr-5 xs:mr-3 lg:mr-0 mt-[-120px] xs:mt-[-75px] bw:mt-[-50px] lg:mt-0">
       {/* line to connect icons */}
-      <div className="absolute left-[calc(27%+45px)] top-[calc(10%+90px)] h-[calc(75%-90px)] w-[3px] bg-[#49494ACC]"></div>
-      <div className="absolute left-[calc(67%+45px)] top-[calc(15%+90px)] h-[calc(75%-90px)] w-[3px] bg-[#49494ACC]"></div>
-      <div className="absolute left-[calc(7%+90px)] top-[calc(47%+45px)] w-[calc(40%-90px)] h-[3px] bg-[#49494ACC]"></div>
-      <div className="absolute left-[calc(47%+90px)] top-[calc(47%+45px)] w-[calc(40%-90px)] h-[3px] bg-[#49494ACC]"></div>
+      <div className="absolute left-[calc(27%+22px)] 2xs:left-[calc(27%+25px)] sm:left-[calc(27%+30px)] md:left-[calc(27%+35px)] bw:left-[calc(27%+40px)] lg:left-[calc(27%+45px)] top-[calc(17%+94px)] 2xs:top-[calc(17%+97px)] xs:top-[calc(12%+96px)] sm:top-[calc(11%+100px)] md:top-[calc(10%+100px)] bw:top-[calc(10%+90px)] h-[calc(45%-58px)] 2xs:h-[calc(45%-60px)] xs:h-[calc(55%-60px)] sm:h-[calc(62%-75px)] md:h-[calc(66%-75px)] bw:h-[calc(71%-75px)] lg:h-[calc(75%-90px)] w-[3px] bg-[#49494ACC]"></div>
+      <div className="absolute left-[calc(67%+22px)] 2xs:left-[calc(67%+25px)] sm:left-[calc(67%+30px)] md:left-[calc(67%+35px)] bw:left-[calc(67%+40px)] lg:left-[calc(67%+45px)] top-[calc(21%+94px)] 2xs:top-[calc(21%+97px)] xs:top-[calc(17%+96px)] sm:top-[calc(16%+100px)] md:top-[calc(15%+100px)] bw:top-[calc(15%+90px)] h-[calc(47%-58px)] 2xs:h-[calc(47%-60px)] xs:h-[calc(55%-60px)] sm:h-[calc(62%-75px)] md:h-[calc(66%-75px)] bw:h-[calc(71%-75px)] lg:h-[calc(75%-90px)] w-[3px] bg-[#49494ACC]"></div>
+      <div className="absolute left-[calc(7%+45px)] 2xs:left-[calc(7%+50px)]  sm:left-[calc(7%+60px)] md:left-[calc(7%+70px)] bw:left-[calc(7%+80px)] lg:left-[calc(7%+90px)] top-[calc(47%+23px)] 2xs:top-[calc(47%+25px)] sm:top-[calc(47%+30px)] md:top-[calc(47%+35px)] bw:top-[calc(47%+40px)] lg:top-[calc(47%+45px)] w-[calc(42%-56px)] 2xs:w-[calc(42%-60px)] sm:w-[calc(40%-60px)] md:w-[calc(40%-70px)] bw:w-[calc(40%-80px)] lg:w-[calc(40%-90px)] h-[3px] bg-[#49494ACC]"></div>
+      <div className="absolute left-[calc(47%+50px)] sm:left-[calc(47%+60px)] md:left-[calc(47%+70px)] bw:left-[calc(47%+80px)] lg:left-[calc(47%+90px)] top-[calc(47%+23px)] 2xs:top-[calc(47%+25px)] sm:top-[calc(47%+30px)] md:top-[calc(47%+35px)] bw:top-[calc(47%+40px)] lg:top-[calc(47%+45px)] w-[calc(42%-57px)] sm:w-[calc(40%-60px)]  md:w-[calc(40%-70px)] bw:w-[calc(40%-80px)] lg:w-[calc(40%-90px)] h-[3px] bg-[#49494ACC]"></div>
 
 
       {/* holder-left */}
@@ -29,17 +29,17 @@ const ConnectorImage = () => {
       </div>
 
       {/* icon1 to logo */}
-      {/* <div className="flow-line1 absolute"></div> */}
+      <div className="flow-line1 absolute"></div>
       {/* icon2 to logo */}
-      {/* <div className="flow-line2 absolute"></div> */}
+      <div className="flow-line2 absolute"></div>
       {/* icon3 to logo */}
-      {/* <div className="flow-line3 absolute"></div> */}
+      <div className="flow-line3 absolute"></div>
       {/* icon4 to logo */}
-      {/* <div className="flow-line4 absolute"></div> */}
+      <div className="flow-line4 absolute"></div>
       {/* icon5 to logo */}
-      {/* <div className="flow-line5 absolute"></div> */}
+      <div className="flow-line5 absolute"></div>
       {/* icon6 to logo */}
-      {/* <div className="flow-line6 absolute"></div> */}
+      <div className="flow-line6 absolute"></div>
 
       {/* icons */}
       <div className="absolute top-[25%] xs:top-[20%] sm:top-[18%] md:top-[15%] bw:top-[12%] lg:top-[10%] left-[27%] w-[45px] 2xs:w-[50px] sm:w-[60px] md:w-[70px] bw:w-[80px] lg:w-[90px] h-auto">
@@ -48,7 +48,7 @@ const ConnectorImage = () => {
       <div className="absolute top-[29%] xs:top-[25%] sm:top-[23%] md:top-[20%] bw:top-[17%] lg:top-[15%] left-[67%] w-[45px] 2xs:w-[50px] sm:w-[60px] md:w-[70px] bw:w-[80px] lg:w-[90px] h-auto">
         <Image src={icon2} alt=""></Image>
       </div>
-      <div className="absolute top-[47%] left-[2%] 2xs:left-[7%] w-[45px] 2xs:w-[50px] sm:w-[60px] md:w-[70px] bw:w-[80px] lg:w-[90px] h-auto">
+      <div className="absolute top-[47%] left-[7%] w-[45px] 2xs:w-[50px] sm:w-[60px] md:w-[70px] bw:w-[80px] lg:w-[90px] h-auto">
         <Image src={icon3} alt=""></Image>
       </div>
 

@@ -31,8 +31,8 @@ const HeroSection = () => {
             transfers.
           </p>
 
-          <div className="flex items-center justify-center gap-3 xs:gap-5 bw:gap-7 mx-auto my-8">
-            <button className="text-[#000612] font-semibold gradient-background rounded-[10px] xs:rounded-[15px] w-[90px] xs:w-[130px] bw:w-[170px] px-[8px] xs:px-[10px] py-[10px] xs:py-[12px] bw:py-[16px] bw:px-[17px] flex items-center justify-evenly group text-[10px] xs:text-sm bw:text-base">
+          <div className="flex items-center justify-center gap-3 xs:gap-5 bw:gap-7 mx-auto my-8 z-[800] relative">
+            <button className="text-[#000612] font-semibold gradient-background rounded-[10px] xs:rounded-[15px] w-[90px] xs:w-[130px] bw:w-[170px] px-[8px] xs:px-[10px] py-[10px] xs:py-[12px] bw:py-[16px] bw:px-[17px] flex items-center justify-evenly group text-[10px] xs:text-sm bw:text-base text-nowrap">
               <FaChevronRight className="hidden group-hover:inline-block right-arrow" />
               <span className="transition-all duration-1000 ease-in-out group-hover:translate-x-[2px]">
                 Get Started
@@ -40,7 +40,7 @@ const HeroSection = () => {
             </button>
 
             <div className="gradient-background rounded-[10px] xs:rounded-[15px] p-[1px] pb-[1.5px] pl-[1.5px] flex items-center justify-center overflow-hidden w-max">
-              <button className="bg-[#000612] font-semibold rounded-[9px] xs:rounded-[14px] w-[85px] xs:w-[125px] bw:w-[170px] px-[8px] xs:px-[9px] bw:px-[15px] py-[8px] xs:py-[9px] bw:py-[14px] tracking-wider flex items-center justify-evenly group text-[10px] xs:text-sm bw:text-base">
+              <button className="bg-[#000612] font-semibold rounded-[9px] xs:rounded-[14px] w-[85px] xs:w-[125px] bw:w-[170px] px-[8px] xs:px-[9px] bw:px-[15px] py-[8px] xs:py-[9px] bw:py-[14px] tracking-wider flex items-center justify-evenly group text-[10px] xs:text-sm bw:text-base text-nowrap">
                 <FaChevronRight className="hidden group-hover:inline-block right-arrow" />
                 <span className="transition-all duration-1000 ease-in-out group-hover:translate-x-[2px]">
                   Learn More
@@ -51,7 +51,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="image-background relative">
-        <div className="absolute w-full">
+        <div className="absolute w-full flex items-center justify-center">
           <ConnectorImage />
         </div>
       </div>

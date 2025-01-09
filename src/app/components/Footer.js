@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaTelegramPlane, FaDiscord, FaLinkedinIn } from "react-icons/fa";
+import { IoDocument } from "react-icons/io5";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
@@ -30,16 +31,21 @@ const Footer = () => {
       <div className="absolute w-[1.5px] 2xs:w-[2px] md:w-[3px] h-[30px] xs:h-[40px] left-[66%] footer-line-6"></div>
 
       <div className="flex items-center justify-center space-x-6 sm:space-x-7 md:space-x-10 text-xs 3xs:text-sm md:text-base bw:text-lg tracking-wider my-4 sm:my-6 bw:my-8">
-        <Link href="/" className="relative group">
+        {/* <Link href="/" className="relative group">
           <span className="hover-effect hover:font-medium">Milestone</span>
         </Link>
         <Link href="/" className="relative group">
           <span className="hover-effect hover:font-medium">Docs</span>
-        </Link>
+        </Link> */}
       </div>
 
       <div className="parent-div">
-        <p className="footer-text text-[8.5vw] font-semibold tracking-wide" data-text="Smart Disperse">Smart Disperse</p>
+        <p
+          className="footer-text text-[8.5vw] font-semibold tracking-wide"
+          data-text="Smart Disperse"
+        >
+          Smart Disperse
+        </p>
       </div>
 
       <div className="flex justify-between gap-1 items-center w-[85%] mx-auto my-4 sm:my-6 bw:my-8 z-[1000]">
@@ -47,6 +53,12 @@ const Footer = () => {
           Copyright @ 2024 Smart - Disperse | All rights reserved
         </p>
         <div className="flex items-center justify-center gap-2 xs:gap-3 md:gap-4 bw:gap-5">
+          <Link href="https://smart-disperse.gitbook.io/smart-disperse" target="_blank">
+            <IoDocument
+              className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#4cc3fe] cursor-pointer transition-colors"
+              title="Docs"
+            />
+          </Link>
           <FaTelegramPlane
             className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#24A1DE] cursor-pointer transition-colors"
             title="Telegram"
