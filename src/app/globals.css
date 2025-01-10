@@ -74,6 +74,23 @@ body {
   width: 100%;
   height: 820px;
 }
+@media (max-width: 1024px) {
+  .image-background {
+    height: 620px;
+  }
+}
+
+@media (max-width: 900px) {
+  .image-background {
+    height: 520px;
+  }
+}
+
+@media (max-width: 500px) {
+  .image-background {
+    height: 420px;
+  }
+}
 
 .usecase-background {
   background-image: url("/usecasebg.svg");
@@ -301,718 +318,1366 @@ body {
 }
 
 /* flowline 1 */
+.flow-line1 {
+  background: linear-gradient(
+    179.16deg,
+    #3e3e3f -6.68%,
+    #af85e3 1.2%,
+    #8b94e2 22.17%,
+    #6ff2f2 57.97%,
+    #68e099 77.02%
+  );
+  animation: flow-line1-animation 8s infinite;
+}
+
+@keyframes flow-line1-animation {
+  0% {
+    top: calc(10% + 90px);
+    left: calc(27% + 45px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47%);
+    left: calc(27% + 45px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 45px);
+    left: calc(27% + 45px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 45px);
+    left: calc(27% + 45px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
   .flow-line1 {
-    background: linear-gradient(
-      179.16deg,
-      #3e3e3f -6.68%,
-      #af85e3 1.2%,
-      #8b94e2 22.17%,
-      #6ff2f2 57.97%,
-      #68e099 77.02%
-    );
-    animation: flow-line1-animation 8s infinite;
+    animation: flow-line1-animation-bw 8s infinite;
   }
+}
 
-  @keyframes flow-line1-animation {
-    0% {
-      top: calc(10% + 90px);
-      left: calc(27% + 45px);
-      width: 3px;
-      height: 50px;
-    }
-    31.25% {
-      top: calc(47%);
-      left: calc(27% + 45px);
-      width: 3px;
-      height: 50px;
-    }
-    35% {
-      top: calc(47% + 45px);
-      left: calc(27% + 45px);
-      width: 3px;
-      height: 0px;
-    }
-    100% {
-      top: calc(47% + 45px);
-      left: calc(27% + 45px);
-      width: 3px;
-      height: 0px;
-    }
+@keyframes flow-line1-animation-bw {
+  0% {
+    top: calc(10% + 90px);
+    left: calc(27% + 40px);
+    width: 3px;
+    height: 50px;
   }
+  31.25% {
+    top: calc(47%);
+    left: calc(27% + 40px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 45px);
+    left: calc(27% + 40px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 45px);
+    left: calc(27% + 40px);
+    width: 3px;
+    height: 0px;
+  }
+}
 
-  @media(max-width:1024px){
-    .flow-line1{
-      animation: flow-line1-animation-bw 8s infinite;
-    }
+@media (max-width: 900px) {
+  .flow-line1 {
+    animation: flow-line1-animation-md 8s infinite;
   }
+}
 
-  @keyframes flow-line1-animation-bw {
-    0% {
-      top: calc(10% + 90px);
-      left: calc(27% + 45px);
-      width: 3px;
-      height: 50px;
-    }
-    31.25% {
-      top: calc(47%);
-      left: calc(27% + 45px);
-      width: 3px;
-      height: 50px;
-    }
-    35% {
-      top: calc(47% + 45px);
-      left: calc(27% + 45px);
-      width: 3px;
-      height: 0px;
-    }
-    100% {
-      top: calc(47% + 45px);
-      left: calc(27% + 45px);
-      width: 3px;
-      height: 0px;
-    }
+@keyframes flow-line1-animation-md {
+  0% {
+    top: calc(12% + 90px);
+    left: calc(27% + 35px);
+    width: 3px;
+    height: 50px;
   }
+  31.25% {
+    top: calc(47% - 10px);
+    left: calc(27% + 35px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 35px);
+    left: calc(27% + 35px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 35px);
+    left: calc(27% + 35px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flow-line1 {
+    animation: flow-line1-animation-sm 8s infinite;
+  }
+}
+
+@keyframes flow-line1-animation-sm {
+  0% {
+    top: calc(13% + 90px);
+    left: calc(27% + 30px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% - 10px);
+    left: calc(27% + 30px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 35px);
+    left: calc(27% + 30px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 35px);
+    left: calc(27% + 30px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 640px) {
+  .flow-line1 {
+    animation: flow-line1-animation-xs 8s infinite;
+  }
+}
+
+@keyframes flow-line1-animation-xs {
+  0% {
+    top: calc(13% + 90px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% - 20px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 25px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 25px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .flow-line1 {
+    animation: flow-line1-animation-2xs 8s infinite;
+  }
+}
+
+@keyframes flow-line1-animation-2xs {
+  0% {
+    top: calc(18% + 90px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% - 20px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 25px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 25px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .flow-line1 {
+    animation: flow-line1-animation-3xs 8s infinite;
+  }
+}
+
+@keyframes flow-line1-animation-3xs {
+  0% {
+    top: calc(18% + 90px);
+    left: calc(27% + 22px);
+    width: 3px;
+    height: 30px;
+  }
+  31.25% {
+    top: calc(47%);
+    left: calc(27% + 22px);
+    width: 3px;
+    height: 30px;
+  }
+  35% {
+    top: calc(47% + 25px);
+    left: calc(27% + 22px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 25px);
+    left: calc(27% + 22px);
+    width: 3px;
+    height: 0px;
+  }
+}
 
 /* flowline 2 */
+.flow-line2 {
+  background: linear-gradient(
+    179.16deg,
+    #3e3e3f -6.68%,
+    #af85e3 1.2%,
+    #8b94e2 22.17%,
+    #6ff2f2 57.97%,
+    #68e099 77.02%
+  );
+  animation: flow-line2-animation 8s infinite;
+}
+
+@keyframes flow-line2-animation {
+  0% {
+    top: calc(15% + 90px);
+    left: calc(67% + 45px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47%);
+    left: calc(67% + 45px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 45px);
+    left: calc(67% + 45px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 45px);
+    left: calc(67% + 45px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
   .flow-line2 {
-    background: linear-gradient(
-      179.16deg,
-      #3e3e3f -6.68%,
-      #af85e3 1.2%,
-      #8b94e2 22.17%,
-      #6ff2f2 57.97%,
-      #68e099 77.02%
-    );
-    animation: flow-line2-animation 8s infinite;
+    animation: flow-line2-animation-bw 8s infinite;
   }
+}
 
-  @keyframes flow-line2-animation {
-    0% {
-      top: calc(15% + 90px);
-      left: calc(67% + 45px);
-      width: 3px;
-      height: 50px;
-    }
-    31.25% {
-      top: calc(47%);
-      left: calc(67% + 45px);
-      width: 3px;
-      height: 50px;
-    }
-    35% {
-      top: calc(47% + 45px);
-      left: calc(67% + 45px);
-      width: 3px;
-      height: 0px;
-    }
-    100% {
-      top: calc(47% + 45px);
-      left: calc(67% + 45px);
-      width: 3px;
-      height: 0px;
-    }
+@keyframes flow-line2-animation-bw {
+  0% {
+    top: calc(15% + 90px);
+    left: calc(67% + 40px);
+    width: 3px;
+    height: 50px;
   }
-
-  @media(max-width:1024px){
-    .flow-line3{
-      animation: flow-line3-animation-bw 8s infinite;
-    }
+  31.25% {
+    top: calc(47%);
+    left: calc(67% + 40px);
+    width: 3px;
+    height: 50px;
   }
-
-  @keyframes flow-line3-animation-bw {
-    0% {
-      top: calc(47% + 40px);
-      left: calc(7% + 90px);
-      width: 50px;
-      height: 3px;
-    }
-
-    31.25% {
-      top: calc(47% + 40px);
-      left: calc(27% - 4px);
-    }
-
-    90% {
-      top: calc(47% + 40px);
-      left: calc(47% - 50px);
-      width: 50px;
-      height: 3px;
-    }
-
-    100% {
-      top: calc(47% + 40px);
-      left: calc(47%);
-      width: 0px;
-      height: 3px;
-    }
+  35% {
+    top: calc(47% + 45px);
+    left: calc(67% + 40px);
+    width: 3px;
+    height: 0px;
   }
+  100% {
+    top: calc(47% + 45px);
+    left: calc(67% + 40px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .flow-line2 {
+    animation: flow-line2-animation-md 8s infinite;
+  }
+}
+
+@keyframes flow-line2-animation-md {
+  0% {
+    top: calc(17% + 90px);
+    left: calc(67% + 35px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% - 10px);
+    left: calc(67% + 35px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 35px);
+    left: calc(67% + 35px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 35px);
+    left: calc(67% + 35px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flow-line2 {
+    animation: flow-line2-animation-sm 8s infinite;
+  }
+}
+
+@keyframes flow-line2-animation-sm {
+  0% {
+    top: calc(17% + 90px);
+    left: calc(67% + 30px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% - 5px);
+    left: calc(67% + 30px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 30px);
+    left: calc(67% + 30px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 30px);
+    left: calc(67% + 30px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 640px) {
+  .flow-line2 {
+    animation: flow-line2-animation-xs 8s infinite;
+  }
+}
+
+@keyframes flow-line2-animation-xs {
+  0% {
+    top: calc(19% + 90px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% - 20px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 25px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 25px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .flow-line2 {
+    animation: flow-line2-animation-2xs 8s infinite;
+  }
+}
+
+@keyframes flow-line2-animation-2xs {
+  0% {
+    top: calc(22% + 90px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% - 20px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 25px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 25px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .flow-line2 {
+    animation: flow-line2-animation-3xs 8s infinite;
+  }
+}
+
+@keyframes flow-line2-animation-3xs {
+  0% {
+    top: calc(22% + 90px);
+    left: calc(67% + 22px);
+    width: 3px;
+    height: 30px;
+  }
+  31.25% {
+    top: calc(47%);
+    left: calc(67% + 22px);
+    width: 3px;
+    height: 30px;
+  }
+  35% {
+    top: calc(47% + 25px);
+    left: calc(67% + 22px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 25px);
+    left: calc(67% + 22px);
+    width: 3px;
+    height: 0px;
+  }
+}
 
 /* flowline 3 */
+.flow-line3 {
+  background: linear-gradient(
+    90deg,
+    #af85e3 1.2%,
+    #8b94e2 22.17%,
+    #6ff2f2 57.97%,
+    #68e099 77.02%,
+    #68e099 94.9%
+  );
+
+  animation: flow-line3-animation 8s infinite;
+}
+
+@keyframes flow-line3-animation {
+  0% {
+    top: calc(47% + 44.5px);
+    left: calc(7% + 90px);
+    width: 50px;
+    height: 3px;
+  }
+
+  31.25% {
+    top: calc(47% + 44.5px);
+    left: calc(27% - 4px);
+  }
+
+  90% {
+    top: calc(47% + 44.5px);
+    left: calc(47% - 50px);
+    width: 50px;
+    height: 3px;
+  }
+
+  100% {
+    top: calc(47% + 44.5px);
+    left: calc(47%);
+    width: 0px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 1024px) {
   .flow-line3 {
-    background: linear-gradient(
-      90deg,
-      #af85e3 1.2%,
-      #8b94e2 22.17%,
-      #6ff2f2 57.97%,
-      #68e099 77.02%,
-      #68e099 94.9%
-    );
+    animation: flow-line3-animation-bw 8s infinite;
+  }
+}
 
-    animation: flow-line3-animation 8s infinite;
+@keyframes flow-line3-animation-bw {
+  0% {
+    top: calc(47% + 40px);
+    left: calc(7% + 90px);
+    width: 50px;
+    height: 3px;
   }
 
-  @keyframes flow-line3-animation {
-    0% {
-      top: calc(47% + 44.5px);
-      left: calc(7% + 90px);
-      width: 50px;
-      height: 3px;
-    }
-
-    31.25% {
-      top: calc(47% + 44.5px);
-      left: calc(27% - 4px);
-    }
-
-    90% {
-      top: calc(47% + 44.5px);
-      left: calc(47% - 50px);
-      width: 50px;
-      height: 3px;
-    }
-
-    100% {
-      top: calc(47% + 44.5px);
-      left: calc(47%);
-      width: 0px;
-      height: 3px;
-    }
+  31.25% {
+    top: calc(47% + 40px);
+    left: calc(27% - 4px);
   }
 
-  @media(max-width:1024px){
-    .flow-line3{
-      animation: flow-line3-animation-bw 8s infinite;
-    }
+  90% {
+    top: calc(47% + 40px);
+    left: calc(47% - 50px);
+    width: 50px;
+    height: 3px;
   }
 
-  @keyframes flow-line3-animation-bw {
-    0% {
-      top: calc(47% + 40px);
-      left: calc(7% + 90px);
-      width: 50px;
-      height: 3px;
-    }
+  100% {
+    top: calc(47% + 40px);
+    left: calc(47%);
+    width: 0px;
+    height: 3px;
+  }
+}
 
-    31.25% {
-      top: calc(47% + 40px);
-      left: calc(27% - 4px);
-    }
+@media (max-width: 900px) {
+  .flow-line3 {
+    animation: flow-line3-animation-md 8s infinite;
+  }
+}
 
-    90% {
-      top: calc(47% + 40px);
-      left: calc(47% - 50px);
-      width: 50px;
-      height: 3px;
-    }
-
-    100% {
-      top: calc(47% + 40px);
-      left: calc(47%);
-      width: 0px;
-      height: 3px;
-    }
+@keyframes flow-line3-animation-md {
+  0% {
+    top: calc(47% + 35px);
+    left: calc(7% + 70px);
+    width: 50px;
+    height: 3px;
   }
 
-  @media(max-width:900px){
-    .flow-line3{
-      animation: flow-line3-animation-md 8s infinite;
-    }
+  31.25% {
+    top: calc(47% + 35px);
+    left: calc(27% - 9px);
   }
 
-  @keyframes flow-line3-animation-md {
-    0% {
-      top: calc(47% + 35px);
-      left: calc(7% + 70px);
-      width: 50px;
-      height: 3px;
-    }
-
-    31.25% {
-      top: calc(47% + 35px);
-      left: calc(27% - 4px);
-    }
-
-    90% {
-      top: calc(47% + 35px);
-      left: calc(47% - 50px);
-      width: 50px;
-      height: 3px;
-    }
-
-    100% {
-      top: calc(47% + 35px);
-      left: calc(47%);
-      width: 0px;
-      height: 3px;
-    }
+  90% {
+    top: calc(47% + 35px);
+    left: calc(47% - 50px);
+    width: 50px;
+    height: 3px;
   }
 
-  @media(max-width:768px){
-    .flow-line3{
-      animation: flow-line3-animation-sm 8s infinite;
-    }
+  100% {
+    top: calc(47% + 35px);
+    left: calc(47%);
+    width: 0px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flow-line3 {
+    animation: flow-line3-animation-sm 8s infinite;
+  }
+}
+
+@keyframes flow-line3-animation-sm {
+  0% {
+    top: calc(47% + 30px);
+    left: calc(7% + 60px);
+    width: 50px;
+    height: 3px;
   }
 
-  @keyframes flow-line3-animation-sm{
-    0% {
-      top: calc(47% + 30px);
-      left: calc(7% + 60px);
-      width: 50px;
-      height: 3px;
-    }
-
-    31.25% {
-      top: calc(47% + 30px);
-      left: calc(27% - 4px);
-    }
-
-    90% {
-      top: calc(47% + 30px);
-      left: calc(47% - 50px);
-      width: 50px;
-      height: 3px;
-    }
-
-    100% {
-      top: calc(47% + 30px);
-      left: calc(47%);
-      width: 0px;
-      height: 3px;
-    }
+  31.25% {
+    top: calc(47% + 30px);
+    left: calc(27% - 18px);
   }
 
-  @media(max-width:640px){
-    .flow-line3{
-      animation: flow-line3-animation-xs 8s infinite;
-    }
+  90% {
+    top: calc(47% + 30px);
+    left: calc(47% - 50px);
+    width: 50px;
+    height: 3px;
   }
 
-  @keyframes flow-line3-animation-xs{
-    0% {
-      top: calc(47% + 25px);
-      left: calc(7% + 54px);
-      width: 50px;
-      height: 3px;
-    }
+  100% {
+    top: calc(47% + 30px);
+    left: calc(47%);
+    width: 0px;
+    height: 3px;
+  }
+}
 
-    31.25% {
-      top: calc(47% + 25px);
-      left: calc(27% - 4px);
-    }
+@media (max-width: 640px) {
+  .flow-line3 {
+    animation: flow-line3-animation-xs 8s infinite;
+  }
+}
 
-    90% {
-      top: calc(47% + 25px);
-      left: calc(47% - 50px);
-      width: 50px;
-      height: 3px;
-    }
-
-    100% {
-      top: calc(47% + 25px);
-      left: calc(47%);
-      width: 0px;
-      height: 3px;
-    }
+@keyframes flow-line3-animation-xs {
+  0% {
+    top: calc(47% + 25px);
+    left: calc(7% + 52px);
+    width: 50px;
+    height: 3px;
   }
 
-  @media(max-width:450px){
-    .flow-line3{
-      animation: flow-line3-animation-2xs 8s infinite;
-    }
+  31.25% {
+    top: calc(47% + 25px);
+    left: calc(27% - 20px);
   }
 
-  @keyframes flow-line3-animation-2xs{
-    0% {
-      top: calc(47% + 23px);
-      left: calc(7% + 45px);
-      width: 20px;
-      height: 3px;
-    }
-
-    31.25% {
-      top: calc(47% + 23px);
-      left: calc(27% - 4px);
-    }
-
-    90% {
-      top: calc(47% + 23px);
-      left: calc(47% - 50px);
-      width: 20px;
-      height: 3px;
-    }
-
-    100% {
-      top: calc(47% + 23px);
-      left: calc(47%);
-      width: 0px;
-      height: 3px;
-    }
+  90% {
+    top: calc(47% + 25px);
+    left: calc(47% - 50px);
+    width: 50px;
+    height: 3px;
   }
+
+  100% {
+    top: calc(47% + 25px);
+    left: calc(47%);
+    width: 0px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 450px) {
+  .flow-line3 {
+    animation: flow-line3-animation-2xs 8s infinite;
+  }
+}
+
+@keyframes flow-line3-animation-2xs {
+  0% {
+    top: calc(47% + 23px);
+    left: calc(7% + 45px);
+    width: 20px;
+    height: 3px;
+  }
+
+  31.25% {
+    top: calc(47% + 23px);
+    left: calc(27% + 5px);
+  }
+
+  90% {
+    top: calc(47% + 23px);
+    left: calc(47% - 20px);
+    width: 20px;
+    height: 3px;
+  }
+
+  100% {
+    top: calc(47% + 23px);
+    left: calc(47%);
+    width: 0px;
+    height: 3px;
+  }
+}
 
 /* flowline 4 */
+.flow-line4 {
+  background: linear-gradient(
+    270deg,
+    #af85e3 1.2%,
+    #8b94e2 22.17%,
+    #6ff2f2 57.97%,
+    #68e099 77.02%,
+    #68e099 94.9%
+  );
+
+  animation: flow-line4-animation 8s infinite;
+}
+
+@keyframes flow-line4-animation {
+  0% {
+    top: calc(47% + 44.5px);
+    left: calc(87% - 50px);
+    width: 50px;
+    height: 3px;
+  }
+  31.25% {
+    top: calc(47% + 44.5px);
+    left: calc(67% + 45px);
+  }
+  90% {
+    top: calc(47% + 44.5px);
+    left: calc(47% + 90px);
+    width: 50px;
+    height: 3px;
+  }
+  100% {
+    top: calc(47% + 44.5px);
+    left: calc(47% + 90px);
+    width: 0px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 1024px) {
   .flow-line4 {
-    background: linear-gradient(
-      270deg,
-      #af85e3 1.2%,
-      #8b94e2 22.17%,
-      #6ff2f2 57.97%,
-      #68e099 77.02%,
-      #68e099 94.9%
-    );
-
-    animation: flow-line4-animation 8s infinite;
+    animation: flow-line4-animation-bw 8s infinite;
   }
+}
 
-  @keyframes flow-line4-animation {
-    0% {
-      top: calc(47% + 44.5px);
-      left: calc(87% - 50px);
-      width: 50px;
-      height: 3px;
-    }
-    31.25% {
-      top: calc(47% + 44.5px);
-      left: calc(67% + 45px);
-    }
-    90% {
-      top: calc(47% + 44.5px);
-      left: calc(47% + 90px);
-      width: 50px;
-      height: 3px;
-    }
-    100% {
-      top: calc(47% + 44.5px);
-      left: calc(47% + 90px);
-      width: 0px;
-      height: 3px;
-    }
+@keyframes flow-line4-animation-bw {
+  0% {
+    top: calc(47% + 40px);
+    left: calc(87% - 50px);
+    width: 50px;
+    height: 3px;
   }
-
-  @media(max-width:1024px){
-    .flow-line4{
-      animation: flow-line4-animation-bw 8s infinite;
-    }
+  31.25% {
+    top: calc(47% + 40px);
+    left: calc(67% + 40px);
   }
-
-  @keyframes flow-line4-animation-bw {
-    0% {
-      top: calc(47% + 40px);
-      left: calc(87% - 50px);
-      width: 50px;
-      height: 3px;
-    }
-    31.25% {
-      top: calc(47% + 40px);
-      left: calc(67% + 45px);
-    }
-    90% {
-      top: calc(47% + 40px);
-      left: calc(47% + 90px);
-      width: 50px;
-      height: 3px;
-    }
-    100% {
-      top: calc(47% + 40px);
-      left: calc(47% + 90px);
-      width: 0px;
-      height: 3px;
-    }
+  90% {
+    top: calc(47% + 40px);
+    left: calc(47% + 80px);
+    width: 50px;
+    height: 3px;
   }
-
-  @media(max-width:900px){
-    .flow-line4{
-      animation: flow-line4-animation-md 8s infinite;
-    }
+  100% {
+    top: calc(47% + 40px);
+    left: calc(47% + 80px);
+    width: 0px;
+    height: 3px;
   }
+}
 
-  @keyframes flow-line4-animation-md {
-    0% {
-      top: calc(47% + 35px);
-      left: calc(87% - 50px);
-      width: 50px;
-      height: 3px;
-    }
-    31.25% {
-      top: calc(47% + 35px);
-      left: calc(67% + 25px);
-    }
-    90% {
-      top: calc(47% + 35px);
-      left: calc(47% + 75px);
-      width: 50px;
-      height: 3px;
-    }
-    100% {
-      top: calc(47% + 35px);
-      left: calc(47% + 75px);
-      width: 0px;
-      height: 3px;
-    }
+@media (max-width: 900px) {
+  .flow-line4 {
+    animation: flow-line4-animation-md 8s infinite;
   }
+}
 
-  @media(max-width:768px){
-    .flow-line4{
-      animation: flow-line4-animation-sm 8s infinite;
-    }
+@keyframes flow-line4-animation-md {
+  0% {
+    top: calc(47% + 35px);
+    left: calc(87% - 50px);
+    width: 50px;
+    height: 3px;
   }
-
-  @keyframes flow-line4-animation-sm{
-    0% {
-      top: calc(47% + 30px);
-      left: calc(7% + 60px);
-      width: 50px;
-      height: 3px;
-    }
-
-    31.25% {
-      top: calc(47% + 30px);
-      left: calc(27% - 4px);
-    }
-
-    90% {
-      top: calc(47% + 30px);
-      left: calc(47% - 50px);
-      width: 50px;
-      height: 3px;
-    }
-
-    100% {
-      top: calc(47% + 30px);
-      left: calc(47%);
-      width: 0px;
-      height: 3px;
-    }
+  31.25% {
+    top: calc(47% + 35px);
+    left: calc(67% + 35px);
   }
-
-  @media(max-width:640px){
-    .flow-line4{
-      animation: flow-line4-animation-xs 8s infinite;
-    }
+  90% {
+    top: calc(47% + 35px);
+    left: calc(47% + 70px);
+    width: 50px;
+    height: 3px;
   }
-
-  @keyframes flow-line4-animation-xs{
-    0% {
-      top: calc(47% + 25px);
-      left: calc(7% + 54px);
-      width: 50px;
-      height: 3px;
-    }
-
-    31.25% {
-      top: calc(47% + 25px);
-      left: calc(27% - 4px);
-    }
-
-    90% {
-      top: calc(47% + 25px);
-      left: calc(47% - 50px);
-      width: 50px;
-      height: 3px;
-    }
-
-    100% {
-      top: calc(47% + 25px);
-      left: calc(47%);
-      width: 0px;
-      height: 3px;
-    }
+  100% {
+    top: calc(47% + 35px);
+    left: calc(47% + 70px);
+    width: 0px;
+    height: 3px;
   }
+}
 
-  @media(max-width:450px){
-    .flow-line4{
-      animation: flow-line4-animation-2xs 8s infinite;
-    }
+@media (max-width: 768px) {
+  .flow-line4 {
+    animation: flow-line4-animation-sm 8s infinite;
   }
+}
 
-  @keyframes flow-line4-animation-2xs{
-    0% {
-      top: calc(47% + 23px);
-      left: calc(7% + 45px);
-      width: 20px;
-      height: 3px;
-    }
-
-    31.25% {
-      top: calc(47% + 23px);
-      left: calc(27% - 4px);
-    }
-
-    90% {
-      top: calc(47% + 23px);
-      left: calc(47% - 50px);
-      width: 20px;
-      height: 3px;
-    }
-
-    100% {
-      top: calc(47% + 23px);
-      left: calc(47%);
-      width: 0px;
-      height: 3px;
-    }
+@keyframes flow-line4-animation-sm {
+  0% {
+    top: calc(47% + 30px);
+    left: calc(87% - 50px);
+    width: 50px;
+    height: 3px;
   }
+  31.25% {
+    top: calc(47% + 30px);
+    left: calc(67% + 29px);
+  }
+  90% {
+    top: calc(47% + 30px);
+    left: calc(47% + 60px);
+    width: 50px;
+    height: 3px;
+  }
+  100% {
+    top: calc(47% + 30px);
+    left: calc(47% + 60px);
+    width: 0px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 640px) {
+  .flow-line4 {
+    animation: flow-line4-animation-2xs 8s infinite;
+  }
+}
+
+@keyframes flow-line4-animation-2xs {
+  0% {
+    top: calc(47% + 25px);
+    left: calc(87% - 50px);
+    width: 50px;
+    height: 3px;
+  }
+  31.25% {
+    top: calc(47% + 25px);
+    left: calc(67% + 25px);
+  }
+  90% {
+    top: calc(47% + 25px);
+    left: calc(47% + 50px);
+    width: 50px;
+    height: 3px;
+  }
+  100% {
+    top: calc(47% + 25px);
+    left: calc(47% + 50px);
+    width: 0px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 450px) {
+  .flow-line4 {
+    animation: flow-line4-animation-3xs 8s infinite;
+  }
+}
+
+@keyframes flow-line4-animation-3xs {
+  0% {
+    top: calc(47% + 22px);
+    left: calc(87% - 30px);
+    width: 30px;
+    height: 3px;
+  }
+  31.25% {
+    top: calc(47% + 22px);
+    left: calc(67% + 22px);
+  }
+  90% {
+    top: calc(47% + 22px);
+    left: calc(47% + 45px);
+    width: 30px;
+    height: 3px;
+  }
+  100% {
+    top: calc(47% + 22px);
+    left: calc(47% + 45px);
+    width: 0px;
+    height: 3px;
+  }
+}
 
 /* flowline 5 */
+.flow-line5 {
+  background: linear-gradient(
+    360deg,
+    #3e3e3f -6.68%,
+    #af85e3 1.2%,
+    #8b94e2 22.17%,
+    #6ff2f2 57.97%,
+    #68e099 87.02%,
+    #68e099 94.9%
+  );
+
+  animation: flow-line5-animation 8s infinite;
+}
+
+@keyframes flow-line5-animation {
+  0% {
+    top: calc(85% - 50px);
+    left: calc(27% + 45px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% + 43px);
+    left: calc(27% + 45px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 43px);
+    left: calc(27% + 45px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 43px);
+    left: calc(27% + 45px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
   .flow-line5 {
-    background: linear-gradient(
-      360deg,
-      #3e3e3f -6.68%,
-      #af85e3 1.2%,
-      #8b94e2 22.17%,
-      #6ff2f2 57.97%,
-      #68e099 87.02%,
-      #68e099 94.9%
-    );
-
-    animation: flow-line5-animation 8s infinite;
+    animation: flow-line5-animation-bw 8s infinite;
   }
+}
 
-  @keyframes flow-line5-animation {
-    0% {
-      top: calc(85% - 50px);
-      left: calc(27% + 45px);
-      width: 3px;
-      height: 50px;
-    }
-    31.25% {
-      top: calc(47% + 43px);
-      left: calc(27% + 45px);
-      width: 3px;
-      height: 50px;
-    }
-    35% {
-      top: calc(47% + 43px);
-      left: calc(27% + 45px);
-      width: 3px;
-      height: 0px;
-    }
-    100% {
-      top: calc(47% + 43px);
-      left: calc(27% + 45px);
-      width: 3px;
-      height: 0px;
-    }
+@keyframes flow-line5-animation-bw {
+  0% {
+    top: calc(87% - 70px);
+    left: calc(27% + 40px);
+    width: 3px;
+    height: 50px;
   }
-
-  @media(max-width:1024px){
-    .flow-line3{
-      animation: flow-line3-animation-bw 8s infinite;
-    }
+  31.25% {
+    top: calc(47% + 40px);
+    left: calc(27% + 40px);
+    width: 3px;
+    height: 50px;
   }
-
-  @keyframes flow-line3-animation-bw {
-    0% {
-      top: calc(47% + 40px);
-      left: calc(7% + 90px);
-      width: 50px;
-      height: 3px;
-    }
-
-    31.25% {
-      top: calc(47% + 40px);
-      left: calc(27% - 4px);
-    }
-
-    90% {
-      top: calc(47% + 40px);
-      left: calc(47% - 50px);
-      width: 50px;
-      height: 3px;
-    }
-
-    100% {
-      top: calc(47% + 40px);
-      left: calc(47%);
-      width: 0px;
-      height: 3px;
-    }
+  35% {
+    top: calc(47% + 40px);
+    left: calc(27% + 40px);
+    width: 3px;
+    height: 0px;
   }
+  100% {
+    top: calc(47% + 40px);
+    left: calc(27% + 40px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .flow-line5 {
+    animation: flow-line5-animation-md 8s infinite;
+  }
+}
+
+@keyframes flow-line5-animation-md {
+  0% {
+    top: calc(83% - 70px);
+    left: calc(27% + 35px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% + 35px);
+    left: calc(27% + 35px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 35px);
+    left: calc(27% + 35px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 35px);
+    left: calc(27% + 35px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flow-line5 {
+    animation: flow-line5-animation-sm 8s infinite;
+  }
+}
+
+@keyframes flow-line5-animation-sm {
+  0% {
+    top: calc(80% - 70px);
+    left: calc(27% + 30px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% + 25px);
+    left: calc(27% + 30px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 25px);
+    left: calc(27% + 30px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 25px);
+    left: calc(27% + 30px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 640px) {
+  .flow-line5 {
+    animation: flow-line5-animation-xs 8s infinite;
+  }
+}
+
+@keyframes flow-line5-animation-xs {
+  0% {
+    top: calc(76% - 70px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% + 25px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 25px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 25px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .flow-line5 {
+    animation: flow-line5-animation-2xs 8s infinite;
+  }
+}
+
+@keyframes flow-line5-animation-2xs {
+  0% {
+    top: calc(71% - 70px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% + 25px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 25px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 25px);
+    left: calc(27% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .flow-line5 {
+    animation: flow-line5-animation-3xs 8s infinite;
+  }
+}
+
+@keyframes flow-line5-animation-3xs {
+  0% {
+    top: calc(71% - 50px);
+    left: calc(27% + 22px);
+    width: 3px;
+    height: 30px;
+  }
+  31.25% {
+    top: calc(47% + 25px);
+    left: calc(27% + 22px);
+    width: 3px;
+    height: 30px;
+  }
+  35% {
+    top: calc(47% + 25px);
+    left: calc(27% + 22px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 25px);
+    left: calc(27% + 22px);
+    width: 3px;
+    height: 0px;
+  }
+}
 
 /* flowline 6 */
+.flow-line6 {
+  background: linear-gradient(
+    360deg,
+    #3e3e3f -6.68%,
+    #af85e3 1.2%,
+    #8b94e2 22.17%,
+    #6ff2f2 57.97%,
+    #68e099 87.02%,
+    #68e099 94.9%
+  );
+
+  animation: flow-line6-animation 8s infinite;
+}
+
+@keyframes flow-line6-animation {
+  0% {
+    top: calc(90% - 40px);
+    left: calc(67% + 45px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% + 43px);
+    left: calc(67% + 45px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 43px);
+    left: calc(67% + 45px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 43px);
+    left: calc(67% + 45px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 1024px) {
   .flow-line6 {
-    background: linear-gradient(
-      360deg,
-      #3e3e3f -6.68%,
-      #af85e3 1.2%,
-      #8b94e2 22.17%,
-      #6ff2f2 57.97%,
-      #68e099 87.02%,
-      #68e099 94.9%
-    );
-
-    animation: flow-line6-animation 8s infinite;
+    animation: flow-line6-animation-bw 8s infinite;
   }
+}
 
-  @keyframes flow-line6-animation {
-    0% {
-      top: calc(90% - 40px);
-      left: calc(67% + 45px);
-      width: 3px;
-      height: 50px;
-    }
-    31.25% {
-      top: calc(47% + 43px);
-      left: calc(67% + 45px);
-      width: 3px;
-      height: 50px;
-    }
-    35% {
-      top: calc(47% + 43px);
-      left: calc(67% + 45px);
-      width: 3px;
-      height: 0px;
-    }
-    100% {
-      top: calc(47% + 43px);
-      left: calc(67% + 45px);
-      width: 3px;
-      height: 0px;
-    }
+@keyframes flow-line6-animation-bw {
+  0% {
+    top: calc(87% - 40px);
+    left: calc(67% + 40px);
+    width: 3px;
+    height: 50px;
   }
-
-  @media(max-width:1024px){
-    .flow-line3{
-      animation: flow-line3-animation-bw 8s infinite;
-    }
+  31.25% {
+    top: calc(47% + 37px);
+    left: calc(67% + 40px);
+    width: 3px;
+    height: 50px;
   }
-
-  @keyframes flow-line3-animation-bw {
-    0% {
-      top: calc(47% + 40px);
-      left: calc(7% + 90px);
-      width: 50px;
-      height: 3px;
-    }
-
-    31.25% {
-      top: calc(47% + 40px);
-      left: calc(27% - 4px);
-    }
-
-    90% {
-      top: calc(47% + 40px);
-      left: calc(47% - 50px);
-      width: 50px;
-      height: 3px;
-    }
-
-    100% {
-      top: calc(47% + 40px);
-      left: calc(47%);
-      width: 0px;
-      height: 3px;
-    }
+  35% {
+    top: calc(47% + 43px);
+    left: calc(67% + 40px);
+    width: 3px;
+    height: 0px;
   }
+  100% {
+    top: calc(47% + 43px);
+    left: calc(67% + 40px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .flow-line6 {
+    animation: flow-line6-animation-md 8s infinite;
+  }
+}
+
+@keyframes flow-line6-animation-md {
+  0% {
+    top: calc(83% - 40px);
+    left: calc(67% + 35px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% + 35px);
+    left: calc(67% + 35px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 35px);
+    left: calc(67% + 35px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 35px);
+    left: calc(67% + 35px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flow-line6 {
+    animation: flow-line6-animation-sm 8s infinite;
+  }
+}
+
+@keyframes flow-line6-animation-sm {
+  0% {
+    top: calc(80% - 40px);
+    left: calc(67% + 30px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% + 20px);
+    left: calc(67% + 30px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 20px);
+    left: calc(67% + 30px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 20px);
+    left: calc(67% + 30px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 640px) {
+  .flow-line6 {
+    animation: flow-line6-animation-xs 8s infinite;
+  }
+}
+
+@keyframes flow-line6-animation-xs {
+  0% {
+    top: calc(76% - 40px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% + 20px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 20px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 20px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .flow-line6 {
+    animation: flow-line6-animation-2xs 8s infinite;
+  }
+}
+
+@keyframes flow-line6-animation-2xs {
+  0% {
+    top: calc(72% - 40px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  31.25% {
+    top: calc(47% + 20px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 50px;
+  }
+  35% {
+    top: calc(47% + 20px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 20px);
+    left: calc(67% + 25px);
+    width: 3px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .flow-line6 {
+    animation: flow-line6-animation-3xs 8s infinite;
+  }
+}
+
+@keyframes flow-line6-animation-3xs {
+  0% {
+    top: calc(72% - 20px);
+    left: calc(67% + 22px);
+    width: 3px;
+    height: 30px;
+  }
+  31.25% {
+    top: calc(47% + 20px);
+    left: calc(67% + 22px);
+    width: 3px;
+    height: 30px;
+  }
+  35% {
+    top: calc(47% + 20px);
+    left: calc(67% + 22px);
+    width: 3px;
+    height: 0px;
+  }
+  100% {
+    top: calc(47% + 20px);
+    left: calc(67% + 22px);
+    width: 3px;
+    height: 0px;
+  }
+}
 
 /* auto-scroll animation */
 @layer components {
@@ -1270,420 +1935,419 @@ body {
 }
 
 /* footer-line-bottom to top of top */
+.footer-line-2 {
+  background: linear-gradient(
+    180deg,
+    #af85e3 1.2%,
+    #8b94e2 22.17%,
+    #6ff2f2 57.97%,
+    #68e099 77.02%,
+    #68e099 94.9%
+  );
+  animation: move2 3s infinite;
+}
+
+@keyframes move2 {
+  0% {
+    top: calc(0% - 40px);
+  }
+  90% {
+    top: calc(0% + 140px);
+    height: 40px;
+  }
+  100% {
+    top: calc(0% + 180px);
+    height: 0px;
+  }
+}
+
+@media (max-width: 900px) {
   .footer-line-2 {
-    background: linear-gradient(
-      180deg,
-      #af85e3 1.2%,
-      #8b94e2 22.17%,
-      #6ff2f2 57.97%,
-      #68e099 77.02%,
-      #68e099 94.9%
-    );
-    animation: move2 3s infinite;
+    animation: move2atmd 3s infinite;
   }
+}
 
-  @keyframes move2 {
-    0% {
-      top: calc(0% - 40px);
-    }
-    90% {
-      top: calc(0% + 140px);
-      height: 40px;
-    }
-    100% {
-      top: calc(0% + 180px);
-      height: 0px;
-    }
+@keyframes move2atmd {
+  0% {
+    top: calc(0% - 40px);
   }
+  90% {
+    top: calc(0% + 120px);
+    height: 40px;
+  }
+  100% {
+    top: calc(0% + 160px);
+    height: 0px;
+  }
+}
 
-  @media (max-width: 900px) {
-    .footer-line-2 {
-      animation: move2atmd 3s infinite;
-    }
+@media (max-width: 768px) {
+  .footer-line-2 {
+    animation: move2atmd 3s infinite;
   }
-  
-  @keyframes move2atmd {
-    0% {
-      top: calc(0% - 40px);
-    }
-    90% {
-      top: calc(0% + 120px);
-      height: 40px;
-    }
-    100% {
-      top: calc(0% + 160px);
-      height: 0px;
-    }
-  }
+}
 
-  @media (max-width: 768px) {
-    .footer-line-2 {
-      animation: move2atmd 3s infinite;
-    }
+@keyframes move2atmd {
+  0% {
+    top: calc(0% - 40px);
   }
-  
-  @keyframes move2atmd {
-    0% {
-      top: calc(0% - 40px);
-    }
-    90% {
-      top: calc(0% + 60px);
-      height: 40px;
-    }
-    100% {
-      top: calc(0% + 100px);
-      height: 0px;
-    }
+  90% {
+    top: calc(0% + 60px);
+    height: 40px;
   }
+  100% {
+    top: calc(0% + 100px);
+    height: 0px;
+  }
+}
 
-  @media (max-width: 500px) {
-    .footer-line-2 {
-      animation: move2atmd 3s infinite;
-    }
+@media (max-width: 500px) {
+  .footer-line-2 {
+    animation: move2atmd 3s infinite;
   }
-  
-  @keyframes move2atmd {
-    0% {
-      top: calc(0% - 30px);
-    }
-    90% {
-      top: calc(0% + 60px);
-      height: 30px;
-    }
-    100% {
-      top: calc(0% + 90px);
-      height: 0px;
-    }
+}
+
+@keyframes move2atmd {
+  0% {
+    top: calc(0% - 30px);
   }
-  
+  90% {
+    top: calc(0% + 60px);
+    height: 30px;
+  }
+  100% {
+    top: calc(0% + 90px);
+    height: 0px;
+  }
+}
 
 /* footer line of side left */
+.footer-line-3 {
+  background: linear-gradient(
+    90deg,
+    #af85e3 1.2%,
+    #8b94e2 22.17%,
+    #6ff2f2 57.97%,
+    #68e099 77.02%,
+    #68e099 94.9%
+  );
+  animation: move3 3s infinite;
+}
+
+@keyframes move3 {
+  0% {
+    left: 140px;
+  }
+  90% {
+    left: calc(0%);
+    width: 40px;
+  }
+  100% {
+    left: calc(0%-40px);
+    width: 0px;
+  }
+}
+
+@media (max-width: 900px) {
   .footer-line-3 {
-    background: linear-gradient(
-      90deg,
-      #af85e3 1.2%,
-      #8b94e2 22.17%,
-      #6ff2f2 57.97%,
-      #68e099 77.02%,
-      #68e099 94.9%
-    );
-    animation: move3 3s infinite;
+    animation: move3atbw 3s infinite;
   }
+}
 
-  @keyframes move3 {
-    0% {
-      left: 140px;
-    }
-    90% {
-      left: calc(0%);
-      width: 40px;
-    }
-    100% {
-      left: calc(0%-40px);
-      width: 0px;
-    }
+@keyframes move3atbw {
+  0% {
+    left: 120px;
   }
+  90% {
+    left: calc(0%);
+    width: 40px;
+  }
+  100% {
+    left: calc(0%-40px);
+    width: 0px;
+  }
+}
 
-  @media (max-width: 900px) {
-    .footer-line-3 {
-      animation: move3atbw 3s infinite;
-    }
+@media (max-width: 768px) {
+  .footer-line-3 {
+    animation: move3atmd 3s infinite;
   }
-  
-  @keyframes move3atbw {
-    0% {
-      left: 120px;
-    }
-    90% {
-      left: calc(0%);
-      width: 40px;
-    }
-    100% {
-      left: calc(0%-40px);
-      width: 0px;
-    }
-  }
+}
 
-  @media (max-width: 768px) {
-    .footer-line-3 {
-      animation: move3atmd 3s infinite;
-    }
+@keyframes move3atmd {
+  0% {
+    left: 60px;
   }
-  
-  @keyframes move3atmd {
-    0% {
-      left: 60px;
-    }
-    90% {
-      left: calc(0%);
-      width: 40px;
-    }
-    100% {
-      left: calc(0%-40px);
-      width: 0px;
-    }
+  90% {
+    left: calc(0%);
+    width: 40px;
   }
+  100% {
+    left: calc(0%-40px);
+    width: 0px;
+  }
+}
 
-  @media (max-width: 500px) {
-    .footer-line-3 {
-      animation: move3atxs 3s infinite;
-    }
+@media (max-width: 500px) {
+  .footer-line-3 {
+    animation: move3atxs 3s infinite;
   }
-  
-  @keyframes move3atxs {
-    0% {
-      left: 30px;
-    }
-    90% {
-      left: calc(0%);
-      width: 30px;
-    }
-    100% {
-      left: calc(0%-30px);
-      width: 0px;
-    }
+}
+
+@keyframes move3atxs {
+  0% {
+    left: 30px;
   }
+  90% {
+    left: calc(0%);
+    width: 30px;
+  }
+  100% {
+    left: calc(0%-30px);
+    width: 0px;
+  }
+}
 
 /* footer line of side right */
+.footer-line-4 {
+  background: linear-gradient(
+    90deg,
+    #af85e3 1.2%,
+    #8b94e2 22.17%,
+    #6ff2f2 57.97%,
+    #68e099 77.02%,
+    #68e099 94.9%
+  );
+  animation: move4 3s infinite;
+}
+
+@keyframes move4 {
+  0% {
+    right: calc(-40px);
+  }
+  90% {
+    right: calc(140px);
+    width: 40px;
+  }
+  100% {
+    right: calc(0% + 180px);
+    width: 0px;
+  }
+}
+
+@media (max-width: 900px) {
   .footer-line-4 {
-    background: linear-gradient(
-      90deg,
-      #af85e3 1.2%,
-      #8b94e2 22.17%,
-      #6ff2f2 57.97%,
-      #68e099 77.02%,
-      #68e099 94.9%
-    );
-    animation: move4 3s infinite;
+    animation: move4atbw 3s infinite;
   }
+}
 
-  @keyframes move4 {
-    0% {
-      right: calc(-40px);
-    }
-    90% {
-      right: calc(140px);
-      width: 40px;
-    }
-    100% {
-      right: calc(0% + 180px);
-      width: 0px;
-    }
+@keyframes move4atbw {
+  0% {
+    right: calc(-40px);
   }
+  90% {
+    right: calc(120px);
+    width: 40px;
+  }
+  100% {
+    right: calc(0% + 160px);
+    width: 0px;
+  }
+}
 
-  @media (max-width: 900px) {
-    .footer-line-4 {
-      animation: move4atbw 3s infinite;
-    }
+@media (max-width: 768px) {
+  .footer-line-4 {
+    animation: move4atmd 3s infinite;
   }
-  
-  @keyframes move4atbw {
-    0% {
-      right: calc(-40px);
-    }
-    90% {
-      right: calc(120px);
-      width: 40px;
-    }
-    100% {
-      right: calc(0% + 160px);
-      width: 0px;
-    }
-  }
+}
 
-  @media (max-width: 768px) {
-    .footer-line-4 {
-      animation: move4atmd 3s infinite;
-    }
+@keyframes move4atmd {
+  0% {
+    right: calc(-40px);
   }
-  
-  @keyframes move4atmd {
-    0% {
-      right: calc(-40px);
-    }
-    90% {
-      right: 60px;
-      width: 40px;
-    }
-    100% {
-      right: 100px;
-      width: 0px;
-    }
+  90% {
+    right: 60px;
+    width: 40px;
   }
+  100% {
+    right: 100px;
+    width: 0px;
+  }
+}
 
-  @media (max-width: 500px) {
-    .footer-line-4 {
-      animation: move4atxs 3s infinite;
-    }
+@media (max-width: 500px) {
+  .footer-line-4 {
+    animation: move4atxs 3s infinite;
   }
-  
-  @keyframes move4atxs {
-    0% {
-      right: calc(-40px);
-    }
-    90% {
-      right: 30px;
-      width: 30px;
-    }
-    100% {
-      right: 60px;
-      width: 0px;
-    }
+}
+
+@keyframes move4atxs {
+  0% {
+    right: calc(-40px);
   }
+  90% {
+    right: 30px;
+    width: 30px;
+  }
+  100% {
+    right: 60px;
+    width: 0px;
+  }
+}
 
 /* footer-line-top to bottom of bottom */
+.footer-line-5 {
+  background: linear-gradient(
+    180deg,
+    #af85e3 1.2%,
+    #8b94e2 22.17%,
+    #6ff2f2 57.97%,
+    #68e099 77.02%,
+    #68e099 94.9%
+  );
+  animation: move5 3s infinite;
+}
+
+@keyframes move5 {
+  0% {
+    bottom: calc(0% + 140px);
+  }
+  90% {
+    bottom: calc(0%);
+    height: 40px;
+  }
+  100% {
+    bottom: calc(0% - 40px);
+    height: 0;
+  }
+}
+
+@media (max-width: 900px) {
   .footer-line-5 {
-    background: linear-gradient(
-      180deg,
-      #af85e3 1.2%,
-      #8b94e2 22.17%,
-      #6ff2f2 57.97%,
-      #68e099 77.02%,
-      #68e099 94.9%
-    );
-    animation: move5 3s infinite;
+    animation: move5atbw 3s infinite;
   }
+}
 
-  @keyframes move5 {
-    0% {
-      bottom: calc(0% + 140px);
-    }
-    90% {
-      bottom: calc(0%);
-      height: 40px;
-    }
-    100% {
-      bottom: calc(0% - 40px);
-      height: 0;
-    }
+@keyframes move5atbw {
+  0% {
+    bottom: calc(0% + 120px);
   }
+  90% {
+    bottom: calc(0%);
+    height: 40px;
+  }
+  100% {
+    bottom: calc(0% - 40px);
+    height: 0px;
+  }
+}
 
-  @media (max-width: 900px) {
-    .footer-line-5 {
-      animation: move5atbw 3s infinite;
-    }
+@media (max-width: 768px) {
+  .footer-line-5 {
+    animation: move5atmd 3s infinite;
   }
-  
-  @keyframes move5atbw {
-    0% {
-      bottom: calc(0% + 120px);
-    }
-    90% {
-      bottom: calc(0%);
-      height: 40px;
-    }
-    100% {
-      bottom: calc(0% - 40px);
-      height: 0px;
-    }
-  }
+}
 
-  @media (max-width: 768px) {
-    .footer-line-5 {
-      animation: move5atmd 3s infinite;
-    }
+@keyframes move5atmd {
+  0% {
+    bottom: calc(0% + 100px);
   }
-  
-  @keyframes move5atmd {
-    0% {
-      bottom: calc(0% + 100px);
-    }
-    90% {
-      bottom: calc(0%);
-      height: 40px;
-    }
-    100% {
-      bottom: calc(0% - 40px);
-      height: 0px;
-    }
+  90% {
+    bottom: calc(0%);
+    height: 40px;
   }
+  100% {
+    bottom: calc(0% - 40px);
+    height: 0px;
+  }
+}
 
-  @media (max-width: 500px) {
-    .footer-line-5 {
-      animation: move5atxs 3s infinite;
-    }
+@media (max-width: 500px) {
+  .footer-line-5 {
+    animation: move5atxs 3s infinite;
   }
-  
-  @keyframes move5atxs {
-    0% {
-      bottom: calc(0% + 60px);
-    }
-    90% {
-      bottom: calc(0%);
-      height: 30px;
-    }
-    100% {
-      bottom: calc(0% - 30px);
-      height: 0px;
-    }
+}
+
+@keyframes move5atxs {
+  0% {
+    bottom: calc(0% + 60px);
   }
+  90% {
+    bottom: calc(0%);
+    height: 30px;
+  }
+  100% {
+    bottom: calc(0% - 30px);
+    height: 0px;
+  }
+}
 
 /* footer-line-bottom to top of bottom */
+.footer-line-6 {
+  background: linear-gradient(
+    180deg,
+    #af85e3 1.2%,
+    #8b94e2 22.17%,
+    #6ff2f2 57.97%,
+    #68e099 77.02%,
+    #68e099 94.9%
+  );
+  animation: move6 3s infinite;
+}
+
+@keyframes move6 {
+  0% {
+    bottom: calc(0%);
+  }
+  90% {
+    bottom: calc(0% + 140px);
+    height: 40px;
+  }
+  100% {
+    bottom: calc(0% + 180px);
+    height: 0;
+  }
+}
+
+@media (max-width: 768px) {
   .footer-line-6 {
-    background: linear-gradient(
-      180deg,
-      #af85e3 1.2%,
-      #8b94e2 22.17%,
-      #6ff2f2 57.97%,
-      #68e099 77.02%,
-      #68e099 94.9%
-    );
-    animation: move6 3s infinite;
+    animation: move6atmd 3s infinite;
   }
+}
 
-  @keyframes move6 {
-    0% {
-      bottom: calc(0%);
-    }
-    90% {
-      bottom: calc(0% + 140px);
-      height: 40px;
-    }
-    100% {
-      bottom: calc(0% + 180px);
-      height: 0;
-    }
+@keyframes move6atmd {
+  0% {
+    bottom: calc(0%);
   }
+  90% {
+    bottom: calc(0% + 100px);
+    height: 40px;
+  }
+  100% {
+    bottom: calc(0% + 140px);
+    height: 0px;
+  }
+}
 
-  @media (max-width: 768px) {
-    .footer-line-6 {
-      animation: move6atmd 3s infinite;
-    }
+@media (max-width: 500px) {
+  .footer-line-6 {
+    animation: move6atxs 3s infinite;
   }
-  
-  @keyframes move6atmd {
-    0% {
-      bottom: calc(0%);
-    }
-    90% {
-      bottom: calc(0% + 100px);
-      height: 40px;
-    }
-    100% {
-      bottom: calc(0% + 140px);
-      height: 0px;
-    }
-  }
+}
 
-  @media (max-width: 500px) {
-    .footer-line-6 {
-      animation: move6atxs 3s infinite;
-    }
+@keyframes move6atxs {
+  0% {
+    bottom: calc(0%);
   }
-  
-  @keyframes move6atxs {
-    0% {
-      bottom: calc(0%);
-    }
-    90% {
-      bottom: calc(0% + 60px);
-      height: 30px;
-    }
-    100% {
-      bottom: calc(0% + 90px);
-      height: 0px;
-    }
+  90% {
+    bottom: calc(0% + 60px);
+    height: 30px;
   }
+  100% {
+    bottom: calc(0% + 90px);
+    height: 0px;
+  }
+}
 
 /* navbar line hover animation */
 .hover-effect {
@@ -1777,11 +2441,11 @@ body {
 @keyframes swing-large {
   0% {
     -webkit-clip-path: ellipse(280px 134px at -10% 50%);
-    clip-path: ellipse(280px 134px at -10% 50%);
+    clip-path: ellipse(280px 134px at -5% 50%);
   }
   100% {
     -webkit-clip-path: ellipse(280px 134px at 110.62% 50%);
-    clip-path: ellipse(280px 134px at 110.62% 50%);
+    clip-path: ellipse(280px 134px at 105.62% 50%);
   }
 }
 
@@ -1796,11 +2460,11 @@ body {
 @keyframes swing-medium {
   0% {
     -webkit-clip-path: ellipse(180px 134px at -10% 50%);
-    clip-path: ellipse(180px 134px at -10% 50%);
+    clip-path: ellipse(180px 134px at -5% 50%);
   }
   100% {
     -webkit-clip-path: ellipse(180px 134px at 110.62% 50%);
-    clip-path: ellipse(180px 134px at 110.62% 50%);
+    clip-path: ellipse(180px 134px at 105.62% 50%);
   }
 }
 
@@ -1815,10 +2479,10 @@ body {
 @keyframes swing-small {
   0% {
     -webkit-clip-path: ellipse(50px 54px at -30% 50%);
-    clip-path: ellipse(50px 54px at -10% 50%);
+    clip-path: ellipse(50px 54px at -5% 50%);
   }
   100% {
     -webkit-clip-path: ellipse(50px 54px at 140.62% 50%);
-    clip-path: ellipse(50px 54px at 110.62% 50%);
+    clip-path: ellipse(50px 54px at 105.62% 50%);
   }
 }

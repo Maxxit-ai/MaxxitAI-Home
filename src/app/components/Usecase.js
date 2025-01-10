@@ -1,5 +1,6 @@
 import React from "react";
 import UseCaseConnector from "./UseCaseConnector";
+import MobileUseCaseConnector from "./MobileUseCaseConnector";
 
 const Usecase = () => {
   return (
@@ -8,8 +9,12 @@ const Usecase = () => {
         Usecases
       </h2>
 
-      <div className="w-full my-10 z-30">
+      <div className="md:flex hidden w-full my-10 z-30">
         <UseCaseConnector />
+      </div>
+
+      <div className="flex md:hidden w-full my-10 z-30">
+        <MobileUseCaseConnector />
       </div>
       <div className="bg-gradient-to-b from-[#00061280] to-[#000612] w-full h-[800px] absolute top-[10%] left-0 z-20"></div>
       <div className="usecase-background mt-[250px] h-[1200px] absolute top-0 z-10"></div>
