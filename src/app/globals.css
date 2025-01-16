@@ -1852,10 +1852,10 @@ body {
       border-color: #68e099;
     }
     25% {
-      border-color: #9c9c9ccc;
+      border-color: transparent;
     }
     100% {
-      border-color: #9c9c9ccc;
+      border-color: transparent;
     }
   }
 }
@@ -1873,10 +1873,10 @@ body {
       border-color: #af85e3;
     }
     51% {
-      border-color: #9c9c9ccc;
+      border-color: transparent;
     }
     100% {
-      border-color: #9c9c9ccc;
+      border-color: transparent;
     }
   }
 }
