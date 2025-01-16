@@ -113,46 +113,46 @@ const Walkthrough = () => {
   return (
     <div className="w-full h-[1000px] relative walkthrough-container">
       <div className="absolute top-0 left-0 walkthrough-bg w-full h-[900px] z-10"></div>
-      <div className="flex flex-col items-center justify-center z-30 relative">
+      <div className="flex flex-col items-center justify-center z-30 relative overflow-hidden">
         <h2 className="text-[20px] 4xs:text-[30px] md:text-[40px] bw:text-[50px] mb-[50px] font-medium tracking-wide text-center bg-gradient-to-r from-[#999999] via-white to-[#999999] bg-clip-text text-transparent">
           SmartDisperse Walkthrough
         </h2>
-        <div className="relative w-full h-[800px] mx-auto">
+        <div className="relative w-[300px] xs:w-[450px] md:w-[700px] bw:w-[850px] xl:w-[1100px] 1300:w-[1300px] 2xl:w-[1530px] h-[800px] mx-auto overflow-hidden">
           {/* logo and route */}
           <div className="absolute top-[calc(10%)] left-[calc(50%-50px)] md:top-[10%] md:left-[10%] z-20">
             <Image src={iconlogo} alt="logo" className="w-[100px] h-[100px]"></Image>
           </div>
-          <div className="hidden md:flex absolute top-[calc(10%+80px)] left-[calc(10%+88px)] z-10">
-            <Image src={route} alt="route"></Image>
+          <div className="hidden md:flex absolute top-[calc(10%+80px)] left-[calc(10%+88px)] w-[950px] 2xl:w-[1130px] h-max z-10">
+            <Image src={route} alt="route" className="w-full h-auto"></Image>
           </div>
           <div className="flex md:hidden absolute top-[calc(10%+100px)] left-[calc(50%-100px)] mx-auto z-10">
             <Image src={mobileroute} alt="route"></Image>
           </div>
 
           {/* Step 1 */}
-          <div className="absolute top-[25%] left-[30%] z-20" ref={elementRefs.step1.icon}>
+          <div className="absolute top-[23%] 2xl:top-[25%] left-[30%] z-20" ref={elementRefs.step1.icon}>
             <Image src={step1} alt="step1"></Image>
           </div>
-          <div className="w-[2px] h-[80px] absolute top-[calc(25%-77px)] left-[calc(30%+27px)] bg-[#49494ACC]" ref={elementRefs.step1.line}></div>
-          <div className="bg-[#2D164A] text-xs px-4 py-3 rounded-md text-white absolute top-[calc(25%-100px)] left-[26.5%]" ref={elementRefs.step1.text}>
+          <div className="w-[2px] h-[80px] absolute top-[calc(23%-77px)] 2xl:top-[calc(25%-77px)] left-[calc(30%+27px)] bg-[#49494ACC]" ref={elementRefs.step1.line}></div>
+          <div className="bg-[#2D164A] text-xs px-4 py-3 rounded-md text-white absolute top-[calc(23%-100px)] 2xl:top-[calc(25%-100px)] left-[26.5%]" ref={elementRefs.step1.text}>
             Connect Wallet
           </div>
 
           {/* Step 2 */}
-          <div className="absolute top-[36%] left-[25%] z-20" ref={elementRefs.step2.icon}>
+          <div className="absolute top-[32%] 2xl:top-[36%] left-[25%] z-20" ref={elementRefs.step2.icon}>
             <Image src={step2} alt="step2"></Image>
           </div>
-          <div className="w-[80px] h-[3px] absolute top-[calc(36%+25px)] left-[calc(25%-73px)] bg-[#49494ACC]" ref={elementRefs.step2.line}></div>
-          <div className="bg-[#0E3F3F] text-xs px-6 py-3 rounded-md text-white absolute top-[calc(36%)] left-[12%]" ref={elementRefs.step2.text}>
+          <div className="w-[80px] h-[3px] absolute top-[calc(32%+25px)] 2xl:top-[calc(36%+25px)] left-[calc(25%-73px)] bg-[#49494ACC]" ref={elementRefs.step2.line}></div>
+          <div className="bg-[#0E3F3F] text-xs px-6 py-3 rounded-md text-white absolute top-[32%] 2xl:top-[calc(36%)] left-[12%]" ref={elementRefs.step2.text}>
             Select Chain
           </div>
 
           {/* Step 3 */}
-          <div className="absolute top-[40%] left-[40%] z-20" ref={elementRefs.step3.icon}>
+          <div className="absolute top-[35%] left-[42%] 2xl:top-[40%] 2xl:left-[40%] z-20" ref={elementRefs.step3.icon}>
             <Image src={step3} alt="step3"></Image>
           </div>
-          <div className="w-[2px] h-[80px] absolute top-[calc(40%+50px)] left-[calc(40%+30px)] bg-[#49494ACC]" ref={elementRefs.step3.line}></div>
-          <div className="bg-[#282C4C] text-xs px-4 py-3 rounded-md text-white text-center absolute top-[calc(40%+130px)] left-[calc(40%-90px)]" ref={elementRefs.step3.text}>
+          <div className="w-[2px] h-[80px] absolute top-[calc(35%+53px)] left-[calc(42%+30px)] 2xl:top-[calc(40%+50px)] 2xl:left-[calc(40%+30px)] bg-[#49494ACC]" ref={elementRefs.step3.line}></div>
+          <div className="bg-[#282C4C] text-xs px-4 py-3 rounded-md text-white text-center absolute top-[calc(35%+130px)] left-[calc(42%-90px)] 2xl:top-[calc(40%+130px)] 2xl:left-[calc(40%-90px)]" ref={elementRefs.step3.text}>
             Select Transactions Type
             <br />
             (same-chain/cross-chain)
@@ -188,11 +188,11 @@ const Walkthrough = () => {
           </div>
 
           {/* Step 7 */}
-          <div className="absolute top-[66.5%] left-[86.2%] z-20" ref={elementRefs.step7.icon}>
+          <div className="absolute top-[66.5%] left-[85.5%] z-20" ref={elementRefs.step7.icon}>
             <Image src={step7} alt="step7"></Image>
           </div>
-          <div className="w-[2px] h-[80px] absolute top-[calc(79%)] left-[calc(89.8%)] bg-[#49494ACC]" ref={elementRefs.step7.line}></div>
-          <div className="bg-[#282C4C] text-xs text-center px-8 py-3 rounded-md text-white absolute top-[88%] left-[85%]" ref={elementRefs.step7.text}>
+          <div className="w-[2px] h-[80px] absolute top-[calc(79%)] left-[calc(89%)] bg-[#49494ACC]" ref={elementRefs.step7.line}></div>
+          <div className="bg-[#282C4C] text-xs text-center px-8 py-3 rounded-md text-white absolute top-[88%] left-[84.5%]" ref={elementRefs.step7.text}>
             View History of
             <br />
             Transactions

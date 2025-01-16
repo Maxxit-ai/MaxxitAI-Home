@@ -20,8 +20,8 @@ const MobileUseCaseConnector = () => {
       <div className=" absolute left-[3%] top-[calc(9%+50px)] w-[2.3px] h-[71%] bg-[#9c9c9c6b] z-10"></div>
       <div className=" absolute right-[3%] top-[calc(9%+50px)] w-[2.3px] h-[71%] bg-[#9c9c9c6b]"></div>
       
-      <div className=" absolute right-[calc(50%+90px)] top-[9%] w-[10%] 3xs:w-[17%] xs:w-[24%] sm:w-[28.5%] h-[2.3px] bg-[#9c9c9c6b] z-10"></div>
-      <div className=" absolute left-[calc(50%+90px)] top-[9%] w-[10%] 3xs:w-[17%] xs:w-[24%] sm:w-[28.5%] h-[2.3px] bg-[#9c9c9c6b]"></div>
+      <div className=" absolute right-[calc(50%+90px)] top-[9%] w-[10%] 3xs:w-[17%] xs:w-[24%] sm:w-[28.5%] md:w-[31%] h-[2.3px] bg-[#9c9c9c6b] z-10"></div>
+      <div className=" absolute left-[calc(50%+90px)] top-[9%] w-[10%] 3xs:w-[17%] xs:w-[24%] sm:w-[28.5%] md:w-[31%] h-[2.3px] bg-[#9c9c9c6b]"></div>
       
       <div className=" absolute left-[3%] top-[32.8%] w-[15%] h-[2.3px] bg-[#9c9c9c6b] z-10"></div>
       <div className=" absolute right-[3%] top-[32.8%] w-[15%] h-[2.3px] bg-[#9c9c9c6b] z-10"></div>
@@ -34,24 +34,24 @@ const MobileUseCaseConnector = () => {
 
 
       {/* holders */}
-      <div className="absolute top-[calc(32%)] left-[13.2%] sm:left-[calc(16%)] w-[10px] h-[20px] overflow-hidden z-30">
+      <div className="absolute top-[calc(32%)] left-[13.2%] sm:left-[calc(16%)] md:left-[calc(16.2%)] w-[10px] h-[20px] overflow-hidden z-30">
         <div className="w-[20px] h-[20px] rounded-full bg-gradient-to-br from-[#000000] via-[#4A4A4A] to-[#000000]"></div>
       </div>
-      <div className="absolute top-[calc(32%)] right-[13.2%] sm:right-[calc(16%)] w-[10px] h-[20px] overflow-hidden z-30 rotate-180">
-        <div className="w-[20px] h-[20px] rounded-full bg-gradient-to-br from-[#000000] via-[#4A4A4A] to-[#000000]"></div>
-      </div>
-
-      <div className="absolute top-[calc(60%)] left-[13.2%] sm:left-[calc(16%)] w-[10px] h-[20px] overflow-hidden z-30">
-        <div className="w-[20px] h-[20px] rounded-full bg-gradient-to-br from-[#000000] via-[#4A4A4A] to-[#000000]"></div>
-      </div>
-      <div className="absolute top-[calc(60%)] right-[13.2%] sm:right-[calc(16%)] w-[10px] h-[20px] overflow-hidden z-30 rotate-180">
+      <div className="absolute top-[calc(32%)] right-[13.2%] sm:right-[calc(16%)] md:right-[calc(16.2%)] w-[10px] h-[20px] overflow-hidden z-30 rotate-180">
         <div className="w-[20px] h-[20px] rounded-full bg-gradient-to-br from-[#000000] via-[#4A4A4A] to-[#000000]"></div>
       </div>
 
-      <div className="absolute top-[calc(88%)] left-[13.2%] sm:left-[calc(16%)] w-[10px] h-[20px] overflow-hidden z-30">
+      <div className="absolute top-[calc(60%)] left-[13.2%] sm:left-[calc(16%)] md:left-[calc(16.2%)] w-[10px] h-[20px] overflow-hidden z-30">
         <div className="w-[20px] h-[20px] rounded-full bg-gradient-to-br from-[#000000] via-[#4A4A4A] to-[#000000]"></div>
       </div>
-      <div className="absolute top-[calc(88%)] right-[13.2%] sm:right-[calc(16%)] w-[10px] h-[20px] overflow-hidden z-30 rotate-180">
+      <div className="absolute top-[calc(60%)] right-[13.2%] sm:right-[calc(16%)] md:right-[calc(16.2%)] w-[10px] h-[20px] overflow-hidden z-30 rotate-180">
+        <div className="w-[20px] h-[20px] rounded-full bg-gradient-to-br from-[#000000] via-[#4A4A4A] to-[#000000]"></div>
+      </div>
+
+      <div className="absolute top-[calc(88%)] left-[13.2%] sm:left-[calc(16%)] md:left-[calc(16.2%)] w-[10px] h-[20px] overflow-hidden z-30">
+        <div className="w-[20px] h-[20px] rounded-full bg-gradient-to-br from-[#000000] via-[#4A4A4A] to-[#000000]"></div>
+      </div>
+      <div className="absolute top-[calc(88%)] right-[13.2%] sm:right-[calc(16%)] md:right-[calc(16.2%)] w-[10px] h-[20px] overflow-hidden z-30 rotate-180">
         <div className="w-[20px] h-[20px] rounded-full bg-gradient-to-br from-[#000000] via-[#4A4A4A] to-[#000000]"></div>
       </div>
 

@@ -101,13 +101,21 @@ body {
   height: 600px;
 }
 
+@media (min-width: 1440px) {
+  .usecase-background {
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 600px;
+  }
+}
+
 .getstarted-background {
   background-image: url("/getstarted.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
-  /* height: 800px; */
 }
 
 /* usecase component */
