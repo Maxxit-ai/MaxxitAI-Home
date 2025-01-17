@@ -12,27 +12,27 @@ const UseCaseConnector = () => {
     <div className="w-full h-[1000px] relative">
       {/* line 1 */}
       <div className="absolute top-[calc(3%+140px)] left-[calc(39%-4px)] lg:left-[calc(40%-4px)] xl:left-[calc(43%-4px)] border-[5px] border-r-0 border-b-0 rounded-b-none rounded-e-none border-[#9c9c9c6b] w-[100px] h-[60px] rounded-[200px]"></div>
-      {/* <div className="absolute top-[calc(3%+140px)] left-[calc(43%-4px)] border-[5px] border-r-0 border-b-0 rounded-b-none rounded-e-none w-[100px] border-transparent h-[60px] rounded-[200px] flow1curveup"></div> */}
+      <div className="absolute top-[calc(3%+140px)] left-[calc(39%-4px)] lg:left-[calc(40%-4px)] xl:left-[calc(43%-4px)] border-[5px] border-r-0 border-b-0 rounded-b-none rounded-e-none w-[100px] border-transparent h-[60px] rounded-[200px] flow1curveup"></div>
 
       <div className="absolute top-[calc(3%+200px)] left-[calc(39%-4px)] lg:left-[calc(40%-4px)] xl:left-[calc(43%-4px)] bg-[#9c9c9c6b] w-[5px] h-[17.4%]"></div>
-      {/* <div className="absolute left-[calc(43%-4px)] w-[5px] h-[70px] flow1"></div> */}
+      <div className="absolute left-[calc(39%-4px)] lg:left-[calc(40%-4px)] xl:left-[calc(43%-4px)] w-[5px] h-[70px] flow1"></div>
 
       <div className="absolute top-[calc(50%-96px)] left-[calc(39%-99px)] lg:left-[calc(40%-99px)] xl:left-[calc(43%-99px)] border-[5px] border-l-0 border-t-0 rounded-t-none rounded-s-none border-[#9c9c9c6b] w-[100px] h-[100px] rounded-[300px]"></div>
-      {/* <div className="absolute top-[calc(50%-96px)] left-[calc(43%-99px)] border-[5px] border-l-0 border-t-0 rounded-t-none rounded-s-none w-[100px] border-transparent h-[100px] rounded-[300px] flow1curvedown"></div> */}
+      <div className="absolute top-[calc(50%-96px)] left-[calc(39%-99px)] lg:left-[calc(40%-99px)] xl:left-[calc(43%-99px)] border-[5px] border-l-0 border-t-0 rounded-t-none rounded-s-none w-[100px] border-transparent h-[100px] rounded-[300px] flow1curvedown"></div>
 
       {/* line 2 */}
       <div className="absolute top-[49.9%] left-[calc(3%+220px)] lg:left-[calc(3%+230px)] xl:left-[calc(10%+280px)] bg-[#9c9c9c6b] w-[28%] xl:w-[26%] h-[5px]"></div>
-      {/* <div className="absolute top-[49.9%] w-[70px] h-[5px] flow2"></div> */}
+      <div className="absolute top-[49.9%] w-[70px] h-[5px] flow2"></div>
 
       {/* line 3 */}
       <div className="absolute top-[calc(50%-1px)] left-[calc(39%-99px)] lg:left-[calc(40%-99px)] xl:left-[calc(43%-99px)] border-[5px] border-l-0 border-b-0 rounded-s-none rounded-b-none border-[#9c9c9c6b] w-[100px] h-[100px] rounded-[300px]"></div>
-      {/* <div className="absolute top-[calc(50%-1px)] left-[calc(43%-99px)] border-[5px] border-l-0 border-b-0 rounded-s-none rounded-b-none w-[100px] border-transparent h-[100px] rounded-[300px] flow3curveup"></div> */}
+      <div className="absolute top-[calc(50%-1px)] left-[calc(39%-99px)] lg:left-[calc(40%-99px)] xl:left-[calc(43%-99px)] border-[5px] border-l-0 border-b-0 rounded-s-none rounded-b-none w-[100px] border-transparent h-[100px] rounded-[300px] flow3curveup"></div>
 
       <div className="absolute top-[calc(50%+98.6px)] left-[calc(39%-4px)] lg:left-[calc(40%-4px)] xl:left-[calc(43%-4px)] bg-[#9c9c9c6b] w-[5px] h-[17.15%]"></div>
-      {/* <div className="absolute left-[calc(43%-4px)] w-[5px] h-[70px] flow3"></div> */}
+      <div className="absolute left-[calc(39%-4px)] lg:left-[calc(40%-4px)] xl:left-[calc(43%-4px)] w-[5px] h-[70px] flow3"></div>
 
       <div className="absolute top-[calc(87%-100px)] left-[calc(39%-4px)] lg:left-[calc(40%-4px)] xl:left-[calc(43%-4px)] border-[5px] border-r-0 border-t-0 rounded-t-none rounded-e-none border-[#9c9c9c6b] w-[100px] h-[60px] rounded-[200px]"></div>
-      {/* <div className="absolute top-[calc(87%-100px)] left-[calc(43%-4px)] border-[5px] border-r-0 border-t-0 rounded-t-none rounded-e-none w-[100px] border-transparent h-[60px] rounded-[200px] flow3curvedown"></div> */}
+      <div className="absolute top-[calc(87%-100px)] left-[calc(39%-4px)] lg:left-[calc(40%-4px)] xl:left-[calc(43%-4px)] border-[5px] border-r-0 border-t-0 rounded-t-none rounded-e-none w-[100px] border-transparent h-[60px] rounded-[200px] flow3curvedown"></div>
 
       {/* circle on left side */}
       <div className="absolute top-[calc(50%-110px)] lg:top-[calc(50%-120px)] xl:top-[calc(50%-140px)] left-[calc(3%+10px)] lg:left-[3%] xl:left-[10%] w-[210px] h-[210px] lg:w-[230px] lg:h-[230px] xl:w-[280px] xl:h-[280px] rounded-full bg-[#68E09978] border border-[#DFDFDF] shadow-[inset_0px_0px_48.59px_0.91px_#FFFFFFB2] opacity-50"></div>

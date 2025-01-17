@@ -87,7 +87,7 @@ const GetStarted = () => {
     <div className="w-full relative h-[720px] overflow-hidden">
       <div className="getstarted-background h-[700px] absolute top-[-10%] z-10"></div>
       <div className="bg-gradient-to-b from-[#00061280] to-[#000612] w-full h-[700px] absolute top-[-10%] left-0 z-20"></div>
-      <h2 className="text-[20px] 4xs:text-[30px] md:text-[40px] bw:text-[50px] font-medium tracking-wide mt-24 mb-0 text-center bg-gradient-to-r from-[#999999] via-white to-[#999999] bg-clip-text text-transparent relative z-30">
+      <h2 className="text-[20px] 4xs:text-[30px] md:text-[40px] bw:text-[50px] font-medium tracking-wide mt-4 mb-0 text-center bg-gradient-to-r from-[#999999] via-white to-[#999999] bg-clip-text text-transparent relative z-30">
         Get Started Now
       </h2>
       <div className="flex flex-wrap w-[92%] xl:w-[85%] items-center justify-center gap-3 my-9 sm:my-16 mx-auto z-30 relative">

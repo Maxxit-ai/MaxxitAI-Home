@@ -10,7 +10,8 @@ import Script from "next/script";
 export default function Home() {
   return (
     <>
-      <Script id="googleanalytics_page"
+      <Script
+        id="googleanalytics_page"
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
@@ -22,8 +23,7 @@ export default function Home() {
           gtag('js', new Date());
           gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}',{
           page_path: window.location.pathname,
-          
-![image](https://cdn.sanity.io/images/dgsq0x0m/production/61f24596fb210134e5df6a1dfa285de0f24791cc-1549x601.png?w=450)});
+          ![image](https://cdn.sanity.io/images/dgsq0x0m/production/61f24596fb210134e5df6a1dfa285de0f24791cc-1549x601.png?w=450)});
          `}
       </Script>
 
