@@ -1,10 +1,10 @@
 import React from "react";
-import optimism from "../assets/chains svg/optimism2.svg";
-import ethereum from "../assets/chains svg/ethereum2.svg";
-import base from "../assets/chains svg/base2.svg";
-import unichain from "../assets/chains svg/unichain2.svg";
-import worldcoin from "../assets/chains svg/worldcoin2.svg";
-import zora from "../assets/chains svg/zora2.svg";
+import optimism from "../assets/images/chains svg/optimism2.svg";
+import ethereum from "../assets/images/chains svg/ethereum2.svg";
+import base from "../assets/images/chains svg/base2.svg";
+import unichain from "../assets/images/chains svg/unichain2.svg";
+import worldcoin from "../assets/images/chains svg/worldcoin2.svg";
+import zora from "../assets/images/chains svg/zora2.svg";
 import Image from "next/image";
 
 const chains = [

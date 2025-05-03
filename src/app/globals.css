@@ -4,8 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --font-poppins: "Poppins", sans-serif;
+} */
+
+html,
+body {
+  font-family: var(--font-league-spartan) !important;
 }
 
 * {
@@ -1934,7 +1939,7 @@ body {
   }
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .flow-m-rtol {
     animation: flow-rtol-sm 10s infinite;
   }
@@ -1945,7 +1950,7 @@ body {
     right: calc(50% + 90px);
     width: 0px;
   }
-  49%{
+  49% {
     right: calc(50% + 90px);
     width: 0px;
   }
@@ -1994,7 +1999,7 @@ body {
   }
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .flow-m-ltor {
     animation: flow-ltor-sm 10s infinite;
   }
@@ -2005,7 +2010,7 @@ body {
     left: calc(50% + 90px);
     width: 0px;
   }
-  49%{
+  49% {
     left: calc(50% + 90px);
     width: 0px;
   }
@@ -2053,7 +2058,7 @@ body {
   0% {
     border-color: transparent;
   }
-  40%{
+  40% {
     border-color: transparent;
   }
   45% {
@@ -2228,11 +2233,11 @@ body {
     left: 3%;
     width: 0px;
   }
-  55%{
+  55% {
     left: 3%;
     width: 0px;
   }
-  56%{
+  56% {
     left: 3%;
     width: 60px;
   }
@@ -2258,11 +2263,11 @@ body {
     left: 3%;
     width: 0px;
   }
-  60%{
+  60% {
     left: 3%;
     width: 0px;
   }
-  61%{
+  61% {
     left: 3%;
     width: 60px;
   }
@@ -2288,11 +2293,11 @@ body {
     right: 3%;
     width: 0px;
   }
-  55%{
+  55% {
     right: 3%;
     width: 0px;
   }
-  56%{
+  56% {
     right: 3%;
     width: 60px;
   }
@@ -2318,11 +2323,11 @@ body {
     right: 3%;
     width: 0px;
   }
-  60%{
+  60% {
     right: 3%;
     width: 0px;
   }
-  61%{
+  61% {
     right: 3%;
     width: 60px;
   }

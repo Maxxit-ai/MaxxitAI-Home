@@ -11,16 +11,24 @@ const HeroSection = () => {
         <div className="w-[85%] mx-auto my-10 sm:my-16">
           <Navbar />
           <h1 className="text-[8vw] sm:text-4xl bw:text-5xl lg:text-6xl xl:text-7xl font-medium text-center mb-5 sm:mb-10 mt-14 sm:mt-20 flex items-center justify-center gap-3 flex-wrap w-full">
-            <span className="gradient-border-animation rounded-[30px] sm:rounded-[40px] overflow-hidden p-[2px] flex ">
+            {/* <span className="gradient-border-animation rounded-[30px] sm:rounded-[40px] overflow-hidden p-[2px] flex ">
               <span className="gradient-bg-animation flex rounded-[30px] sm:rounded-[40px] p-[2px]">
                 <span className="gradient-text-animation rounded-[30px] sm:rounded-[40px] px-3 sm:px-4 py-3 sm:py-6 overflow-hidden">
                   Cross-Chain
                 </span>
               </span>
-            </span>
+            </span> */}
 
             <span className="bg-gradient-to-br from-[#999999] via-white to-[#999999] bg-clip-text text-transparent">
-              Made Simple
+              Insights that Lead with
+            </span>
+
+            <span className="gradient-border-animation rounded-[30px] sm:rounded-[40px] overflow-hidden p-[2px] flex ">
+              <span className="gradient-bg-animation flex rounded-[30px] sm:rounded-[40px] p-[2px]">
+                <span className="gradient-text-animation rounded-[30px] sm:rounded-[40px] px-3 sm:px-4 py-3 sm:py-6 overflow-hidden">
+                  Proven Intelligence
+                </span>
+              </span>
             </span>
           </h1>
           <p className="text-center w-[90%] sm:w-[80%] mx-auto text-[10px] sm:text-sm lg:text-lg tracking-wide">

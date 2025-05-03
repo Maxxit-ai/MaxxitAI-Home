@@ -1,20 +1,20 @@
 "use client"
 import React, { useState } from "react";
 
-import iconlogo from "../assets/herosection svg/iconlogo.svg";
-import icon1 from "../assets/herosection svg/icon1.svg";
-import icon2 from "../assets/herosection svg/icon2.svg";
-import icon3 from "../assets/herosection svg/icon3.svg";
-import icon4 from "../assets/herosection svg/icon4.svg";
-import icon5 from "../assets/herosection svg/icon5.svg";
-import icon6 from "../assets/herosection svg/icon6.svg";
+import iconlogo from "../assets/images/herosection svg/iconlogo.svg";
+import icon1 from "../assets/images/herosection svg/icon1.svg";
+import icon2 from "../assets/images/herosection svg/icon2.svg";
+import icon3 from "../assets/images/herosection svg/icon3.svg";
+import icon4 from "../assets/images/herosection svg/icon4.svg";
+import icon5 from "../assets/images/herosection svg/icon5.svg";
+import icon6 from "../assets/images/herosection svg/icon6.svg";
 
-import icon1_2 from "../assets/herosection svg/icon1_2.svg";
-import icon2_2 from "../assets/herosection svg/icon2_2.svg";
-import icon3_2 from "../assets/herosection svg/icon3_2.svg";
-import icon4_2 from "../assets/herosection svg/icon4_2.svg";
-import icon5_2 from "../assets/herosection svg/icon5_2.svg";
-import icon6_2 from "../assets/herosection svg/icon6_2.svg";
+import icon1_2 from "../assets/images/herosection svg/icon1_2.svg";
+import icon2_2 from "../assets/images/herosection svg/icon2_2.svg";
+import icon3_2 from "../assets/images/herosection svg/icon3_2.svg";
+import icon4_2 from "../assets/images/herosection svg/icon4_2.svg";
+import icon5_2 from "../assets/images/herosection svg/icon5_2.svg";
+import icon6_2 from "../assets/images/herosection svg/icon6_2.svg";
 import Image from "next/image";
 
 const ConnectorImage = () => {

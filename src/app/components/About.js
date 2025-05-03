@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import fast from "../assets/about gifs/fast.gif";
-import secure from "../assets/about gifs/secure.gif";
-import friendly from "../assets/about gifs/friendly.gif";
+import fast from "../assets/images/about gifs/fast.gif";
+import secure from "../assets/images/about gifs/secure.gif";
+import friendly from "../assets/images/about gifs/friendly.gif";
 
 const about = [
   {

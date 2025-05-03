@@ -3,17 +3,17 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import route from "@/app/assets/walkthrough svgs/walkthroughRoute.svg";
-import mobileroute from "@/app/assets/walkthrough svgs/mobileRoute.svg";
+import route from "@/app/assets/images/walkthrough svgs/walkthroughRoute.svg";
+import mobileroute from "@/app/assets/images/walkthrough svgs/mobileRoute.svg";
 
-import iconlogo from "@/app/assets/herosection svg/iconlogo.svg";
-import step1 from "@/app/assets/walkthrough svgs/step1.svg";
-import step2 from "@/app/assets/walkthrough svgs/step2.svg";
-import step3 from "@/app/assets/walkthrough svgs/step3.svg";
-import step4 from "@/app/assets/walkthrough svgs/step4.svg";
-import step5 from "@/app/assets/walkthrough svgs/step5.svg";
-import step6 from "@/app/assets/walkthrough svgs/step6.svg";
-import step7 from "@/app/assets/walkthrough svgs/step7.svg";
+import iconlogo from "@/app/assets/images/herosection svg/iconlogo.svg";
+import step1 from "@/app/assets/images/walkthrough svgs/step1.svg";
+import step2 from "@/app/assets/images/walkthrough svgs/step2.svg";
+import step3 from "@/app/assets/images/walkthrough svgs/step3.svg";
+import step4 from "@/app/assets/images/walkthrough svgs/step4.svg";
+import step5 from "@/app/assets/images/walkthrough svgs/step5.svg";
+import step6 from "@/app/assets/images/walkthrough svgs/step6.svg";
+import step7 from "@/app/assets/images/walkthrough svgs/step7.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
