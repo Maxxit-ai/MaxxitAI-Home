@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="w-full mx-auto px-2 py-1 sm:p-3 flex items-center justify-between">
+      <div className="w-[80%] mx-auto px-2 py-8 pb-6 sm:pt-12 flex items-center justify-between">
         {/* logo */}
         <div className="max-[360px]:w-[100px] w-[120px] sm:w-[180px] lg:w-[200px] h-auto">
           <Link href="/" className="flex items-end gap-2">
