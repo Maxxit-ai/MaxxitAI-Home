@@ -38,6 +38,31 @@ const Navbar = () => {
         </div>
 
         {/* launch button */}
+        <div className="sm:flex items-center justify-center gap-2 sm:gap-4">
+        <div className="flex items-center justify-center gap-2 sm:gap-4">
+          <Link href="/about">
+            <div className="gradient-background max-[360px]:rounded-[9px] rounded-[11px] lg:rounded-[15px] max-[360px]:p-[1px] p-[2px] flex items-center justify-center overflow-hidden">
+              <button
+                onClick={handleButtonClick}
+                className="bg-[#000612] hover:bg-transparent hover:text-black max-[360px]:text-[8px] text-[10px] min-[500px]:text-sm sm:font-semibold flex items-center justify-center max-[360px]:rounded-[8px] rounded-[10px] lg:rounded-[14px] px-3 lg:px-4 py-[6px] sm:py-[10px] lg:py-[13px] tracking-wider hover:scale-105 hover:shadow-[0px_4px_20px_rgba(0,255,255,0.6)]  transition-all duration-300 ease-out"
+              >
+                About
+              </button>
+            </div>
+          </Link>
+        </div>
+        <div className="flex items-center justify-center gap-2 sm:gap-4">
+          <Link href="/disclaimer">
+            <div className="gradient-background max-[360px]:rounded-[9px] rounded-[11px] lg:rounded-[15px] max-[360px]:p-[1px] p-[2px] flex items-center justify-center overflow-hidden">
+              <button
+                onClick={handleButtonClick}
+                className="bg-[#000612] hover:bg-transparent hover:text-black max-[360px]:text-[8px] text-[10px] min-[500px]:text-sm sm:font-semibold flex items-center justify-center max-[360px]:rounded-[8px] rounded-[10px] lg:rounded-[14px] px-3 lg:px-4 py-[6px] sm:py-[10px] lg:py-[13px] tracking-wider hover:scale-105 hover:shadow-[0px_4px_20px_rgba(0,255,255,0.6)]  transition-all duration-300 ease-out"
+              >
+                Disclaimer
+              </button>
+            </div>
+          </Link>
+        </div>
         <div className="flex items-center justify-center gap-2 sm:gap-4">
           <Link href="https://app.maxxit.ai/" target="_blank">
             <div className="gradient-background max-[360px]:rounded-[9px] rounded-[11px] lg:rounded-[15px] max-[360px]:p-[1px] p-[2px] flex items-center justify-center overflow-hidden">
@@ -49,6 +74,7 @@ const Navbar = () => {
               </button>
             </div>
           </Link>
+        </div>
         </div>
       </div>
     </nav>
