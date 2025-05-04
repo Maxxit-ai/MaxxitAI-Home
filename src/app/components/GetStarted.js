@@ -78,9 +78,7 @@ const GetStarted = () => {
                 {item.heading}
               </h1>
             </div>
-            <div
-              className={`h-[1.3px] w-full ${item.lineGradient} my-2`}
-            ></div>
+            <div className={`h-[1.3px] w-full ${item.lineGradient} my-2`}></div>
             <div className="flex h-[200px] items-center">
               <p className="mb-0 mt-3 text-center text-[9px] tracking-wider md:text-[13px] lg:text-[14px] xl:my-4">
                 {item.paragraph}
@@ -99,21 +97,16 @@ const GetStarted = () => {
   };
 
   return (
-    <div className="px-4 py-8 first:pt-6 md:px-6 md:py-12 lg:py-16">
-      <div className="mx-auto flex w-full max-w-6xl flex-col items-center">
-        <div className="-mt-[3rem]">
-          <div className="relative w-full">
-            <div className="absolute z-10 h-[700px]"></div>
-            <h2 className="4xs:text-[30px] bw:text-[50px] relative z-30 bg-gradient-to-r from-[#999999] via-white to-[#999999] bg-clip-text text-center text-[20px] font-medium tracking-wide text-transparent md:text-[40px] Heading">
-              Our Key Features
-            </h2>
-            <div className="relative z-30 mx-auto flex w-full flex-wrap items-center justify-between gap-3 xl:w-full mt-[5rem]">
-              {getstarted.map((item, index) => (
-                <Card key={index} item={item} />
-              ))}
-            </div>
-          </div>
-        </div>
+    <div className="w-full relative h-[720px] overflow-hidden">
+      <div className="getstarted-background h-[720px] absolute top-[-10%] z-10"></div>
+      <div className="bg-gradient-to-b from-[#00061280] to-[#000612] w-full h-[700px] absolute top-[-10%] left-0 z-20"></div>
+      <h2 className="text-[20px] 4xs:text-[30px] md:text-[40px] bw:text-[50px] font-medium tracking-wide mt-4 mb-0 text-center bg-gradient-to-r from-[#999999] via-white to-[#999999] bg-clip-text text-transparent relative z-30">
+        Get Started Now
+      </h2>
+      <div className="flex flex-wrap w-[92%] xl:w-[85%] items-center justify-center gap-3 my-9 sm:my-16 mx-auto z-30 relative">
+        {getstarted.map((item, index) => (
+          <Card key={index} item={item} />
+        ))}
       </div>
     </div>
   );
