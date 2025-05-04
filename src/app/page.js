@@ -9,6 +9,7 @@ import SupportedChains from "./components/SupportedChains";
 import Usecase from "./components/Usecase";
 import Walkthrough from "./components/Walkthrough";
 import Image from "next/image";
+import TopTweetsCarousel from "./components/TweetsCarousel/TopTweetsCarousel";
 // import Script from "next/script";
 // import Head from "next/head";
 
@@ -64,7 +65,7 @@ export default function Home() {
       </Head> */}
 
       <HeroSection />
-      <SupportedChains />
+      <TopTweetsCarousel />
       <About />
       <Usecase />
       <Walkthrough />

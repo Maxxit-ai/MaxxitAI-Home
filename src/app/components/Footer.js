@@ -41,24 +41,22 @@ const Footer = () => {
 
       <div className="parent-div">
         <p
-          className="footer-text text-[8.5vw] font-semibold tracking-wide"
-          data-text="Smart Disperse"
+          className="footer-text text-[10vw] font-semibold font-napzerRounded tracking-[0.13em]"
+          data-text="Maxxit AI"
         >
-          Smart Disperse
+          Maxxit AI
         </p>
       </div>
 
       <div className="flex justify-between gap-1 items-center w-[85%] mx-auto my-4 sm:my-6 bw:my-8 z-[1000]">
         <p className="text-[#ffffff] text-[6px] 3xs:text-[8px] md:text-xs bw:text-sm xl:text-base">
-          Copyright @ 2024 Smart - Disperse | All rights reserved
+          Copyright @ 2025 Maxxit | All rights reserved
         </p>
         <div className="flex items-center justify-center gap-2 xs:gap-3 md:gap-4 bw:gap-5">
-          <Link href="https://smart-disperse.gitbook.io/smart-disperse" target="_blank">
-            <IoDocument
-              className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#4cc3fe] cursor-pointer transition-colors"
-              title="Docs"
-            />
-          </Link>
+          <IoDocument
+            className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#4cc3fe] cursor-pointer transition-colors"
+            title="Docs"
+          />
           <FaTelegramPlane
             className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#24A1DE] cursor-pointer transition-colors"
             title="Telegram"

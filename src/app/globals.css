@@ -184,6 +184,15 @@ body {
 .gradient-3 {
   background: linear-gradient(
       318.89deg,
+      #fff099 12.35%,
+      rgba(255, 240, 153, 0) 32.35%
+    ),
+    linear-gradient(133.75deg, #fff099 13.61%, rgba(255, 240, 153, 0) 33.42%);
+}
+
+.gradient-4 {
+  background: linear-gradient(
+      318.89deg,
       #68e099 12.35%,
       rgba(104, 224, 153, 0) 32.35%
     ),
