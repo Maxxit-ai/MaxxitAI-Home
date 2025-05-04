@@ -47,7 +47,7 @@ export default function Home() {
     <div className="">
       <Navbar />
       <HeroSection />
-      {/* <TopTweetsCarousel /> */}
+      <TopTweetsCarousel />
       <About />
       <Usecase />
       <Walkthrough />
