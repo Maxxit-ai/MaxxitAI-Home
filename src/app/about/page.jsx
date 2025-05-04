@@ -200,7 +200,7 @@ const AboutPage = () => {
                 Get access to reliable, backtested signals from verified
                 influencers, delivered directly to your Telegram.
               </p>
-              <div className="flex items-center mt-4">
+              {/* <div className="flex items-center mt-4">
                 <span className="text-blue-400 font-medium group-hover:text-blue-300 transition-colors duration-300">
                   Learn more
                 </span>
@@ -208,7 +208,7 @@ const AboutPage = () => {
                   size={16}
                   className="ml-2 text-blue-400 group-hover:ml-3 group-hover:text-blue-300 transition-all duration-300"
                 />
-              </div>
+              </div> */}
             </motion.div>
 
             <motion.div
@@ -230,7 +230,7 @@ const AboutPage = () => {
                 Build credibility with transparent performance metrics and earn
                 revenue based on the value you deliver.
               </p>
-              <div className="flex items-center mt-4">
+              {/* <div className="flex items-center mt-4">
                 <span className="text-blue-400 font-medium group-hover:text-blue-300 transition-colors duration-300">
                   Learn more
                 </span>
@@ -238,7 +238,7 @@ const AboutPage = () => {
                   size={16}
                   className="ml-2 text-blue-400 group-hover:ml-3 group-hover:text-blue-300 transition-all duration-300"
                 />
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </motion.section>

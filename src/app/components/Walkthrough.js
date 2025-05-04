@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
+import maxxitIcon from "../../../public/img/maxxit_icon.svg";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import route from "@/app/assets/images/walkthrough svgs/walkthroughRoute.svg";
 import mobileroute from "@/app/assets/images/walkthrough svgs/mobileRoute.svg";
@@ -131,12 +132,22 @@ const Walkthrough = () => {
         </h2>
         <div className="relative w-[300px] sm:w-[600px] bw:w-[890px] 1300:w-[1300px] 2xl:w-[1530px] h-[800px] ml-[-40px] bw:mx-auto overflow-hidden">
           {/* logo and route */}
-          <div className="absolute top-[calc(0%)] left-[calc(50%-35px)] bw:top-[10%] bw:left-0 1300:top-[10%] 1300:left-[10%] z-20">
-            <Image
-              src={iconlogo}
-              alt="logo"
-              className="w-[70px] h-[70px] 1300:w-[100px] 1300:h-[100px]"
-            ></Image>
+          <div className="absolute top-[calc(1%)] left-[calc(50%-29px)] bw:top-[13%] bw:left-[7px] 1300:top-[13%] 1300:left-[11%] z-20">
+            <div
+              className="rounded-full p-1"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(175, 133, 227, 1), rgba(111, 242, 242, 1), rgba(104, 224, 153, 1))",
+              }}
+            >
+              <div className="rounded-full bg-white p-0.5">
+                <Image
+                  src={maxxitIcon}
+                  alt="logo"
+                  className="w-[50px] h-[50px] 1300:w-[80px] 1300:h-[80px] rounded-full"
+                ></Image>
+              </div>
+            </div>
           </div>
           <div className="hidden bw:flex absolute left-[60px] top-[calc(10%+55px)] 1300:top-[calc(10%+80px)] 1300:left-[calc(10%+88px)] w-[800px] 1300:w-[950px] 2xl:w-[1130px] h-max z-10">
             <Image src={route} alt="route" className="w-full h-auto"></Image>

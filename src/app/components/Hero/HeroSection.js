@@ -90,7 +90,7 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className="hero-buttons flex items-center justify-center gap-3 xs:gap-5 bw:gap-7 mx-auto my-8 relative">
+            {/* <div className="hero-buttons flex items-center justify-center gap-3 xs:gap-5 bw:gap-7 mx-auto my-8 relative">
               <Link
                 href="https://app.maxxit.ai/"
                 target="_blank"
@@ -112,7 +112,7 @@ const HeroSection = () => {
                   </span>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
 
-import iconlogo from "../../assets/images/herosection svg/iconlogo.svg";
+// import iconlogo from "../../assets/images/herosection svg/iconlogo.svg";
+import maxxitIcon from "../../assets/images/navbar/maxxit_logo.svg";
 import icon1 from "../../assets/images/herosection svg/icon1.svg";
 import icon2 from "../../assets/images/herosection svg/icon2.svg";
 import icon3 from "../../assets/images/herosection svg/icon3.svg";
@@ -77,8 +78,37 @@ const ConnectorImage = () => {
         <Image src={getIcon(3, icon3, icon3_2)} alt="icon5" />
       </div>
 
-      <div className="absolute top-[47%] left-[47%] w-[45px] 2xs:w-[50px] sm:w-[60px] md:w-[70px] bw:w-[80px] lg:w-[90px] h-auto">
-        <Image src={iconlogo} alt=""></Image>
+      {/* inner container holds the actual bg and the image */}
+      {/* <div
+        className="absolute top-[47%] left-[47%] w-[45px] 2xs:w-[50px] sm:w-[60px] md:w-[70px] bw:w-[80px] lg:w-[90px] rounded-full p-1"
+        style={{
+          background:
+            "linear-gradient(to right, rgba(175, 133, 227, 1), rgba(111, 242, 242, 1), rgba(104, 224, 153, 1))",
+        }}
+      >
+        <div className="rounded-full p-0.5">
+          <Image
+            src={maxxitIcon}
+            alt=""
+            className="rounded-full w-full h-auto"
+          ></Image>
+        </div>
+      </div> */}
+
+      <div
+        className="border-[3px] border-violet-300 border-solid absolute top-[47%] left-[47%] w-[45px] 2xs:w-[50px] sm:w-[60px] md:w-[70px] bw:w-[80px] lg:w-[90px] rounded-full p-1"
+        // style={{
+        //   background:
+        //     "linear-gradient(to right, rgba(175, 133, 227, 0.5), rgba(111, 242, 242, 0.8), rgba(104, 224, 153, 0.8))",
+        // }}
+      >
+        <div className="rounded-full p-0.5">
+          <Image
+            src={maxxitIcon}
+            alt=""
+            className="rounded-full w-full h-auto"
+          ></Image>
+        </div>
       </div>
 
       <div

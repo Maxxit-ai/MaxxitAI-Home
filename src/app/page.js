@@ -48,7 +48,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <TopTweetsCarousel />
-      <About />
+      {/* <About /> */}
       <Usecase />
       <Walkthrough />
       <GetStarted />

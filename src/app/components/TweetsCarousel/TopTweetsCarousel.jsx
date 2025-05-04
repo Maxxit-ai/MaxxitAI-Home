@@ -119,7 +119,7 @@ export default function TopTweetsCarousel() {
   }
 
   return (
-    <div className="w-full overflow-hidden bg-[#000612] py-16">
+    <div className="w-full overflow-hidden bg-[#000612] py-16 mt-[7rem]">
       <div className="container mx-auto px-4 mb-6 flex flex-col gap-[0.5rem] items-center justify-center">
         <h2 className="text-[20px] 4xs:text-[30px] md:text-[40px] bw:text-[50px] font-medium tracking-normal text-center bg-gradient-to-r from-[#999999] via-white to-[#999999] bg-clip-text text-transparent">Top Weekly Signal Providers</h2>
         <p className="text-white/60 text-lg mt-[4px] my-6 text-[9px] xs:text-xs sm:text-sm bw:text-base w-[70%] xl:w-full mx-auto font-light tracking-wide text-center">Latest insights from leading crypto influencers</p>
