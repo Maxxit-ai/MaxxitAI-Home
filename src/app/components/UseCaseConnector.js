@@ -60,67 +60,84 @@ const UseCaseConnector = () => {
       <div className="absolute top-[calc(3%+20px)] left-[calc(45%+20px)] xl:left-[calc(50%+20px)] w-[380px] lg:w-[440px] xl:w-[480px] h-[180px] lg:h-[220px] xl:h-[240px] rounded-3xl bg-border-gradient1"></div>
       <div className="absolute top-[calc(3%+21px)] left-[calc(45%+21px)] xl:left-[calc(50%+21px)] w-[378px] lg:w-[438px] xl:w-[478px] h-[178px] lg:h-[218px] xl:h-[238px] rounded-3xl bg-[#050e21] flex flex-col justify-between py-5 px-7">
         <div className="flex items-center relative gap-5">
-          <Image src={prize} alt="" className="w-[40px] lg:w-[60px] h-[40px] lg:h-[60px] xl:w-[70px] xl:h-[70px]"></Image>
+          <Image
+            src={prize}
+            alt=""
+            className="w-[40px] lg:w-[60px] h-[40px] lg:h-[60px] xl:w-[70px] xl:h-[70px]"
+          ></Image>
           <div className="flex flex-col gap-2">
             <h1 className="text-lg lg:text-xl xl:text-2xl font-medium tracking-wider">
-              Dispersing Prize
+              Subscribe to Proven Signal Providers
             </h1>
             <div className="w-[100px] h-[1.5px] bg-[#AF85E3]"></div>
           </div>
         </div>
-        <p className="font-normal text-xs xl:text-sm tracking-wider">
-          SmartDisperse distributes prizes to multiple addresses in preferred
-          tokens, swapping if necessary, saving both time and fees.
+        <p className="font-normal text-xs xl:text-sm tracking-wider pb-4">
+          Follow top-performing X accounts whose strategies are converted into
+          real, actionable signals — not just opinions or sentiment. Each
+          account is ranked by backtested performance and on-chain proof.
         </p>
-        <div className="bg-gradient-to-br from-[#4F4F4F] via-[#AF85E3] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
+        {/* <div className="bg-gradient-to-br from-[#4F4F4F] via-[#AF85E3] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
           <button className="bg-[#050e21] font-light text-xs xl:text-sm flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">
             Start Now <FaArrowRightLong className="text-xs mt-[1.5px]" />
           </button>
-        </div>
+        </div> */}
       </div>
       {/* side div2 */}
       <div className="absolute top-[calc(50%-140px)] left-[49%] xl:left-[55%] w-[420px] lg:w-[480px] xl:w-[520px] h-[220px] lg:h-[260px] xl:h-[280px] rounded-2xl bg-[#050E21]"></div>
       <div className="absolute top-[calc(50%-120px)] left-[calc(49%+20px)] xl:left-[calc(55%+20px)] w-[380px] lg:w-[440px] xl:w-[480px] h-[180px] lg:h-[220px] xl:h-[240px] rounded-3xl bg-border-gradient2"></div>
       <div className="absolute top-[calc(50%-119px)] left-[calc(49%+21px)] xl:left-[calc(55%+21px)] w-[378px] lg:w-[438px] xl:w-[478px] h-[178px] lg:h-[218px] xl:h-[238px] rounded-3xl bg-[#050e21] flex flex-col justify-between py-5 px-7">
         <div className="flex items-center relative gap-5">
-          <Image src={send} alt="" className="w-[40px] lg:w-[60px] h-[40px] lg:h-[60px] xl:w-[70px] xl:h-[70px]"></Image>
+          <Image
+            src={send}
+            alt=""
+            className="w-[40px] lg:w-[60px] h-[40px] lg:h-[60px] xl:w-[70px] xl:h-[70px]"
+          ></Image>
           <div className="flex flex-col gap-2">
-            <h1 className="text-lg lg:text-xl xl:text-2xl font-medium tracking-wider">Sending Gas</h1>
+            <h1 className="text-lg lg:text-xl xl:text-2xl font-medium tracking-wider">
+              Get Clean, Actionable Signals on Telegram
+            </h1>
             <div className="w-[100px] h-[1.5px] bg-[#6FF2F2]"></div>
           </div>
         </div>
-        <p className="font-normal text-xs xl:text-sm tracking-wider">
-          If an address lacks gas for ERC-20 tokens, SmartDisperse ensures gas
-          availability from another chain, enabling smooth transactions.
+        <p className="font-normal text-xs xl:text-sm tracking-wider pb-4">
+          Once subscribed, receive structured, market-tested signals right in
+          Telegram. No noise, no clutter — just high-quality signals derived
+          from the logic of traders you trust.
         </p>
-        <div className="bg-gradient-to-br from-[#4F4F4F] via-[#6FF2F2] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
+        {/* <div className="bg-gradient-to-br from-[#4F4F4F] via-[#6FF2F2] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
           <button className="bg-[#050e21] font-light text-xs xl:text-sm flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">
             Start Now <FaArrowRightLong className="text-xs mt-[1.5px]" />
           </button>
-        </div>
+        </div> */}
       </div>
       {/* side div3 */}
       <div className="absolute top-[calc(97%-280px)] left-[45%] xl:left-[50%] w-[420px] lg:w-[480px] xl:w-[520px] h-[220px] lg:h-[260px] xl:h-[280px] rounded-2xl bg-[#050E21]"></div>
       <div className="absolute top-[calc(97%-260px)] left-[calc(45%+20px)] xl:left-[calc(50%+20px)] w-[380px] lg:w-[440px] xl:w-[480px] h-[180px] lg:h-[220px] xl:h-[240px] rounded-3xl bg-border-gradient3"></div>
       <div className="absolute top-[calc(97%-259px)] left-[calc(45%+21px)] xl:left-[calc(50%+21px)] w-[378px] lg:w-[438px] xl:w-[478px] h-[178px] lg:h-[218px] xl:h-[238px] rounded-3xl bg-[#050e21] flex flex-col justify-between py-5 px-7">
         <div className="flex items-center relative gap-5">
-          <Image src={wallet} alt="" className="w-[40px] lg:w-[60px] h-[40px] lg:h-[60px] xl:w-[70px] xl:h-[70px]"></Image>
+          <Image
+            src={wallet}
+            alt=""
+            className="w-[40px] lg:w-[60px] h-[40px] lg:h-[60px] xl:w-[70px] xl:h-[70px]"
+          ></Image>
           <div className="flex flex-col gap-2">
             <h1 className="text-lg lg:text-xl xl:text-2xl font-medium tracking-wider">
-              Multi-Wallet Transfers
+              Built for Trust, Driven by Performance
             </h1>
             <div className="w-[100px] h-[1.5px] bg-[#68E099]"></div>
           </div>
         </div>
-        <p className="font-normal text-xs xl:text-sm tracking-wider">
-          Send funds to multiple wallets at once, streamlining transactions and
-          efficiently catering to diverse use cases.
+        <p className="font-normal text-xs xl:text-sm tracking-wider pb-4">
+          All signals are reasonably backtested, benchmarked, and stored
+          immutably on-chain. Creators earn up to 100% of subscription revenue
+          based on actual results — aligning trust and incentives.
         </p>
-        <div className="bg-gradient-to-br from-[#4F4F4F] via-[#68E099] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
+        {/* <div className="bg-gradient-to-br from-[#4F4F4F] via-[#68E099] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
           <button className="bg-[#050e21] font-light text-xs xl:text-sm flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">
             Start Now <FaArrowRightLong className="text-xs mt-[1.5px]" />
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

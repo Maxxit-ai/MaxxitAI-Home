@@ -2,6 +2,8 @@ import "./globals.css";
 import Script from "next/script";
 import { League_Spartan } from "next/font/google";
 import localFonts from "next/font/local";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Maxxit AI",
@@ -42,36 +44,9 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        {/* 
-        <Script id="googleanalytics"
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-          strategy="afterInteractive"
-        />
-
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-              page_path: window.location.pathname,
-            });
-          `}
-        </Script> */}
       </head>
 
       <body className={`${leagueSpartan.variable} ${napzerRounded.variable}`}>
-        {/* Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-55NM4QMF"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
-        {/* End Google Tag Manager (noscript) */}
-
         {children}
       </body>
     </html>
