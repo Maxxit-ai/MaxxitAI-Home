@@ -76,7 +76,7 @@ export default function OnboardingCarousel() {
   ];
 
   return (
-    <div className="w-full overflow-hidden bg-[#020617]">
+    <div className="w-full overflow-hidden bg-[#020617] border-[1.5px] rounded-lg border-blue-600/30">
       {/* <div className="container mx-auto px-4 mb-8 flex flex-col gap-[0.5rem] items-center justify-center">
         <h2 className="text-[20px] 4xs:text-[30px] md:text-[40px] bw:text-[50px] font-medium tracking-normal text-center bg-gradient-to-r from-[#999999] via-white to-[#999999] bg-clip-text text-transparent">How Maxxit Works</h2>
         <p className="text-white/60 text-lg mt-[4px] my-6 text-[9px] xs:text-xs sm:text-sm bw:text-base w-[70%] xl:w-full mx-auto font-light tracking-wide text-center">Your guide to verified crypto signals in under a minute</p>

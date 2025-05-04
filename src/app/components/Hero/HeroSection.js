@@ -48,7 +48,7 @@ const HeroSection = () => {
               {/* </div> */}
             </div>
 
-            <div className="flex items-center justify-center gap-3 xs:gap-5 bw:gap-7 mx-auto my-8 z-[800] relative">
+            <div className="flex items-center justify-center gap-3 xs:gap-5 bw:gap-7 mx-auto my-8 relative">
               <Link
                 href="https://cross-chain.smartdisperse.xyz/cross-chain"
                 target="_blank"

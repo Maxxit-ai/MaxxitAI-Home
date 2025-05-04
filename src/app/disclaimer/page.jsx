@@ -65,7 +65,7 @@ const TermsAndConditions = () => {
       >
         <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center px-4 py-12">
           <StarGrid />
-          <div className="relative p-10">
+          <div className="relative">
             <div className="relative">
               <div className="mb-16 flex flex-col items-center text-center">
                 <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-blue-500/10 px-4 py-2 backdrop-blur-sm">

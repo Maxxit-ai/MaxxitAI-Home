@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
+import Link from "next/link";
 import Footer from "../components/Footer";
 import OnboardingCarousel from "../components/OnboardingCarousel";
 import Features from "../components/Features/Features";
@@ -149,7 +150,7 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <motion.div
               variants={itemVariants}
-              className="bg-[#040A20] border border-blue-900/30 rounded-2xl p-6 shadow-lg hover:shadow-blue-900/10 transition-all duration-300 hover:-translate-y-1"
+              className="bg-[#040A20] border border-blue-600/30 rounded-2xl p-6 shadow-lg hover:shadow-blue-600/10 transition-all duration-300 hover:-translate-y-1"
             >
               <div className="flex flex-col sm:flex-row sm:items-center mb-4">
                 <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-3 sm:mb-0 sm:mr-4">
@@ -171,7 +172,7 @@ const AboutPage = () => {
 
             <motion.div
               variants={itemVariants}
-              className="bg-[#040A20] border border-blue-900/30 rounded-2xl p-6 shadow-lg hover:shadow-blue-900/10 transition-all duration-300 hover:-translate-y-1"
+              className="bg-[#040A20] border border-blue-600/30 rounded-2xl p-6 shadow-lg hover:shadow-blue-600/10 transition-all duration-300 hover:-translate-y-1"
             >
               <div className="flex flex-col sm:flex-row sm:items-center mb-4">
                 <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-3 sm:mb-0 sm:mr-4">
@@ -211,9 +212,10 @@ const AboutPage = () => {
               <h2 className="text-[20px] 4xs:text-[30px] md:text-[40px] bw:text-[50px] font-medium tracking-normal text-center bg-gradient-to-r from-[#999999] via-white to-[#999999] bg-clip-text text-transparent">
                 Discover Reliable Signals
               </h2>
-            <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full mb-3 mx-auto"></div>
+              <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full mb-3 mx-auto"></div>
               <p className="max-w-2xl mx-auto text-gray-300 text-lg">
-                Access verified crypto signals and make informed trading decisions
+                Access verified crypto signals and make informed trading
+                decisions
               </p>
             </div>
             <OnboardingCarousel />
@@ -222,7 +224,7 @@ const AboutPage = () => {
           {/* Key Guidelines */}
           <motion.div
             variants={itemVariants}
-            className="bg-gradient-to-b from-[#050A25] to-[#030819] border border-blue-900/30 rounded-2xl p-6 sm:p-8 shadow-xl mt-16"
+            className="bg-gradient-to-b from-[#050A25] to-[#030819] border border-blue-600/30 rounded-2xl p-6 sm:p-8 shadow-xl mt-16"
           >
             <h3 className="text-2xl font-bold text-white mb-6">
               Key Guidelines for Users
@@ -313,12 +315,15 @@ const AboutPage = () => {
           </motion.div>
 
           {/* Why Join Maxxit */}
-          <motion.div variants={itemVariants} className="bg-gradient-to-b from-[#050A25] to-[#030819] border border-blue-900/30 rounded-2xl p-6 sm:p-8 shadow-xl my-16">
+          <motion.div
+            variants={itemVariants}
+            className="bg-gradient-to-b from-[#050A25] to-[#030819] border border-blue-600/30 rounded-2xl p-6 sm:p-8 shadow-xl my-16"
+          >
             <h3 className="text-2xl font-bold text-white mb-8">
               Why Join Maxxit?
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-[#040A20]/80 p-6 rounded-2xl border border-blue-900/30 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 hover:-translate-y-1">
+              <div className="bg-[#040A20]/80 p-6 rounded-2xl border border-blue-600/30 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 hover:-translate-y-1">
                 <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
                   <Star size={24} className="text-blue-400" />
                 </div>
@@ -331,7 +336,7 @@ const AboutPage = () => {
                 </p>
               </div>
 
-              <div className="bg-[#040A20]/80 p-6 rounded-2xl border border-blue-900/30 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 hover:-translate-y-1">
+              <div className="bg-[#040A20]/80 p-6 rounded-2xl border border-blue-600/30 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 hover:-translate-y-1">
                 <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
                   <Shield size={24} className="text-blue-400" />
                 </div>
@@ -344,7 +349,7 @@ const AboutPage = () => {
                 </p>
               </div>
 
-              <div className="bg-[#040A20]/80 p-6 rounded-2xl border border-blue-900/30 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 hover:-translate-y-1">
+              <div className="bg-[#040A20]/80 p-6 rounded-2xl border border-blue-600/30 hover:shadow-lg hover:shadow-blue-500/5 transition-all duration-300 hover:-translate-y-1">
                 <div className="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
                   <Zap size={24} className="text-blue-400" />
                 </div>
@@ -360,20 +365,23 @@ const AboutPage = () => {
           </motion.div>
 
           {/* Onboarding Process */}
-          <motion.div variants={itemVariants} className="bg-gradient-to-b from-[#050A25] to-[#030819] border border-blue-900/30 rounded-2xl p-6 sm:p-8 shadow-xl my-16">
+          <motion.div
+            variants={itemVariants}
+            className="bg-gradient-to-b from-[#050A25] to-[#030819] border border-blue-600/30 rounded-2xl p-6 sm:p-8 shadow-xl my-16"
+          >
             <h3 className="text-2xl font-bold text-white mb-8">
               Influencer Onboarding Process
             </h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <div className="flex items-center space-x-4 bg-[#040A20]/60 p-5 rounded-xl border border-solid border-blue-600/90">
+              <div className="flex items-center space-x-4 bg-[#040A20]/60 p-5 rounded-xl border border-solid border-blue-600/60">
                 <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
                   <span className="font-bold text-blue-400">1</span>
                 </div>
                 <p className="text-gray-200">Connect your X account</p>
               </div>
 
-              <div className="flex items-center space-x-4 bg-[#040A20]/60 p-5 rounded-xl border border-blue-600/90">
+              <div className="flex items-center space-x-4 bg-[#040A20]/60 p-5 rounded-xl border border-blue-600/60">
                 <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
                   <span className="font-bold text-blue-400">2</span>
                 </div>
@@ -382,7 +390,7 @@ const AboutPage = () => {
                 </p>
               </div>
 
-              <div className="flex items-center space-x-4 bg-[#040A20]/60 p-5 rounded-xl border border-blue-800/90">
+              <div className="flex items-center space-x-4 bg-[#040A20]/60 p-5 rounded-xl border border-blue-600/60">
                 <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
                   <span className="font-bold text-blue-400">3</span>
                 </div>
@@ -391,7 +399,7 @@ const AboutPage = () => {
                 </p>
               </div>
 
-              <div className="flex items-center space-x-4 bg-[#040A20]/60 p-5 rounded-xl border border-blue-060/90">
+              <div className="flex items-center space-x-4 bg-[#040A20]/60 p-5 rounded-xl border border-blue-600/60">
                 <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
                   <span className="font-bold text-blue-400">4</span>
                 </div>
@@ -405,7 +413,7 @@ const AboutPage = () => {
           {/* Key Guidelines */}
           <motion.div
             variants={itemVariants}
-            className="bg-gradient-to-b from-[#050A25] to-[#030819] border border-blue-900/30 rounded-2xl p-6 sm:p-8 shadow-xl"
+            className="bg-gradient-to-b from-[#050A25] to-[#030819] border border-blue-600/30 rounded-2xl p-6 sm:p-8 shadow-xl"
           >
             <h3 className="text-2xl font-bold text-white mb-6">
               Key Guidelines for Influencers
@@ -499,19 +507,19 @@ const AboutPage = () => {
                   trading experience.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <a
-                    href="https://app.maxxit.ai"
-                    target="_blank"
-                    className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg transition-colors"
-                  >
-                    Get Started <ChevronRight size={18} className="ml-1" />
-                  </a>
-                  <a
-                    href="/"
-                    className="inline-flex items-center px-6 py-3 bg-transparent hover:bg-blue-900/30 text-blue-400 border border-blue-500/40 font-medium rounded-lg transition-colors"
-                  >
-                    Learn More
-                  </a>
+                <Link
+      href="https://app.maxxit.ai"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg transition-colors">
+      Get Started <ChevronRight size={18} className="ml-1" />
+    </Link>
+    <Link
+      href="/"
+      className="inline-flex items-center px-6 py-3 bg-transparent hover:bg-blue-600/30 text-blue-400 border border-blue-500/40 font-medium rounded-lg transition-colors"
+    >
+      Learn More
+    </Link>
                 </div>
               </div>
 
@@ -519,11 +527,15 @@ const AboutPage = () => {
                 <div className="absolute inset-0 rounded-full border-2 border-dashed border-blue-500/30 animate-spin-slow"></div>
                 <div className="absolute inset-4 rounded-full border border-blue-500/50"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <img
-                    src="/img/maxxit_logo.svg"
-                    alt="Maxxit"
-                    className="h-20 w-20 md:h-28 md:w-28"
-                  />
+                  <div className="relative h-20 w-20 md:h-28 md:w-28">
+                    <Image
+                      src="/img/maxxit_logo.svg"
+                      alt="Maxxit"
+                      fill
+                      sizes="(min-width: 768px) 112px, 80px"
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -536,7 +548,7 @@ const AboutPage = () => {
         <Features />
         <Synapse />
       </div>
-      
+
       <Footer />
     </>
   );
