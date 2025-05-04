@@ -76,7 +76,7 @@ export default function OnboardingCarousel() {
   ];
 
   return (
-    <div className="w-full overflow-hidden bg-[#020617] border-[1.5px] rounded-lg border-blue-600/30">
+    <div className="w-full overflow-hidden bg-[#000612] border-[1.5px] rounded-lg border-blue-600/30">
       {/* <div className="container mx-auto px-4 mb-8 flex flex-col gap-[0.5rem] items-center justify-center">
         <h2 className="text-[20px] 4xs:text-[30px] md:text-[40px] bw:text-[50px] font-medium tracking-normal text-center bg-gradient-to-r from-[#999999] via-white to-[#999999] bg-clip-text text-transparent">How Maxxit Works</h2>
         <p className="text-white/60 text-lg mt-[4px] my-6 text-[9px] xs:text-xs sm:text-sm bw:text-base w-[70%] xl:w-full mx-auto font-light tracking-wide text-center">Your guide to verified crypto signals in under a minute</p>
@@ -107,7 +107,7 @@ export default function OnboardingCarousel() {
         >
           {slides.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <div className="flex flex-col items-center px-4 sm:px-8 py-12 sm:py-16 bg-gradient-to-br from-[#0a101f] to-[#020617] rounded-xl border border-[#1a2035] shadow-lg overflow-hidden">
+              <div className="flex flex-col items-center px-4 sm:px-8 py-12 sm:py-16 bg-gradient-to-br from-[#0a101f] to-[#000612] rounded-xl border border-[#1a2035] shadow-lg overflow-hidden">
                 <div className="text-center mb-10">
                   <div className="relative w-20 h-20 mx-auto mb-6 flex items-center justify-center bg-gradient-to-br from-[#1a2035] to-[#0a101f] rounded-full border border-[#1a2035]/50 shadow-lg">
                     <span className="text-4xl">{slide.icon}</span>

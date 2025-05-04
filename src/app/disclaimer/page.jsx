@@ -28,6 +28,56 @@ import Footer from "../components/Footer";
 import img from "../../../public/img/maxxit_black_bg.png";
 import Link from "next/link";
 
+// Decorative background element component
+const BackgroundBlob = ({ className, color, size, delay, duration }) => {
+  const blobRef = useRef(null);
+
+  useEffect(() => {
+    if (blobRef.current) {
+      // Random rotation
+      const rotation = Math.random() * 360;
+
+      // Animation with GSAP
+      gsap.set(blobRef.current, {
+        rotation: rotation,
+        scale: 0.8,
+        opacity: 0,
+      });
+
+      gsap.to(blobRef.current, {
+        opacity: 1,
+        scale: 1,
+        duration: duration || 1.5,
+        delay: delay || 0,
+        ease: "power2.inOut",
+      });
+
+      // Gentle floating animation
+      gsap.to(blobRef.current, {
+        y: "20px",
+        rotation: rotation + 5,
+        duration: 8 + Math.random() * 4,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+    }
+  }, [delay, duration]);
+
+  return (
+    <div
+      ref={blobRef}
+      className={`absolute rounded-full blur-3xl opacity-0 ${className}`}
+      style={{
+        width: size || "400px",
+        height: size || "400px",
+        background: color || "rgba(118, 202, 228, 0.03)",
+        willChange: "transform, opacity",
+      }}
+    />
+  );
+};
+
 const TermsAndConditions = () => {
   const container = useRef(null);
   const sectionRefs = useRef([]);
@@ -118,8 +168,53 @@ const TermsAndConditions = () => {
         className="min-h-screen pb-20 text-center text-[#76CAE4] overflow-hidden"
         ref={container}
       >
-        <div className="relative mx-auto w-full max-w-6xl px-4 py-12">
-          <StarGrid />
+        {/* Background decorative elements */}
+        <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+          {/* Top left blob */}
+          <BackgroundBlob
+            className="left-[-100px] top-[10%]"
+            color="rgba(175, 133, 227, 0.04)"
+            size="500px"
+            delay={0.2}
+          />
+
+          {/* Top right blob */}
+          <BackgroundBlob
+            className="right-[-120px] top-[5%]"
+            color="rgba(111, 242, 242, 0.04)"
+            size="600px"
+            delay={0.5}
+          />
+
+          {/* Middle left blob */}
+          <BackgroundBlob
+            className="left-[10%] top-[40%]"
+            color="rgba(104, 224, 153, 0.03)"
+            size="400px"
+            delay={0.8}
+            duration={2}
+          />
+
+          {/* Bottom right blob */}
+          <BackgroundBlob
+            className="right-[5%] bottom-[15%]"
+            color="rgba(175, 133, 227, 0.04)"
+            size="450px"
+            delay={1.2}
+          />
+
+          {/* Bottom center blob */}
+          <BackgroundBlob
+            className="left-[40%] bottom-[5%]"
+            color="rgba(111, 242, 242, 0.03)"
+            size="550px"
+            delay={1.5}
+            duration={2.2}
+          />
+        </div>
+
+        <div className="relative mx-auto w-full max-w-6xl px-4 py-12 z-10">
+          {/* <StarGrid /> */}
 
           {/* Hero section with enhanced styling */}
           <div className="relative z-10">
@@ -139,7 +234,7 @@ const TermsAndConditions = () => {
               </h1>
 
               <div className="max-w-3xl mx-auto pt-6">
-                <p className="terms__subtitle  mb-4 text-lg md:text-xl text-slate-200/90 opacity-0">
+                <p className="terms__subtitle mb-4 text-lg md:text-xl text-slate-200/90 opacity-0">
                   Welcome to the Maxxit Platform, developed and operated by the
                   Maxxit team ("we," "us," or "our"). By accessing or using the
                   Platform or engaging with our tools, analyses, or services
@@ -152,14 +247,14 @@ const TermsAndConditions = () => {
                   tools, the Impact Factor metric, and the Heartbeat parameter.
                 </p>
 
-                <div className="mt-8 flex items-center justify-center gap-5">
+                {/* <div className="mt-8 flex items-center justify-center gap-5">
                   <Link href="/">
                     <button className="text-[#000612] font-semibold gradient-background rounded-xl px-6 py-3 flex items-center justify-center gap-2 group transition-all duration-300 transform hover:scale-105">
                       <span>Back to Home</span>
                       <ChevronRight className="h-4 w-4 transition-all duration-300 group-hover:translate-x-1" />
                     </button>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
 

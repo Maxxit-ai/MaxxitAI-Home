@@ -44,7 +44,7 @@ const AboutPage = () => {
   return (
     <>
       <Navbar />
-      <div className="relative overflow-hidden bg-[#020617] min-h-screen">
+      <div className="relative overflow-hidden bg-[#000612] min-h-screen">
         {/* Background elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute w-[600px] h-[600px] rounded-full bg-blue-500/5 -top-[300px] -left-[300px] blur-3xl"></div>
@@ -507,19 +507,20 @@ const AboutPage = () => {
                   trading experience.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                <Link
-      href="https://app.maxxit.ai"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg transition-colors">
-      Get Started <ChevronRight size={18} className="ml-1" />
-    </Link>
-    <Link
-      href="/"
-      className="inline-flex items-center px-6 py-3 bg-transparent hover:bg-blue-600/30 text-blue-400 border border-blue-500/40 font-medium rounded-lg transition-colors"
-    >
-      Learn More
-    </Link>
+                  <Link
+                    href="https://app.maxxit.ai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg transition-colors"
+                  >
+                    Get Started <ChevronRight size={18} className="ml-1" />
+                  </Link>
+                  <Link
+                    href="/"
+                    className="inline-flex items-center px-6 py-3 bg-transparent hover:bg-blue-600/30 text-blue-400 border border-blue-500/40 font-medium rounded-lg transition-colors"
+                  >
+                    Learn More
+                  </Link>
                 </div>
               </div>
 
@@ -544,7 +545,7 @@ const AboutPage = () => {
       </div>
 
       {/* Move Features and Synapse components outside the main container */}
-      <div className="relative z-0 bg-[#020617]">
+      <div className="relative z-0 bg-[#000612]">
         <Features />
         <Synapse />
       </div>

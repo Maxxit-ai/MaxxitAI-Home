@@ -110,7 +110,7 @@ export default function TopTweetsCarousel() {
 
   if (tweets.length === 0) {
     return (
-      <div className="w-full overflow-hidden bg-[#020617] py-8">
+      <div className="w-full overflow-hidden bg-[#000612] py-8">
         <div className="container mx-auto px-4 mb-6 flex justify-center">
           <div className="text-white/60 text-lg">No tweets available</div>
         </div>
@@ -147,7 +147,7 @@ export default function TopTweetsCarousel() {
             style={{ width: '380px' }}
           >
             <div
-              className="flex-shrink-0 w-[380px] bg-gradient-to-br from-[#0a101f] to-[#020617] rounded-xl border border-[#1a2035] shadow-lg overflow-hidden"
+              className="flex-shrink-0 w-[380px] bg-gradient-to-br from-[#0a101f] to-[#000612] rounded-xl border border-[#1a2035] shadow-lg overflow-hidden"
             >
               <div className="p-5">
                 {/* Header with influencer info */}
