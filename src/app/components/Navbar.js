@@ -165,7 +165,7 @@ const Navbar = () => {
           <Link href="/" className="flex items-end gap-2">
             <Image
               src={maxxit}
-              alt="Smart Disperse"
+              alt="logo"
               className="w-8 sm:w-14 lg:w-20"
             />
             <div className="text-2xl sm:text-6xl lg:text-7xl font-napzerRounded bg-gradient-to-b from-[#AAC9FA] to-[#E1EAF9] bg-clip-text text-transparent">
@@ -183,9 +183,9 @@ const Navbar = () => {
           >
             <div className="bg-[#000612] hover:bg-transparent hover:text-[#AAC9FA] rounded-full p-2 text-white transition-all duration-300 ease-out">
               {isMobileMenuOpen ? (
-                <CgClose className="w-5 h-5" />
+                <CgClose className="w-5 h-5 hover:text-black" />
               ) : (
-                <TbMenu2 className="w-5 h-5" />
+                <TbMenu2 className="w-5 h-5 hover:text-black" />
               )}
             </div>
           </button>
@@ -221,7 +221,7 @@ const Navbar = () => {
             aria-label="Close menu"
           >
             <div className="bg-[#000612] hover:bg-transparent hover:text-[#AAC9FA] rounded-full p-1.5 text-white transition-all duration-300 ease-out">
-              <CgClose className="w-4 h-4" />
+              <CgClose className="w-4 h-4 hover:text-black" />
             </div>
           </button>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import UseCaseConnector from "./UseCaseConnector";
-import MobileUseCaseConnector from "./MobileUseCaseConnector";
+import UseCaseConnector from "./Usecases/UseCaseConnector";
+import MobileUseCaseConnector from "./Usecases/MobileUseCaseConnector";
 
 const Usecase = () => {
   return (

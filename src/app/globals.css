@@ -2950,3 +2950,104 @@ body {
     clip-path: ellipse(50px 54px at 105.62% 50%);
   }
 }
+
+/* Adding new animation styles at the end of the file */
+
+/* Pulse slow animation for gradient elements */
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Slow spin animation for decorative borders */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
+
+.animate-reverse {
+  animation-direction: reverse;
+}
+
+/* Fade in animation for modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Glow pulse animation for hero elements */
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.hero__glow {
+  animation: glow-pulse 4s ease-in-out infinite;
+}
+
+/* Gradient border for cards and buttons */
+.border-gradient-to-r {
+  border-image: linear-gradient(to right, var(--tw-gradient-stops)) 1;
+}
+
+/* Float animation for decorative elements */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Scale pulse animation for attention-grabbing elements */
+@keyframes scale-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-scale-pulse {
+  animation: scale-pulse 3s ease-in-out infinite;
+}

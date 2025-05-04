@@ -34,7 +34,7 @@ const About = () => {
       <div className="absolute top-[100px] left-[-200PX] w-[500px] h-[500px] rounded-full bg-gradient-to-l from-[#AF85E34D] to-[#ffffff00]"></div>
       <div className="backdrop-blur-[20px] bg-gradient-to-b from-[#00061266] to-[#000612] flex flex-col items-center my-10">
         <h2 className="text-[20px] 4xs:text-[30px] md:text-[40px] bw:text-[50px] font-medium tracking-normal text-center bg-gradient-to-r from-[#999999] via-white to-[#999999] bg-clip-text text-transparent">
-          About SmartDisperse
+          About MaxxitAI
         </h2>
         <p className="my-6 text-[9px] xs:text-xs sm:text-sm bw:text-base w-[70%] xl:w-full mx-auto font-light tracking-wide text-center">
           SmartDisperse leverages Superchain Interop to enable seamless

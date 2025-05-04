@@ -92,7 +92,7 @@ const HeroSection = () => {
 
             <div className="hero-buttons flex items-center justify-center gap-3 xs:gap-5 bw:gap-7 mx-auto my-8 relative">
               <Link
-                href="https://cross-chain.smartdisperse.xyz/cross-chain"
+                href="https://app.maxxit.ai/"
                 target="_blank"
                 className="button"
               >

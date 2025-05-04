@@ -1,42 +1,24 @@
 "use client";
-import React from "react";
-import { useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import usePrefersReducedMotion from "@/hooks/usePrefersReducedMotion";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
-export default function AnimatedContent({
-  children,
-}) {
-  const container = useRef(null);
-  const prefersReducedMotion = usePrefersReducedMotion();
-  gsap.registerPlugin(useGSAP, ScrollTrigger);
-
-  useGSAP(
-    () => {
-      if (prefersReducedMotion) {
-        gsap.set(container.current, { y: 0 });
-        return;
-      }
-
-      gsap.fromTo(
-        container.current,
-        { y: 100 },
-        {
-          y: 0,
-          ease: "power2.inOut",
-          duration: 1,
-          scrollTrigger: {
-            trigger: container.current,
-            start: "top bottom-=40%",
-            toggleActions: "play pause resume reverse",
-          },
-        },
-      );
-    },
-    { scope: container },
+// This component wraps content with smooth reveal animations
+const AnimatedContent = ({ children, delay = 0, className = "" }) => {
+  return (
+    <motion.div
+      initial={{ y: 20, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{
+        duration: 0.7,
+        delay: delay,
+        ease: [0.25, 0.1, 0.25, 1.0], // Custom easing function
+      }}
+      className={className}
+    >
+      {children}
+    </motion.div>
   );
+};
 
-  return <div ref={container}>{children}</div>;
-}
+export default AnimatedContent;

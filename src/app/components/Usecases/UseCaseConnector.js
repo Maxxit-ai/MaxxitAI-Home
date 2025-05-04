@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import logo from "../assets/images/logospin.svg";
-import prize from "../assets/images/usecases svg/prize.svg";
-import send from "../assets/images/usecases svg/send.svg";
-import wallet from "../assets/images/usecases svg/wallet.svg";
+import logo from "../../assets/images/navbar/maxxit_logo.svg";
+import prize from "../../assets/images/usecases svg/prize.svg";
+import send from "..//../assets/images/usecases svg/send.svg";
+import wallet from "../../assets/images/usecases svg/wallet.svg";
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
