@@ -81,7 +81,7 @@ const Navbar = () => {
               }}
               className={`${
                 isActive("/about")
-                  ? "bg-transparent text-white"
+                  ? "bg-transparent text-black"
                   : "bg-[#000612] hover:bg-transparent hover:text-black"
               } max-[360px]:text-[8px] text-[10px] min-[500px]:text-sm sm:font-semibold flex items-center justify-center max-[360px]:rounded-[8px] rounded-[10px] lg:rounded-[14px] px-3 lg:px-4 py-[6px] sm:py-[10px] lg:py-[13px] tracking-wider hover:scale-105 hover:shadow-[0px_4px_20px_rgba(0,255,255,0.6)] transition-all duration-300 ease-out ${
                 isMobile ? "w-full" : ""
@@ -114,7 +114,7 @@ const Navbar = () => {
               }}
               className={`${
                 isActive("/disclaimer")
-                  ? "bg-transparent text-white"
+                  ? "bg-transparent text-black"
                   : "bg-[#000612] hover:bg-transparent hover:text-black"
               } max-[360px]:text-[8px] text-[10px] min-[500px]:text-sm sm:font-semibold flex items-center justify-center max-[360px]:rounded-[8px] rounded-[10px] lg:rounded-[14px] px-3 lg:px-4 py-[6px] sm:py-[10px] lg:py-[13px] tracking-wider hover:scale-105 hover:shadow-[0px_4px_20px_rgba(0,255,255,0.6)] transition-all duration-300 ease-out ${
                 isMobile ? "w-full" : ""
