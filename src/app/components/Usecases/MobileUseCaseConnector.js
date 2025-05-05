@@ -78,8 +78,8 @@ const MobileUseCaseConnector = () => {
 
       {/* circle on left side */}
       <div className="relative w-[180px] h-[180px] overflow-hidden z-50">
-        <div className="absolute top-0 left-0 w-[180px] h-[180px] rounded-full bg-[#68E09978] border border-[#DFDFDF] shadow-[inset_0px_0px_48.59px_0.91px_#FFFFFFB2] opacity-50"></div>
-        <div className="absolute top-[30px] left-[30px] w-[120px] h-[120px] rounded-full bg-[#AF85E378] border border-[#DFDFDF] shadow-[inset_0px_0px_22.03px_4.53px_#FFFFFFB2] opacity-70"></div>
+        <div className="absolute top-0 left-0 w-[180px] h-[180px] rounded-full bg-[#4185F378] border border-[#DFDFDF] shadow-[inset_0px_0px_48.59px_0.91px_#FFFFFFB2] opacity-50"></div>
+        <div className="absolute top-[30px] left-[30px] w-[120px] h-[120px] rounded-full bg-[#63A7FA78] border border-[#DFDFDF] shadow-[inset_0px_0px_22.03px_4.53px_#FFFFFFB2] opacity-70"></div>
         <div className="absolute top-[60px] left-[60px] w-[60px] h-[60px] rounded-full bg-[#8B94E2] border border-[#FFFFFF] shadow-[inset_0px_4.53px_21.85px_6.35px_#FFFFFF80] opacity-90"></div>
         <div className="absolute top-[70px] left-[70px] w-[40px] h-[40px] overflow-hidden">
           <Image src={logo} alt="" width={60} height={60}></Image>
@@ -100,7 +100,7 @@ const MobileUseCaseConnector = () => {
                 <h1 className="text-[12px] xs:text-sm sm:text-base font-medium tracking-wider">
                   Subscribe to Proven Signal Providers
                 </h1>
-                <div className="w-[80px] xs:w-[100px] h-[1.5px] bg-[#AF85E3]"></div>
+                <div className="w-[80px] xs:w-[100px] h-[1.5px] bg-[#63A7FA]"></div>
               </div>
             </div>
             <p className="font-normal text-[10px] xs:text-xs tracking-wider">
@@ -109,7 +109,7 @@ const MobileUseCaseConnector = () => {
               Each account is ranked by backtested performance and on-chain
               proof.
             </p>
-            {/* <div className="bg-gradient-to-br from-[#4F4F4F] via-[#AF85E3] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
+            {/* <div className="bg-gradient-to-br from-[#4F4F4F] via-[#63A7FA] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
               <button className="bg-[#050e21] font-light text-[8px] xs:text-xs flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">
                 Start Now{" "}
                 <FaArrowRightLong className="text-[8px] xs:text-xs mt-[1.5px]" />
@@ -163,7 +163,7 @@ const MobileUseCaseConnector = () => {
                 <h1 className="text-[12px] xs:text-sm sm:text-base font-medium tracking-wider">
                   Built for Trust, Driven by Performance
                 </h1>
-                <div className="w-[80px] xs:w-[100px] h-[1.5px] bg-[#68E099]"></div>
+                <div className="w-[80px] xs:w-[100px] h-[1.5px] bg-[#4185F3]"></div>
               </div>
             </div>
             <p className="font-normal text-[10px] xs:text-xs tracking-wider">
@@ -171,7 +171,7 @@ const MobileUseCaseConnector = () => {
               immutably on-chain. Creators earn up to 100% of subscription
               revenue based on actual results — aligning trust and incentives.
             </p>
-            {/* <div className="bg-gradient-to-br from-[#4F4F4F] via-[#68E099] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
+            {/* <div className="bg-gradient-to-br from-[#4F4F4F] via-[#4185F3] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
               <button className="bg-[#050e21] font-light text-[8px] xs:text-xs flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">
                 Start Now{" "}
                 <FaArrowRightLong className="text-[8px] xs:text-xs mt-[1.5px]" />

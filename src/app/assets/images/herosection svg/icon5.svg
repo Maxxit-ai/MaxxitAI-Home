@@ -3,10 +3,10 @@
 <circle cx="62" cy="62" r="43.5" fill="url(#paint1_radial_382_6894)"/>
 <defs>
 <linearGradient id="paint0_linear_382_6894" x1="135.303" y1="62" x2="-10.5296" y2="67.7991" gradientUnits="userSpaceOnUse">
-<stop stop-color="#AF85E3"/>
+<stop stop-color="#63A7FA"/>
 <stop offset="0.284047" stop-color="#8B94E2"/>
 <stop offset="0.636445" stop-color="#6FF2F2"/>
-<stop offset="1" stop-color="#68E099"/>
+<stop offset="1" stop-color="#4185F3"/>
 </linearGradient>
 <radialGradient id="paint1_radial_382_6894" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(76.6812 38.6187) rotate(132.33) scale(74.2871 58.8029)">
 <stop stop-color="#D7FFE7"/>

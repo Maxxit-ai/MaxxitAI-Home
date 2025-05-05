@@ -192,7 +192,7 @@ const TermsAndConditions = () => {
             color="rgba(104, 224, 153, 0.03)"
             size="400px"
             delay={0.8}
-            duration={2}
+            duration={0.6}
           />
 
           {/* Bottom right blob */}
@@ -200,7 +200,7 @@ const TermsAndConditions = () => {
             className="right-[5%] bottom-[15%]"
             color="rgba(175, 133, 227, 0.04)"
             size="450px"
-            delay={1.2}
+            delay={1}
           />
 
           {/* Bottom center blob */}
@@ -209,7 +209,7 @@ const TermsAndConditions = () => {
             color="rgba(111, 242, 242, 0.03)"
             size="550px"
             delay={1.5}
-            duration={2.2}
+            duration={0.7}
           />
         </div>
 
@@ -260,7 +260,7 @@ const TermsAndConditions = () => {
 
             {/* Styled image container */}
             {/* <div className="relative w-full max-w-5xl mx-auto mb-20 transform transition-all duration-500 hover:scale-[1.02]">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#af85e3]/20 via-[#6ff2f2]/20 to-[#68e099]/20 rounded-3xl blur-xl -z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#63A7FA]/20 via-[#6ff2f2]/20 to-[#4185F3]/20 rounded-3xl blur-xl -z-10"></div>
               <div className="rounded-3xl overflow-hidden border border-blue-500/30 shadow-lg shadow-blue-500/10">
                 <Image
                   src={img}
@@ -276,13 +276,13 @@ const TermsAndConditions = () => {
           <div className="space-y-14 mt-10">
             {/* Section 1: Eligibility and Access */}
             <div className="terms-section group relative rounded-2xl border border-blue-500/20 bg-blue-500/5 p-8 md:p-10 backdrop-blur-sm transition-all duration-500 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#af85e3]/5 via-transparent to-[#68e099]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#63A7FA]/5 via-transparent to-[#4185F3]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
 
               <div className="mb-8 flex items-center gap-4">
                 <div className="flex items-center justify-center w-14 h-14 bg-blue-500/10 rounded-full">
-                  <Users className="h-8 w-8 text-[#76CAE4] transition-all duration-500 group-hover:scale-110 group-hover:text-[#af85e3]" />
+                  <Users className="h-8 w-8 text-[#76CAE4] transition-all duration-500 group-hover:scale-110 group-hover:text-[#63A7FA]" />
                 </div>
-                <h2 className="bg-gradient-to-r from-[#76CAE4] to-[#af85e3] bg-clip-text text-transparent text-3xl font-bold transition-all duration-500">
+                <h2 className="bg-gradient-to-r from-[#76CAE4] to-[#63A7FA] bg-clip-text text-transparent text-3xl font-bold transition-all duration-500">
                   1. Eligibility and Access
                 </h2>
               </div>
@@ -327,7 +327,7 @@ const TermsAndConditions = () => {
 
             {/* Section 2: Nature of the Content */}
             <div className="terms-section group relative rounded-2xl border border-blue-500/20 bg-blue-500/5 p-8 md:p-10 backdrop-blur-sm transition-all duration-500 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#6ff2f2]/5 via-transparent to-[#af85e3]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#6ff2f2]/5 via-transparent to-[#63A7FA]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
 
               <div className="mb-8 flex items-center gap-4">
                 <div className="flex items-center justify-center w-14 h-14 bg-blue-500/10 rounded-full">
@@ -383,13 +383,13 @@ const TermsAndConditions = () => {
 
             {/* Section 3: Prohibited Conduct */}
             <div className="terms-section group relative rounded-2xl border border-blue-500/20 bg-blue-500/5 p-8 md:p-10 backdrop-blur-sm transition-all duration-500 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#68e099]/5 via-transparent to-[#6ff2f2]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#4185F3]/5 via-transparent to-[#6ff2f2]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
 
               <div className="mb-8 flex items-center gap-4">
                 <div className="flex items-center justify-center w-14 h-14 bg-blue-500/10 rounded-full">
-                  <AlertTriangle className="h-8 w-8 text-[#76CAE4] transition-all duration-500 group-hover:scale-110 group-hover:text-[#68e099]" />
+                  <AlertTriangle className="h-8 w-8 text-[#76CAE4] transition-all duration-500 group-hover:scale-110 group-hover:text-[#4185F3]" />
                 </div>
-                <h2 className="bg-gradient-to-r from-[#76CAE4] to-[#68e099] bg-clip-text text-transparent text-3xl font-bold transition-all duration-500">
+                <h2 className="bg-gradient-to-r from-[#76CAE4] to-[#4185F3] bg-clip-text text-transparent text-3xl font-bold transition-all duration-500">
                   3. Prohibited Conduct
                 </h2>
               </div>
@@ -403,7 +403,7 @@ const TermsAndConditions = () => {
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center mt-1 transition-all duration-300 group-hover/item:bg-red-500/20">
                       <XCircle className="h-5 w-5 text-red-400 group-hover/item:text-red-300 transition-colors duration-300" />
                     </div>
-                    <span className="transition-colors duration-300 group-hover/item:text-slate-200">
+                    <span className="transition-colors duration-300 group-hover/item:text-slate-200 mt-[10px]">
                       Use the Platform for any unlawful purpose or to violate
                       any laws or regulations.
                     </span>
@@ -412,7 +412,7 @@ const TermsAndConditions = () => {
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center mt-1 transition-all duration-300 group-hover/item:bg-red-500/20">
                       <XCircle className="h-5 w-5 text-red-400 group-hover/item:text-red-300 transition-colors duration-300" />
                     </div>
-                    <span className="transition-colors duration-300 group-hover/item:text-slate-200">
+                    <span className="transition-colors duration-300 group-hover/item:text-slate-200 mt-[10px]">
                       Misrepresent, distort, or misuse the analyses, metrics, or
                       insights provided by the Platform.
                     </span>
@@ -421,7 +421,7 @@ const TermsAndConditions = () => {
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center mt-1 transition-all duration-300 group-hover/item:bg-red-500/20">
                       <XCircle className="h-5 w-5 text-red-400 group-hover/item:text-red-300 transition-colors duration-300" />
                     </div>
-                    <span className="transition-colors duration-300 group-hover/item:text-slate-200">
+                    <span className="transition-colors duration-300 group-hover/item:text-slate-200 mt-[10px]">
                       Attempt to manipulate the Platform's systems, metrics, or
                       data sources.
                     </span>
@@ -430,7 +430,7 @@ const TermsAndConditions = () => {
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center mt-1 transition-all duration-300 group-hover/item:bg-red-500/20">
                       <XCircle className="h-5 w-5 text-red-400 group-hover/item:text-red-300 transition-colors duration-300" />
                     </div>
-                    <span className="transition-colors duration-300 group-hover/item:text-slate-200">
+                    <span className="transition-colors duration-300 group-hover/item:text-slate-200 mt-[10px]">
                       Upload or transmit malicious content, such as viruses,
                       intended to disrupt the Platform.
                     </span>
@@ -439,7 +439,7 @@ const TermsAndConditions = () => {
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center mt-1 transition-all duration-300 group-hover/item:bg-red-500/20">
                       <XCircle className="h-5 w-5 text-red-400 group-hover/item:text-red-300 transition-colors duration-300" />
                     </div>
-                    <span className="transition-colors duration-300 group-hover/item:text-slate-200">
+                    <span className="transition-colors duration-300 group-hover/item:text-slate-200 mt-[10px]">
                       Share false or misleading information about the Platform's
                       capabilities or results.
                     </span>
@@ -450,13 +450,13 @@ const TermsAndConditions = () => {
 
             {/* Section 4: Intellectual Property */}
             <div className="terms-section group relative rounded-2xl border border-blue-500/20 bg-blue-500/5 p-8 md:p-10 backdrop-blur-sm transition-all duration-500 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#af85e3]/5 via-transparent to-[#6ff2f2]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#63A7FA]/5 via-transparent to-[#6ff2f2]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
 
               <div className="mb-8 flex items-center gap-4">
                 <div className="flex items-center justify-center w-14 h-14 bg-blue-500/10 rounded-full">
-                  <Lock className="h-8 w-8 text-[#76CAE4] transition-all duration-500 group-hover:scale-110 group-hover:text-[#af85e3]" />
+                  <Lock className="h-8 w-8 text-[#76CAE4] transition-all duration-500 group-hover:scale-110 group-hover:text-[#63A7FA]" />
                 </div>
-                <h2 className="bg-gradient-to-r from-[#76CAE4] to-[#af85e3] bg-clip-text text-transparent text-3xl font-bold transition-all duration-500">
+                <h2 className="bg-gradient-to-r from-[#76CAE4] to-[#63A7FA] bg-clip-text text-transparent text-3xl font-bold transition-all duration-500">
                   4. Intellectual Property
                 </h2>
               </div>
@@ -491,7 +491,7 @@ const TermsAndConditions = () => {
 
             {/* Section 5: Privacy and Data Usage */}
             <div className="terms-section group relative rounded-2xl border border-blue-500/20 bg-blue-500/5 p-8 md:p-10 backdrop-blur-sm transition-all duration-500 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#6ff2f2]/5 via-transparent to-[#68e099]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#6ff2f2]/5 via-transparent to-[#4185F3]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
 
               <div className="mb-8 flex items-center gap-4">
                 <div className="flex items-center justify-center w-14 h-14 bg-blue-500/10 rounded-full">
@@ -529,13 +529,13 @@ const TermsAndConditions = () => {
 
             {/* Section 6: Disclaimer of Warranties */}
             <div className="terms-section group relative rounded-2xl border border-blue-500/20 bg-blue-500/5 p-8 md:p-10 backdrop-blur-sm transition-all duration-500 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#68e099]/5 via-transparent to-[#af85e3]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#4185F3]/5 via-transparent to-[#63A7FA]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
 
               <div className="mb-8 flex items-center gap-4">
                 <div className="flex items-center justify-center w-14 h-14 bg-blue-500/10 rounded-full">
-                  <AlertOctagon className="h-8 w-8 text-[#76CAE4] transition-all duration-500 group-hover:scale-110 group-hover:text-[#68e099]" />
+                  <AlertOctagon className="h-8 w-8 text-[#76CAE4] transition-all duration-500 group-hover:scale-110 group-hover:text-[#4185F3]" />
                 </div>
-                <h2 className="bg-gradient-to-r from-[#76CAE4] to-[#68e099] bg-clip-text text-transparent text-3xl font-bold transition-all duration-500">
+                <h2 className="bg-gradient-to-r from-[#76CAE4] to-[#4185F3] bg-clip-text text-transparent text-3xl font-bold transition-all duration-500">
                   6. Disclaimer of Warranties
                 </h2>
               </div>
@@ -569,13 +569,13 @@ const TermsAndConditions = () => {
 
             {/* Section 7: Limitation of Liability */}
             <div className="terms-section group relative rounded-2xl border border-blue-500/20 bg-blue-500/5 p-8 md:p-10 backdrop-blur-sm transition-all duration-500 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#af85e3]/5 via-transparent to-[#68e099]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#63A7FA]/5 via-transparent to-[#4185F3]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
 
               <div className="mb-8 flex items-center gap-4">
                 <div className="flex items-center justify-center w-14 h-14 bg-blue-500/10 rounded-full">
-                  <Scale className="h-8 w-8 text-[#76CAE4] transition-all duration-500 group-hover:scale-110 group-hover:text-[#af85e3]" />
+                  <Scale className="h-8 w-8 text-[#76CAE4] transition-all duration-500 group-hover:scale-110 group-hover:text-[#63A7FA]" />
                 </div>
-                <h2 className="bg-gradient-to-r from-[#76CAE4] to-[#af85e3] bg-clip-text text-transparent text-3xl font-bold transition-all duration-500">
+                <h2 className="bg-gradient-to-r from-[#76CAE4] to-[#63A7FA] bg-clip-text text-transparent text-3xl font-bold transition-all duration-500">
                   7. Limitation of Liability
                 </h2>
               </div>
@@ -593,7 +593,7 @@ const TermsAndConditions = () => {
             {/* Remaining sections with enhanced styling */}
             {/* Section 8: Modifications to the Terms */}
             <div className="terms-section group relative rounded-2xl border border-blue-500/20 bg-blue-500/5 p-8 md:p-10 backdrop-blur-sm transition-all duration-500 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#6ff2f2]/5 via-transparent to-[#af85e3]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#6ff2f2]/5 via-transparent to-[#63A7FA]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
 
               <div className="mb-8 flex items-center gap-4">
                 <div className="flex items-center justify-center w-14 h-14 bg-blue-500/10 rounded-full">
@@ -616,13 +616,13 @@ const TermsAndConditions = () => {
 
             {/* Section 9: Governing Law */}
             <div className="terms-section group relative rounded-2xl border border-blue-500/20 bg-blue-500/5 p-8 md:p-10 backdrop-blur-sm transition-all duration-500 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#68e099]/5 via-transparent to-[#6ff2f2]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#4185F3]/5 via-transparent to-[#6ff2f2]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
 
               <div className="mb-8 flex items-center gap-4">
                 <div className="flex items-center justify-center w-14 h-14 bg-blue-500/10 rounded-full">
-                  <Globe className="h-8 w-8 text-[#76CAE4] transition-all duration-500 group-hover:scale-110 group-hover:text-[#68e099]" />
+                  <Globe className="h-8 w-8 text-[#76CAE4] transition-all duration-500 group-hover:scale-110 group-hover:text-[#4185F3]" />
                 </div>
-                <h2 className="bg-gradient-to-r from-[#76CAE4] to-[#68e099] bg-clip-text text-transparent text-3xl font-bold transition-all duration-500">
+                <h2 className="bg-gradient-to-r from-[#76CAE4] to-[#4185F3] bg-clip-text text-transparent text-3xl font-bold transition-all duration-500">
                   9. Governing Law
                 </h2>
               </div>
@@ -639,13 +639,13 @@ const TermsAndConditions = () => {
 
             {/* Section 10: Contact Us */}
             <div className="terms-section group relative rounded-2xl border border-blue-500/20 bg-blue-500/5 p-8 md:p-10 backdrop-blur-sm transition-all duration-500 hover:border-blue-400/40 hover:shadow-lg hover:shadow-blue-500/10">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#af85e3]/5 via-transparent to-[#68e099]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#63A7FA]/5 via-transparent to-[#4185F3]/5 rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
 
               <div className="mb-8 flex items-center gap-4">
                 <div className="flex items-center justify-center w-14 h-14 bg-blue-500/10 rounded-full">
-                  <MessageCircle className="h-8 w-8 text-[#76CAE4] transition-all duration-500 group-hover:scale-110 group-hover:text-[#af85e3]" />
+                  <MessageCircle className="h-8 w-8 text-[#76CAE4] transition-all duration-500 group-hover:scale-110 group-hover:text-[#63A7FA]" />
                 </div>
-                <h2 className="bg-gradient-to-r from-[#76CAE4] to-[#af85e3] bg-clip-text text-transparent text-3xl font-bold transition-all duration-500">
+                <h2 className="bg-gradient-to-r from-[#76CAE4] to-[#63A7FA] bg-clip-text text-transparent text-3xl font-bold transition-all duration-500">
                   10. Contact Us
                 </h2>
               </div>
@@ -660,7 +660,7 @@ const TermsAndConditions = () => {
 
             {/* Final acceptance section with enhanced styling */}
             <div className="terms-section group relative rounded-2xl border border-blue-500/20 bg-gradient-to-b from-blue-500/5 to-blue-500/10 p-10 backdrop-blur-sm transition-all duration-500 hover:border-blue-400/40 hover:shadow-lg">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#af85e3]/10 via-[#6ff2f2]/5 to-[#68e099]/10 rounded-2xl opacity-30 transition-opacity duration-500 group-hover:opacity-50"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#63A7FA]/10 via-[#6ff2f2]/5 to-[#4185F3]/10 rounded-2xl opacity-30 transition-opacity duration-500 group-hover:opacity-50"></div>
 
               <div className="flex flex-col items-center justify-center text-center relative z-10">
                 <div className="flex transform flex-col items-center gap-6 transition-all duration-500 hover:scale-[1.02]">

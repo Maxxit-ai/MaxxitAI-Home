@@ -96,7 +96,7 @@ const ConnectorImage = () => {
       </div> */}
 
       <div
-        className="border-[3px] border-violet-300 border-solid absolute top-[47%] left-[47%] w-[45px] 2xs:w-[50px] sm:w-[60px] md:w-[70px] bw:w-[80px] lg:w-[90px] rounded-full p-1"
+        className="border-[3px] border-cyan-300 border-solid absolute top-[47%] left-[47%] w-[45px] 2xs:w-[50px] sm:w-[60px] md:w-[70px] bw:w-[80px] lg:w-[90px] rounded-full p-1"
         // style={{
         //   background:
         //     "linear-gradient(to right, rgba(175, 133, 227, 0.5), rgba(111, 242, 242, 0.8), rgba(104, 224, 153, 0.8))",

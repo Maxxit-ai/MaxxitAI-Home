@@ -35,9 +35,9 @@ const UseCaseConnector = () => {
       <div className="absolute top-[calc(87%-100px)] left-[calc(39%-4px)] lg:left-[calc(40%-4px)] xl:left-[calc(43%-4px)] border-[5px] border-r-0 border-t-0 rounded-t-none rounded-e-none w-[100px] border-transparent h-[60px] rounded-[200px] flow3curvedown"></div>
 
       {/* circle on left side */}
-      <div className="absolute top-[calc(50%-110px)] lg:top-[calc(50%-120px)] xl:top-[calc(50%-140px)] left-[calc(3%+10px)] lg:left-[3%] xl:left-[10%] w-[210px] h-[210px] lg:w-[230px] lg:h-[230px] xl:w-[280px] xl:h-[280px] rounded-full bg-[#68E09978] border border-[#DFDFDF] shadow-[inset_0px_0px_48.59px_0.91px_#FFFFFFB2] opacity-50"></div>
-      <div className="absolute top-[calc(50%-70px)] xl:top-[calc(50%-90px)] left-[calc(3%+50px)] xl:left-[calc(10%+50px)] w-[130px] h-[130px] xl:w-[180px] xl:h-[180px] rounded-full bg-[#AF85E378] border border-[#DFDFDF] shadow-[inset_0px_0px_22.03px_4.53px_#FFFFFFB2] opacity-70"></div>
-      <div className="absolute top-[calc(50%-35px)] xl:top-[calc(50%-50px)] left-[calc(3%+85px)] xl:left-[calc(10%+90px)] w-[60px] h-[60px] xl:w-[100px] xl:h-[100px] rounded-full bg-[#8B94E2] border border-[#FFFFFF] shadow-[inset_0px_4.53px_21.85px_6.35px_#FFFFFF80] opacity-90"></div>
+      <div className="absolute top-[calc(50%-110px)] lg:top-[calc(50%-120px)] xl:top-[calc(50%-140px)] left-[calc(3%+10px)] lg:left-[3%] xl:left-[10%] w-[210px] h-[210px] lg:w-[230px] lg:h-[230px] xl:w-[280px] xl:h-[280px] rounded-full bg-[#4185F378] border border-[#DFDFDF] shadow-[inset_0px_0px_48.59px_0.91px_#FFFFFFB2] opacity-50"></div>
+      <div className="absolute top-[calc(50%-70px)] xl:top-[calc(50%-90px)] left-[calc(3%+50px)] xl:left-[calc(10%+50px)] w-[130px] h-[130px] xl:w-[180px] xl:h-[180px] rounded-full bg-[#63A7FA78] border border-[#DFDFDF] shadow-[inset_0px_0px_22.03px_4.53px_#FFFFFFB2] opacity-70"></div>
+      <div className="absolute top-[calc(50%-35px)] xl:top-[calc(50%-50px)] left-[calc(3%+85px)] xl:left-[calc(10%+90px)] w-[60px] h-[60px] xl:w-[100px] xl:h-[100px] rounded-full bg-[#ffffff] border border-[#FFFFFF] shadow-[inset_0px_4.53px_21.85px_6.35px_#FFFFFF80] opacity-90"></div>
       <div className="absolute top-[calc(50%-25px)] xl:top-[calc(50%-30px)] left-[calc(3%+95px)]  xl:left-[calc(10%+110px)] w-[40px] h-[40px] xl:w-[60px] xl:h-[60px] overflow-hidden">
         <Image src={logo} alt="" className="w-full h-full"></Image>
       </div>
@@ -77,7 +77,7 @@ const UseCaseConnector = () => {
           real, actionable signals — not just opinions or sentiment. Each
           account is ranked by backtested performance and on-chain proof.
         </p>
-        {/* <div className="bg-gradient-to-br from-[#4F4F4F] via-[#AF85E3] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
+        {/* <div className="bg-gradient-to-br from-[#4F4F4F] via-[#63A7FA] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
           <button className="bg-[#050e21] font-light text-xs xl:text-sm flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">
             Start Now <FaArrowRightLong className="text-xs mt-[1.5px]" />
           </button>
@@ -133,7 +133,7 @@ const UseCaseConnector = () => {
           immutably on-chain. Creators earn up to 100% of subscription revenue
           based on actual results — aligning trust and incentives.
         </p>
-        {/* <div className="bg-gradient-to-br from-[#4F4F4F] via-[#68E099] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
+        {/* <div className="bg-gradient-to-br from-[#4F4F4F] via-[#4185F3] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
           <button className="bg-[#050e21] font-light text-xs xl:text-sm flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">
             Start Now <FaArrowRightLong className="text-xs mt-[1.5px]" />
           </button>

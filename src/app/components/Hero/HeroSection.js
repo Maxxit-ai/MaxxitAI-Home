@@ -75,8 +75,8 @@ const HeroSection = () => {
 
             <div className="hero-video-container w-full max-w-4xl mx-auto relative">
               <div className="hero__glow absolute inset-0 -z-10 bg-blue-500/30 opacity-0 blur-2xl filter" />
-              <div className="p-[3px] rounded-xl overflow-hidden relative bg-gradient-to-br from-[#af85e3] via-[#6ff2f2] to-[#68e099]">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#af85e3]/30 via-[#6ff2f2]/30 to-[#68e099]/30 opacity-50 z-0"></div>
+              <div className="p-[3px] rounded-xl overflow-hidden relative bg-gradient-to-br from-[#63A7FA] via-[#6ff2f2] to-[#4185F3]">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#63A7FA]/30 via-[#6ff2f2]/30 to-[#4185F3]/30 opacity-50 z-0"></div>
                 <div className="relative z-10 rounded-lg overflow-hidden border-2 border-[#000612]">
                   <video
                     className="rounded-lg w-full max-w-full h-auto"

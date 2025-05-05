@@ -153,7 +153,7 @@ export default function OnboardingCarousel() {
         
         .swiper-pagination-bullet-active {
           opacity: 1;
-          background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+          background: linear-gradient(90deg, #4185F3, #48CBE2);
           width: 24px;
           border-radius: 4px;
         }

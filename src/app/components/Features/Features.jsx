@@ -116,8 +116,8 @@ const Features = () => {
 
       {/* Animated gradient background */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-blue-500/5 to-purple-500/5 -top-[300px] -right-[300px] blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-purple-500/5 to-teal-500/5 -bottom-[300px] -left-[300px] blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-blue-500/5 to-cyan-500/5 -top-[300px] -right-[300px] blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-cyan-500/5 to-cyan-500/5 -bottom-[300px] -left-[300px] blur-3xl"></div>
       </div>
 
       {/* Content */}
@@ -148,13 +148,13 @@ const Features = () => {
                 {/* Content Side */}
                 <div className="col-span-1 flex flex-col justify-center gap-5 rounded-2xl p-4 transition-all duration-500 relative">
                   {/* Background glow */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-xl"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-xl"></div>
 
                   <div className="flex items-center gap-4 relative z-10">
-                    <div className="inline-flex items-center justify-center rounded-xl bg-gradient-to-br from-[#af85e3]/20 to-[#6ff2f2]/20 p-3 backdrop-blur-sm group-hover:from-[#af85e3]/30 group-hover:to-[#6ff2f2]/30 transition-all duration-500">
+                    <div className="inline-flex items-center justify-center rounded-xl bg-gradient-to-br from-[#63A7FA]/20 to-[#6ff2f2]/20 p-3 backdrop-blur-sm group-hover:from-[#63A7FA]/30 group-hover:to-[#6ff2f2]/30 transition-all duration-500">
                       <Icon className="h-8 w-8 text-blue-400 group-hover:text-blue-300 transition-colors duration-500" />
                     </div>
-                    <h3 className="bg-gradient-to-r from-[#af85e3] via-[#6ff2f2] to-[#68e099] bg-clip-text text-lg font-bold text-transparent">
+                    <h3 className="bg-gradient-to-r from-[#63A7FA] via-[#6ff2f2] to-[#4185F3] bg-clip-text text-lg font-bold text-transparent">
                       {caseStudy.data.company}
                     </h3>
                   </div>
@@ -164,11 +164,11 @@ const Features = () => {
                   {/* Learn more as an anchor with enhanced styling */}
                   <Link
                     href={caseStudy.data.path}
-                    className="group/btn relative inline-flex h-fit w-fit items-center gap-2 rounded-full border border-blue-100/20 bg-gradient-to-r from-blue-500/10 to-purple-500/10 px-6 py-3 text-blue-200 outline-none ring-blue-400 transition-all duration-500 hover:border-blue-400/40 hover:text-blue-300 hover:shadow-lg hover:shadow-blue-500/10 focus:ring-2 relative z-10"
+                    className="group/btn inline-flex h-fit w-fit items-center gap-2 rounded-full border border-blue-100/20 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 px-6 py-3 text-blue-200 outline-none ring-blue-400 transition-all duration-500 hover:border-blue-400/40 hover:text-blue-300 hover:shadow-lg hover:shadow-blue-500/10 focus:ring-2 relative z-10"
                   >
                     <span>Learn more</span>
                     <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
-                    <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 transition-opacity duration-500 group-hover/btn:opacity-20"></div>
+                    <div className="absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 transition-opacity duration-500 group-hover/btn:opacity-20"></div>
                   </Link>
                 </div>
 
@@ -180,7 +180,7 @@ const Features = () => {
                   )}
                 >
                   {/* Gradient glow effect */}
-                  <div className="absolute inset-[0.5rem] rounded-xl bg-gradient-to-r from-[#af85e3]/20 via-[#6ff2f2]/20 to-[#68e099]/20 opacity-75 blur-2xl transition-all duration-500 group-hover:opacity-100 group-hover:from-[#af85e3]/30 group-hover:via-[#6ff2f2]/30 group-hover:to-[#68e099]/30"></div>
+                  <div className="absolute inset-[0.5rem] rounded-xl bg-gradient-to-r from-[#63A7FA]/20 via-[#6ff2f2]/20 to-[#4185F3]/20 opacity-75 blur-2xl transition-all duration-500 group-hover:opacity-100 group-hover:from-[#63A7FA]/30 group-hover:via-[#6ff2f2]/30 group-hover:to-[#4185F3]/30"></div>
 
                   {/* Video with enhanced border */}
                   <video
