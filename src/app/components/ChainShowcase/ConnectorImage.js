@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 // import iconlogo from "../../assets/images/herosection svg/iconlogo.svg";
-import maxxitIcon from "../../assets/images/navbar/maxxit_logo.svg";
+import maxxitIcon from "../../../../public/img/maxxitIcon.svg";
 import icon1 from "../../assets/images/herosection svg/icon1.svg";
 import icon2 from "../../assets/images/herosection svg/icon2.svg";
 import icon3 from "../../assets/images/herosection svg/icon3.svg";
@@ -26,7 +26,7 @@ const ConnectorImage = () => {
   };
 
   return (
-    <div className="relative bg-transparent w-[90%] xs:w-[75%] sm:w-[80%] md:w-[74%] lg:w-[70%] h-[600px] my-0 lg:my-10 mr-5 xs:mr-3 lg:mr-0 mt-[-120px] xs:mt-[-75px] bw:mt-[-50px] lg:mt-0">
+    <div className="relative bg-transparent w-[90%] xs:w-[75%] sm:w-[80%] md:w-[74%] lg:w-[70%] h-[450px] xs:h-[500px] sm:h-[550px] lg:h-[600px] my-0 lg:my-10 mr-5 xs:mr-3 lg:mr-0 mt-0 xs:mt-0 sm:mt-0 lg:mt-0">
       {/* line to connect icons */}
       <div className="absolute left-[calc(27%+22px)] 2xs:left-[calc(27%+25px)] sm:left-[calc(27%+30px)] md:left-[calc(27%+35px)] bw:left-[calc(27%+40px)] lg:left-[calc(27%+45px)] top-[calc(17%+94px)] 2xs:top-[calc(17%+97px)] xs:top-[calc(12%+96px)] sm:top-[calc(11%+100px)] md:top-[calc(10%+100px)] bw:top-[calc(10%+90px)] h-[calc(45%-58px)] 2xs:h-[calc(45%-60px)] xs:h-[calc(55%-60px)] sm:h-[calc(62%-75px)] md:h-[calc(66%-75px)] bw:h-[calc(71%-75px)] lg:h-[calc(75%-90px)] w-[3px] bg-[#49494ACC]"></div>
       <div className="absolute left-[calc(67%+22px)] 2xs:left-[calc(67%+25px)] sm:left-[calc(67%+30px)] md:left-[calc(67%+35px)] bw:left-[calc(67%+40px)] lg:left-[calc(67%+45px)] top-[calc(21%+94px)] 2xs:top-[calc(21%+97px)] xs:top-[calc(17%+96px)] sm:top-[calc(16%+100px)] md:top-[calc(15%+100px)] bw:top-[calc(15%+90px)] h-[calc(47%-58px)] 2xs:h-[calc(47%-60px)] xs:h-[calc(55%-60px)] sm:h-[calc(62%-75px)] md:h-[calc(66%-75px)] bw:h-[calc(71%-75px)] lg:h-[calc(75%-90px)] w-[3px] bg-[#49494ACC]"></div>
@@ -79,36 +79,8 @@ const ConnectorImage = () => {
       </div>
 
       {/* inner container holds the actual bg and the image */}
-      {/* <div
-        className="absolute top-[47%] left-[47%] w-[45px] 2xs:w-[50px] sm:w-[60px] md:w-[70px] bw:w-[80px] lg:w-[90px] rounded-full p-1"
-        style={{
-          background:
-            "linear-gradient(to right, rgba(175, 133, 227, 1), rgba(111, 242, 242, 1), rgba(104, 224, 153, 1))",
-        }}
-      >
-        <div className="rounded-full p-0.5">
-          <Image
-            src={maxxitIcon}
-            alt=""
-            className="rounded-full w-full h-auto"
-          ></Image>
-        </div>
-      </div> */}
-
-      <div
-        className="border-[3px] border-cyan-300 border-solid absolute top-[47%] left-[47%] w-[45px] 2xs:w-[50px] sm:w-[60px] md:w-[70px] bw:w-[80px] lg:w-[90px] rounded-full p-1"
-        // style={{
-        //   background:
-        //     "linear-gradient(to right, rgba(175, 133, 227, 0.5), rgba(111, 242, 242, 0.8), rgba(104, 224, 153, 0.8))",
-        // }}
-      >
-        <div className="rounded-full p-0.5">
-          <Image
-            src={maxxitIcon}
-            alt=""
-            className="rounded-full w-full h-auto"
-          ></Image>
-        </div>
+      <div className="absolute top-[47%] left-[47%] w-[45px] 2xs:w-[50px] sm:w-[60px] md:w-[70px] bw:w-[80px] lg:w-[90px] h-auto">
+        <Image src={maxxitIcon} alt=""></Image>
       </div>
 
       <div

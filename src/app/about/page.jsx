@@ -241,6 +241,83 @@ const AboutPage = () => {
               </div> */}
             </motion.div>
           </div>
+
+          {/* Maxxit AI Robot Feature */}
+          <motion.div
+            variants={itemVariants}
+            className="w-full rounded-2xl overflow-hidden mb-16 relative border-2 border-blue-500/30 shadow-xl shadow-blue-500/10 hover:shadow-blue-500/20 transition-all duration-500"
+          >
+            <div className="relative bg-[#000000] min-h-[500px]">
+              {/* Full width robot image as background */}
+              <div className="absolute inset-0 w-full h-full">
+                <Image
+                  src="/img/ai_robot.png"
+                  alt="AI Robot"
+                  className="object-cover object-left"
+                  fill
+                  sizes="100vw"
+                  priority
+                />
+                {/* Dark overlay for mobile only */}
+                <div className="absolute inset-0 bg-black/70 md:bg-transparent"></div>
+              </div>
+
+              {/* Content overlay on right side */}
+              <div className="relative z-10 flex flex-col min-h-[500px] w-full">
+                <div className="flex flex-col md:flex-row h-full">
+                  {/* Left side empty space (for robot image) - hidden on mobile */}
+                  <div className="hidden md:block md:w-1/2 lg:w-2/5"></div>
+
+                  {/* Right side content - full width on mobile */}
+                  <div className="w-full md:w-1/2 lg:w-3/5 p-8 md:p-12 flex flex-col justify-center">
+                    <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#63A7FA] via-[#6ff2f2] to-[#4185F3] mb-6">
+                    Why Maxxit is the Go-To Platform for Verified Crypto Insights ?
+                    </h2>
+
+                    <p className="text-gray-300 text-lg mb-8 leading-relaxed">
+                      Maxxit is a performance-driven platform that brings
+                      credibility and clarity to crypto signals from Twitter
+                      (X). It enables users to subscribe to top-performing
+                      crypto influencers, receive market-tested signals on
+                      Telegram, and track verified performance, all with
+                      on-chain transparency.
+                    </p>
+
+                    <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200 mb-5">
+                      Maxxit designed for :
+                    </h3>
+
+                    <ul className="space-y-4">
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-[#63A7FA]/20 to-[#6ff2f2]/20 flex items-center justify-center mr-3 mt-1">
+                          <span className="text-blue-400 text-sm font-bold">
+                            •
+                          </span>
+                        </div>
+                        <p className="text-gray-300">
+                          Crypto users seeking reliable, clear, and data-backed
+                          trade signals
+                        </p>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-[#63A7FA]/20 to-[#6ff2f2]/20 flex items-center justify-center mr-3 mt-1">
+                          <span className="text-blue-400 text-sm font-bold">
+                            •
+                          </span>
+                        </div>
+                        <p className="text-gray-300">
+                          Influencers (signal providers) who want to build trust
+                          and earn revenue based on actual market value
+                          delivered
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </motion.section>
 
         {/* For Users Section */}
@@ -284,17 +361,17 @@ const AboutPage = () => {
           {/* Key Guidelines with enhanced styling */}
           <motion.div
             variants={itemVariants}
-            className="bg-gradient-to-b from-[#050A25] to-[#030819] border border-blue-500/30 rounded-2xl p-6 sm:p-8 shadow-xl mt-16 relative overflow-hidden group hover:border-blue-500/50 transition-all duration-500"
+            className="bg-gradient-to-b from-[#050A25] to-[#030819] border border-blue-600/30 rounded-2xl p-6 sm:p-8 shadow-xl mt-16 relative overflow-hidden group hover:border-blue-500/50 transition-all duration-500"
           >
             {/* Animated background elements */}
             <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-blue-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 rounded-full -mt-32 -mr-32 blur-3xl group-hover:bg-blue-500/10 transition-colors duration-700"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/5 rounded-full -mb-32 -ml-32 blur-3xl group-hover:bg-blue-500/10 transition-colors duration-700"></div>
 
             <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200 mb-6 relative z-10">
               Key Guidelines for Users
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+            <div className="flex flex-col gap-6 relative z-10">
               <div className="flex items-start group/item transition-all duration-300 hover:translate-x-1">
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-[#63A7FA]/20 to-[#6ff2f2]/20 flex items-center justify-center mr-4 group-hover/item:from-[#63A7FA]/30 group-hover/item:to-[#6ff2f2]/30 transition-all duration-300">
                   <CheckCircle
@@ -304,11 +381,10 @@ const AboutPage = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200 mb-2">
-                    Only Follow What Works
+                  Only Follow What Works
                   </h4>
                   <p className="text-gray-300 group-hover/item:text-gray-200 transition-colors duration-300">
-                    Performance metrics are transparently displayed so you can
-                    make informed decisions.
+                  Performance metrics are transparently displayed so you can make informed decisions.
                   </p>
                 </div>
               </div>
@@ -322,11 +398,10 @@ const AboutPage = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200 mb-2">
-                    Pay Only for Value
+                  Respect Platform Use
                   </h4>
                   <p className="text-gray-300 group-hover/item:text-gray-200 transition-colors duration-300">
-                    Credits are deducted only when a signal qualifies as
-                    valuable based on performance.
+                  Misuse of the system or bot will lead to restrictions to maintain quality.
                   </p>
                 </div>
               </div>
@@ -340,29 +415,10 @@ const AboutPage = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200 mb-2">
-                    Respect Platform Use
+                  Join the Community
                   </h4>
                   <p className="text-gray-300 group-hover/item:text-gray-200 transition-colors duration-300">
-                    Misuse of the system or bot will lead to restrictions to
-                    maintain quality.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start group/item transition-all duration-300 hover:translate-x-1">
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-[#63A7FA]/20 to-[#6ff2f2]/20 flex items-center justify-center mr-4 group-hover/item:from-[#63A7FA]/30 group-hover/item:to-[#6ff2f2]/30 transition-all duration-300">
-                  <CheckCircle
-                    size={20}
-                    className="text-blue-400 group-hover/item:text-blue-300 transition-colors duration-300"
-                  />
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200 mb-2">
-                    Join the Community
-                  </h4>
-                  <p className="text-gray-300 group-hover/item:text-gray-200 transition-colors duration-300">
-                    Your feedback and ideas are welcome to help improve the
-                    Maxxit platform.
+                  Your feedback and ideas are welcome to help improve the Maxxit platform.
                   </p>
                 </div>
               </div>
@@ -532,7 +588,7 @@ const AboutPage = () => {
               Key Guidelines for Influencers
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+            <div className="flex flex-col gap-6 relative z-10">
               <div className="flex items-start group/item transition-all duration-300 hover:translate-x-1">
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-[#63A7FA]/20 to-[#6ff2f2]/20 flex items-center justify-center mr-4 group-hover/item:from-[#63A7FA]/30 group-hover/item:to-[#6ff2f2]/30 transition-all duration-300">
                   <CheckCircle
@@ -586,24 +642,6 @@ const AboutPage = () => {
                   </p>
                 </div>
               </div>
-
-              <div className="flex items-start group/item transition-all duration-300 hover:translate-x-1">
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-[#63A7FA]/20 to-[#6ff2f2]/20 flex items-center justify-center mr-4 group-hover/item:from-[#63A7FA]/30 group-hover/item:to-[#6ff2f2]/30 transition-all duration-300">
-                  <CheckCircle
-                    size={20}
-                    className="text-blue-400 group-hover/item:text-blue-300 transition-colors duration-300"
-                  />
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200 mb-2">
-                    Transparency is Rewarded
-                  </h4>
-                  <p className="text-gray-300 group-hover/item:text-gray-200 transition-colors duration-300">
-                    Clear reasoning, charts, or follow-ups boost engagement and
-                    retention.
-                  </p>
-                </div>
-              </div>
             </div>
           </motion.div>
         </motion.section>
@@ -621,7 +659,6 @@ const AboutPage = () => {
             <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-br from-blue-500/10 to-blue-500/10 rounded-full -mt-40 -mr-40 blur-3xl group-hover:from-blue-500/15 group-hover:to-blue-500/15 transition-colors duration-700"></div>
             <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-br from-blue-500/10 to-blue-500/10 rounded-full -mb-40 -ml-40 blur-3xl group-hover:from-blue-500/15 group-hover:to-blue-500/15 transition-colors duration-700"></div>
 
-
             {/* Animated gradient lines */}
             {/* <div className="absolute h-px w-full top-1/4 bg-gradient-to-r from-transparent via-blue-500/20 to-transparent animate-pulse-slow opacity-70 group-hover:opacity-100 transition-opacity duration-700"></div> */}
             {/* <div className="absolute h-px w-full top-3/4 bg-gradient-to-r from-transparent via-blue-500/20 to-transparent animate-pulse-slow delay-1000 opacity-70 group-hover:opacity-100 transition-opacity duration-700"></div> */}
@@ -636,7 +673,7 @@ const AboutPage = () => {
                   and performance-backed signals that can transform your crypto
                   trading experience.
                 </p>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                   <Link
                     href="https://app.maxxit.ai"
                     target="_blank"

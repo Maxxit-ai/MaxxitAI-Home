@@ -1728,11 +1728,11 @@ body {
 .flow2 {
   background: linear-gradient(
     270deg,
-    #4185F3 1.2%,
-    #48CBE2 22.17%,
+    #6FF2F2 1.2%,
+    #6AE9E9 22.17%,
     #6ff2f2 57.97%,
-    #63A7FA 77.02%,
-    #68e09a00 94.9%
+    #6CECEC 77.02%,
+    #6FF2F2 94.9%
   );
 
   animation: flow2-animation 6s infinite;
@@ -1767,11 +1767,11 @@ body {
   .flow1 {
     background: linear-gradient(
       180deg,
-      #4185F3 1.2%,
-      #48CBE2 22.17%,
-      #6ff2f2 57.97%,
-      #63A7FA 77.02%,
-      #63A7FA 94.9%
+      #AF85E3 1.2%,
+      #AF85E3 22.17%,
+      #AF85E3 57.97%,
+      #AF85E3 77.02%,
+      #AF85E3 94.9%
     );
 
     animation: flow1-animation 6s 2s infinite;
@@ -1804,10 +1804,10 @@ body {
 
   @keyframes curve1 {
     0% {
-      border-color: #4185F3;
+      border-color: #AF85E3;
     }
     10% {
-      border-color: #63A7FA;
+      border-color: #AF85E3;
     }
     25% {
       border-color: transparent;
@@ -1826,10 +1826,10 @@ body {
 
   @keyframes curve2 {
     0% {
-      border-color: #4185F3;
+      border-color: #AF85E3;
     }
     30% {
-      border-color: #4185F3;
+      border-color: #AF85E3;
     }
     40% {
       border-color: transparent;
@@ -1845,11 +1845,11 @@ body {
   .flow3 {
     background: linear-gradient(
       360deg,
-      #4185F3 1.2%,
-      #48CBE2 22.17%,
-      #6ff2f2 57.97%,
-      #63A7FA 77.02%,
-      #63A7FA 94.9%
+      #68E099 1.2%,
+      #68E099 22.17%,
+      #68E099 57.97%,
+      #68E099 77.02%,
+      #68E099 94.9%
     );
 
     animation: flow3-animation 6s 1.5s infinite;
@@ -1881,10 +1881,10 @@ body {
 
   @keyframes curve-1 {
     0% {
-      border-color: #4185F3;
+      border-color: #68E099;
     }
     10% {
-      border-color: #63A7FA;
+      border-color: #68E099;
     }
     25% {
       border-color: transparent;
@@ -1902,10 +1902,10 @@ body {
 
   @keyframes curve-2 {
     0% {
-      border-color: #4185F3;
+      border-color: #68E099;
     }
     10% {
-      border-color: #4185F3;
+      border-color: #68E099;
     }
     40% {
       border-color: transparent;
