@@ -106,8 +106,8 @@ const MobileUseCaseConnector = () => {
             <p className="font-normal text-[10px] xs:text-xs tracking-wider">
               Follow top-performing X accounts whose strategies are converted
               into real, actionable signals — not just opinions or sentiment.
-              Each account is ranked by backtested performance and on-chain
-              proof.
+              {/* Each account is ranked by backtested performance and on-chain
+              proof. */}
             </p>
             {/* <div className="bg-gradient-to-br from-[#4F4F4F] via-[#63A7FA] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
               <button className="bg-[#050e21] font-light text-[8px] xs:text-xs flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">
@@ -137,8 +137,9 @@ const MobileUseCaseConnector = () => {
             </div>
             <p className="font-normal text-[10px] xs:text-xs tracking-wider">
               Once subscribed, receive structured, market-tested signals right
-              in Telegram. No noise, no clutter — just high-quality signals
-              derived from the logic of traders you trust.
+              in Telegram. 
+              {/* No noise, no clutter — just high-quality signals
+              derived from the logic of traders you trust. */}
             </p>
             {/* <div className="bg-gradient-to-br from-[#4F4F4F] via-[#6FF2F2] to-[#4F4F4F] rounded-[15px] p-[1px] flex items-center justify-center overflow-hidden w-max">
               <button className="bg-[#050e21] font-light text-[8px] xs:text-xs flex items-center justify-center gap-2 hover:gap-4 rounded-[14px] px-4 py-[6px] tracking-wider">

@@ -51,7 +51,9 @@ export default function Home() {
       {/* <About /> */}
       <Usecase />
       <Walkthrough />
-      <GetStarted />
+      <div className="hidden sm:flex">
+        <GetStarted />
+      </div>
       <ChainConnectorMain />
       <Footer />
     </div>
