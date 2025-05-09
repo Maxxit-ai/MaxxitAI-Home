@@ -53,26 +53,39 @@ const Footer = () => {
           Copyright @ 2025 Maxxit | All rights reserved
         </p>
         <div className="flex items-center justify-center gap-2 xs:gap-3 md:gap-4 bw:gap-5">
-          <IoDocument
+          {/* <IoDocument
             className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#4cc3fe] cursor-pointer transition-colors"
             title="Docs"
-          />
-          <FaTelegramPlane
+          /> */}
+          {/* <FaTelegramPlane
             className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#24A1DE] cursor-pointer transition-colors"
             title="Telegram"
-          />
-          <FaDiscord
+          /> */}
+          {/* <FaDiscord
             className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#5865F2] cursor-pointer transition-colors"
             title="Discord"
-          />
-          <FaXTwitter
-            className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#515151] cursor-pointer transition-colors"
-            title="Twitter"
-          />
-          <FaLinkedinIn
+          /> */}
+          <Link href={"https://x.com/MaxxitAI"} target="_blank">
+            <FaXTwitter
+              className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#515151] cursor-pointer transition-colors"
+              title="Twitter"
+            />
+          </Link>
+          <Link
+            href={"https://t.me/+XcOX2uNUxnIzNzFl"}
+            target="_blank"
+            className="flex items-center gap-2 text-[#000612] text-[9px] md:text-sm lg:text-base font-semibold gradient-background rounded-full px-2 py-1 sm:px-3 sm:py-2"
+          >
+            Support
+            <FaTelegramPlane
+              className="text-[15px] md:text-[20px] bw:text-[20px] hover:text-[#24A1DE] cursor-pointer transition-colors"
+              title="Telegram"
+            />
+          </Link>
+          {/* <FaLinkedinIn
             className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#0077B5] cursor-pointer transition-colors"
             title="Linkedin"
-          />
+          /> */}
         </div>
       </div>
     </div>
