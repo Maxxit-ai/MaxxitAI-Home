@@ -1,14 +1,14 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import { FaTelegramPlane, FaDiscord, FaLinkedinIn } from "react-icons/fa";
-import { IoDocument } from "react-icons/io5";
+import { FaTelegramPlane } from "react-icons/fa";
+import { SiGitbook } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
     <div className="w-full border-t-[1.5px] border-t-[#ffffff74] h-[250px] xs:h-[300px] md:h-[450px] bw:h-[550px] flex flex-col justify-between bg-[#000612] text-white relative overflow-hidden">
-      {/* lines */}
+      {/* Decorative lines */}
       <div className="absolute bg-[#252525CC] w-[1.5px] 2xs:w-[2px] md:w-[3px] h-[90px] xs:h-[100px] md:h-[160px] bw:h-[180px] top-0 left-[25%]"></div>
       <div className="absolute w-[1.5px] 2xs:w-[2px] md:w-[3px] h-[30px] xs:h-[40px] left-[25%] footer-line-1"></div>
 
@@ -30,14 +30,7 @@ const Footer = () => {
       <div className="absolute bg-[#252525CC] w-[1.5px] 2xs:w-[2px] md:w-[3px] h-[90px] xs:h-[100px] md:h-[160px] bw:h-[180px] bottom-0 left-[66%]"></div>
       <div className="absolute w-[1.5px] 2xs:w-[2px] md:w-[3px] h-[30px] xs:h-[40px] left-[66%] footer-line-6"></div>
 
-      <div className="flex items-center justify-center space-x-6 sm:space-x-7 md:space-x-10 text-xs 3xs:text-sm md:text-base bw:text-lg tracking-wider my-4 sm:my-6 bw:my-8">
-        {/* <Link href="/" className="relative group">
-          <span className="hover-effect hover:font-medium">Milestone</span>
-        </Link>
-        <Link href="/" className="relative group">
-          <span className="hover-effect hover:font-medium">Docs</span>
-        </Link> */}
-      </div>
+      <div className="flex items-center justify-center space-x-6 sm:space-x-7 md:space-x-10 text-xs 3xs:text-sm md:text-base bw:text-lg tracking-wider my-4 sm:my-6 bw:my-8"></div>
 
       <div className="parent-div">
         <p
@@ -53,39 +46,33 @@ const Footer = () => {
           Copyright @ 2025 Maxxit | All rights reserved
         </p>
         <div className="flex items-center justify-center gap-2 xs:gap-3 md:gap-4 bw:gap-5">
-          {/* <IoDocument
-            className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#4cc3fe] cursor-pointer transition-colors"
-            title="Docs"
-          /> */}
-          {/* <FaTelegramPlane
-            className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#24A1DE] cursor-pointer transition-colors"
-            title="Telegram"
-          /> */}
-          {/* <FaDiscord
-            className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#5865F2] cursor-pointer transition-colors"
-            title="Discord"
-          /> */}
-          <Link href={"https://x.com/MaxxitAI"} target="_blank">
-            <FaXTwitter
-              className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#515151] cursor-pointer transition-colors"
-              title="Twitter"
-            />
-          </Link>
-          <Link
-            href={"https://t.me/+XcOX2uNUxnIzNzFl"}
+          <a
+            href="https://maxxit.gitbook.io/maxxit-ai/"
             target="_blank"
-            className="flex items-center gap-2 text-[#000612] text-[9px] md:text-sm lg:text-base font-semibold gradient-background rounded-full px-2 py-1 sm:px-3 sm:py-2"
+            rel="noopener noreferrer"
+            className="hover:text-black hover:bg-white rounded-full p-1 transition-colors"
+            title="Docs"
           >
-            Support
-            <FaTelegramPlane
-              className="text-[15px] md:text-[20px] bw:text-[20px] hover:text-[#24A1DE] cursor-pointer transition-colors"
-              title="Telegram"
-            />
-          </Link>
-          {/* <FaLinkedinIn
-            className="text-[15px] md:text-[20px] bw:text-[24px] hover:text-[#0077B5] cursor-pointer transition-colors"
-            title="Linkedin"
-          /> */}
+            <SiGitbook className="text-[15px] md:text-[20px] bw:text-[24px] cursor-pointer" />
+          </a>
+          <a
+            href="https://t.me/+XcOX2uNUxnIzNzFl"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#24A1DE] hover:bg-white rounded-full p-1 transition-colors"
+            title="Telegram"
+          >
+            <FaTelegramPlane className="text-[15px] md:text-[20px] bw:text-[24px] cursor-pointer" />
+          </a>
+          <a
+            href="https://x.com/MaxxitAI"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#515151] hover:bg-white rounded-full p-1 transition-colors"
+            title="Twitter"
+          >
+            <FaXTwitter className="text-[15px] md:text-[20px] bw:text-[24px] cursor-pointer" />
+          </a>
         </div>
       </div>
     </div>

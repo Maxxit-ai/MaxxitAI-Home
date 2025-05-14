@@ -92,6 +92,40 @@ const Navbar = () => {
           </div>
         </Link>
       </div>
+      <div className={`flex ${isMobile ? "w-full" : ""} items-center justify-center gap-2 sm:gap-4`}>
+      <a
+        href="https://maxxit.gitbook.io/maxxit-ai/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={isMobile ? "w-full" : ""}
+      >
+        <div
+          className={`gradient-background max-[360px]:rounded-[9px] rounded-[11px] lg:rounded-[15px] max-[360px]:p-[1px] p-[2px] flex items-center justify-center overflow-hidden ${
+            isMobile ? "w-full" : ""
+          } ${
+            isActive("/about")
+              ? "shadow-[0px_0px_15px_rgba(170,201,250,0.7)]"
+              : ""
+          }`}
+        >
+          <button
+            onClick={() => {
+              handleButtonClick();
+              if (isMobile) setMobileMenuOpen(false);
+            }}
+            className={`${
+              isActive("/about")
+                ? "bg-transparent text-black"
+                : "bg-[#000612] hover:bg-transparent hover:text-black"
+            } max-[360px]:text-[8px] text-[10px] min-[500px]:text-sm sm:font-semibold flex items-center justify-center max-[360px]:rounded-[8px] rounded-[10px] lg:rounded-[14px] px-3 lg:px-4 py-[6px] sm:py-[10px] lg:py-[13px] tracking-wider hover:scale-105 hover:shadow-[0px_4px_20px_rgba(0,255,255,0.6)] transition-all duration-300 ease-out ${
+              isMobile ? "w-full" : ""
+            }`}
+          >
+            Docs
+          </button>
+        </div>
+      </a>
+    </div>
       <div
         className={`flex ${
           isMobile ? "w-full" : ""
