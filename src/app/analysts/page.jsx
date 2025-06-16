@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
 import Footer from "../components/Footer";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 import {
   ArrowRight,
   CheckCircle,
@@ -28,15 +28,51 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/autoplay";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+// Import Embla Carousel styles will be handled with custom CSS
 
 const AnalystsPage = () => {
   const heroRef = useRef(null);
   const [activeStepIndex, setActiveStepIndex] = useState(0);
+
+  // Embla Carousel setup
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      loop: true,
+      align: "start",
+      containScroll: false,
+      dragFree: false,
+      slidesToScroll: 1,
+      skipSnaps: false,
+      startIndex: 0,
+    },
+    [Autoplay({ delay: 4000, stopOnInteraction: false })]
+  );
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  const scrollTo = useCallback(
+    (index) => {
+      if (emblaApi) emblaApi.scrollTo(index);
+    },
+    [emblaApi]
+  );
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setActiveStepIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi, setActiveStepIndex]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on("select", onSelect);
+  }, [emblaApi, onSelect]);
 
   // Step-by-step process data for Swiper
   const processSteps = [
@@ -250,104 +286,102 @@ const AnalystsPage = () => {
             <div className="h-1 w-24 bg-gradient-to-r from-[#63A7FA] via-[#6ff2f2] to-[#4185F3] rounded-full mb-8 mx-auto"></div>
           </motion.div>
 
-          {/* Enhanced Swiper Carousel */}
-          <div className="w-full overflow-hidden bg-gradient-to-b from-[#050A25] to-[#030819] border border-blue-600/30 rounded-3xl shadow-2xl shadow-blue-500/10">
-            <div className="max-w-7xl mx-auto px-8 py-4">
-              <Swiper
-                modules={[Autoplay, Pagination, Navigation]}
-                spaceBetween={24}
-                slidesPerView={1}
-                centeredSlides={false}
-                loop={true}
-                speed={800}
-                autoplay={{
-                  delay: 4000,
-                  disableOnInteraction: false,
-                }}
-                pagination={{
-                  clickable: true,
-                  renderBullet: function (index, className) {
-                    return `<span class="${className} step-pagination-bullet bg-gradient-to-r ${processSteps[index].gradient}">
-                      <span class="step-number">${processSteps[index].step}</span>
-                    </span>`;
-                  },
-                }}
-                navigation={true}
-                slidesOffsetBefore={0}
-                slidesOffsetAfter={0}
-                breakpoints={{
-                  640: {
-                    slidesPerView: 1,
-                    spaceBetween: 16,
-                    centeredSlides: false,
-                  },
-                  768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                    centeredSlides: false,
-                  },
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 24,
-                    centeredSlides: false,
-                  },
-                }}
-                onSlideChange={(swiper) =>
-                  setActiveStepIndex(swiper.activeIndex)
-                }
-                className="processSwiper py-8 !overflow-visible"
-              >
-                {processSteps.map((step, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="group">
-                                             <div
-                         className={`bg-gradient-to-br ${step.gradient} backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-[420px] transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 relative overflow-hidden flex flex-col justify-between`}
-                       >
-                        {/* Animated background elements */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                        <div className="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-gradient-to-br from-white/5 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+          {/* Enhanced Embla Carousel */}
+          <div className="w-full bg-gradient-to-b from-[#050A25] to-[#030819] border border-blue-600/30 rounded-3xl shadow-2xl shadow-blue-500/10">
+            <div className="max-w-7xl mx-auto py-4 px-4">
+              <div className="embla overflow-hidden" ref={emblaRef}>
+                <div className="embla__container flex">
+                  {processSteps.map((step, index) => (
+                    <div key={index} className="embla__slide">
+                      <div className="h-full px-3">
+                        <div className="group h-full">
+                          <div
+                            className={`bg-gradient-to-br ${step.gradient} backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-6 lg:p-8 h-[380px] sm:h-[400px] lg:h-[420px] transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-2 relative overflow-hidden flex flex-col justify-between`}
+                          >
+                            {/* Animated background elements */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                            <div className="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-gradient-to-br from-white/5 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
 
-                                                 <div className="relative z-10 flex flex-col h-full">
-                           {/* Step number badge */}
-                           <div className="flex items-center justify-between mb-6">
-                             <div className="w-16 h-16 rounded-full bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform duration-500">
-                               <span className="text-2xl font-bold bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
-                                 {step.step}
-                    </span>
-                             </div>
-                             <div
-                               className={`w-12 h-12 rounded-xl bg-gradient-to-br ${step.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-500 border border-white/10`}
-                             >
-                               <span
-                                 className={`bg-gradient-to-r ${step.iconGradient} bg-clip-text text-transparent`}
-                               >
-                                 {step.icon}
-                    </span>
-                  </div>
-                </div>
+                            <div className="relative z-10 flex flex-col h-full">
+                              {/* Step number badge */}
+                              <div className="flex items-center justify-between mb-6">
+                                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform duration-500">
+                                  <span className="text-2xl font-bold bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
+                                    {step.step}
+                                  </span>
+                                </div>
+                                <div
+                                  className={`w-12 h-12 rounded-xl bg-gradient-to-br ${step.gradient} flex items-center justify-center group-hover:scale-110 transition-transform duration-500 border border-white/10`}
+                                >
+                                  <span
+                                    className={`bg-gradient-to-r ${step.iconGradient} bg-clip-text text-transparent`}
+                                  >
+                                    {step.icon}
+                                  </span>
+                                </div>
+                              </div>
 
-                           {/* Content */}
-                           <div className="flex-grow">
-                             <h3 className="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200 mb-4 group-hover:from-blue-200 group-hover:to-white transition-all duration-300">
-                               {step.title}
-                </h3>
-                             <p className="text-gray-300 text-sm md:text-base leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
-                               {step.description}
-                             </p>
-                           </div>
+                              {/* Content */}
+                              <div className="flex-grow">
+                                <h3 className="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-200 mb-4 group-hover:from-blue-200 group-hover:to-white transition-all duration-300">
+                                  {step.title}
+                                </h3>
+                                <p className="text-gray-300 text-sm md:text-base leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+                                  {step.description}
+                                </p>
+                              </div>
 
-                           {/* Progress indicator */}
-                           <div className="mt-6 flex items-center">
-                             <span className="text-sm font-medium text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
-                               Step {step.step}
-                             </span>
-                           </div>
-                         </div>
+                              {/* Progress indicator */}
+                              <div className="mt-6 flex items-center">
+                                <span className="text-sm font-medium text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                                  Step {step.step}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+                  ))}
+                </div>
+              </div>
+
+              {/* Navigation buttons */}
+              <div className="flex sm:flex-row justify-center items-center gap-4 my-8">
+                {/* Left navigation button */}
+                <button
+                  onClick={scrollPrev}
+                  className="embla__prev w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-blue-600/20 to-blue-600/10 backdrop-blur-sm border border-blue-500/30 flex items-center justify-center hover:bg-blue-600/30 hover:border-blue-500/50 hover:scale-110 transition-all duration-300 order-1"
+                >
+                  <ChevronRight
+                    size={16}
+                    className="text-blue-400 rotate-180"
+                  />
+                </button>
+
+                {/* Pagination dots */}
+                <div className="flex gap-1 sm:gap-2 flex-wrap justify-center order-2">
+                  {processSteps.map((step, index) => (
+                    <button
+                      key={index}
+                      onClick={() => scrollTo(index)}
+                      className={`step-pagination-bullet transition-all duration-300 ${
+                        index === activeStepIndex ? "active" : ""
+                      }`}
+                    >
+                      <span className="step-number">{step.step}</span>
+                    </button>
+                  ))}
+                </div>
+
+                {/* Right navigation button */}
+                <button
+                  onClick={scrollNext}
+                  className="embla__next w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-blue-600/20 to-blue-600/10 backdrop-blur-sm border border-blue-500/30 flex items-center justify-center hover:bg-blue-600/30 hover:border-blue-500/50 hover:scale-110 transition-all duration-300 order-3"
+                >
+                  <ChevronRight size={16} className="text-blue-400" />
+                </button>
+              </div>
             </div>
           </div>
         </motion.section>
@@ -1047,73 +1081,93 @@ const AnalystsPage = () => {
 
       <Footer />
 
-      {/* Custom CSS for Swiper and animations */}
+      {/* Custom CSS for Embla Carousel and animations */}
       <style jsx global>{`
-                .processSwiper {
-          overflow: visible !important;
+        .embla {
+          overflow: hidden;
         }
-        
-        .processSwiper .swiper-wrapper {
-          align-items: stretch;
+
+        .embla__container {
+          backface-visibility: hidden;
+          display: flex;
+          touch-action: pan-y;
         }
-        
-        .processSwiper .swiper-slide {
-          opacity: 1 !important;
-          transform: none !important;
+
+        .embla__slide {
+          flex: 0 0 100%;
+          min-width: 0;
         }
-        
-        .processSwiper .swiper-pagination {
-          position: relative;
-          margin-top: 2rem;
+
+        @media (min-width: 768px) {
+          .embla__slide {
+            flex: 0 0 50%;
+          }
         }
-        
+
+        @media (min-width: 1024px) {
+          .embla__slide {
+            flex: 0 0 33.333333%;
+          }
+        }
+
         .step-pagination-bullet {
-          width: 48px;
-          height: 48px;
+          width: 40px;
+          height: 40px;
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          border-radius: 12px;
-          margin: 0 8px;
+          border-radius: 10px;
+          margin: 0 4px;
           transition: all 0.3s ease;
           border: 2px solid rgba(255, 255, 255, 0.1);
           backdrop-filter: blur(10px);
+          background: rgba(5, 10, 37, 0.3);
+          cursor: pointer;
         }
-        
+
+        @media (min-width: 640px) {
+          .step-pagination-bullet {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            margin: 0 8px;
+          }
+        }
+
         .step-pagination-bullet .step-number {
           color: white;
           font-weight: bold;
-          font-size: 16px;
+          font-size: 14px;
         }
-        
-        .swiper-pagination-bullet-active {
+
+        @media (min-width: 640px) {
+          .step-pagination-bullet .step-number {
+            font-size: 16px;
+          }
+        }
+
+        .step-pagination-bullet.active {
           transform: scale(1.1);
           border-color: rgba(99, 167, 250, 0.5);
           box-shadow: 0 8px 32px rgba(99, 167, 250, 0.3);
-        }
-        
-        .processSwiper .swiper-button-next,
-        .processSwiper .swiper-button-prev {
-          color: #63a7fa;
-          background: rgba(5, 10, 37, 0.8);
-          width: 48px;
-          height: 48px;
-          border-radius: 50%;
-          border: 1px solid rgba(99, 167, 250, 0.3);
-          backdrop-filter: blur(10px);
-          --swiper-navigation-size: 20px;
-          transition: all 0.3s ease;
-        }
-        
-        .processSwiper .swiper-button-next:hover,
-        .processSwiper .swiper-button-prev:hover {
           background: rgba(99, 167, 250, 0.2);
-          border-color: rgba(99, 167, 250, 0.5);
-          transform: scale(1.1);
         }
-        
-        .processSwiper .swiper-button-disabled {
+
+        .step-pagination-bullet:hover {
+          border-color: rgba(99, 167, 250, 0.3);
+          background: rgba(99, 167, 250, 0.1);
+        }
+
+        .embla__prev,
+        .embla__next {
+          cursor: pointer;
+          outline: none;
+        }
+
+        .embla__prev:disabled,
+        .embla__next:disabled {
           opacity: 0.3;
+          cursor: not-allowed;
         }
 
         @keyframes spin-slow {
