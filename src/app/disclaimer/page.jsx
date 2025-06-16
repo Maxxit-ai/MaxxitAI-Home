@@ -226,7 +226,7 @@ const TermsAndConditions = () => {
                 </span>
               </div>
 
-              <h1 className="terms__heading mb-6 text-5xl md:text-6xl lg:text-7xl font-bold relative opacity-0">
+              <h1 className="terms__heading mb-6 text-4xl md:text-5xl lg:text-6xl font-bold relative opacity-0">
                 <span className="gradient-text-animation">
                   Maxxit Terms of Use
                 </span>

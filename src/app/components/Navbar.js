@@ -92,51 +92,18 @@ const Navbar = () => {
           </div>
         </Link>
       </div>
-      <div className={`flex ${isMobile ? "w-full" : ""} items-center justify-center gap-2 sm:gap-4`}>
-      <a
-        href="https://maxxit.gitbook.io/maxxit-ai/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={isMobile ? "w-full" : ""}
-      >
-        <div
-          className={`gradient-background max-[360px]:rounded-[9px] rounded-[11px] lg:rounded-[15px] max-[360px]:p-[1px] p-[2px] flex items-center justify-center overflow-hidden ${
-            isMobile ? "w-full" : ""
-          } ${
-            isActive("/about")
-              ? "shadow-[0px_0px_15px_rgba(170,201,250,0.7)]"
-              : ""
-          }`}
-        >
-          <button
-            onClick={() => {
-              handleButtonClick();
-              if (isMobile) setMobileMenuOpen(false);
-            }}
-            className={`${
-              isActive("/about")
-                ? "bg-transparent text-black"
-                : "bg-[#000612] hover:bg-transparent hover:text-black"
-            } max-[360px]:text-[8px] text-[10px] min-[500px]:text-sm sm:font-semibold flex items-center justify-center max-[360px]:rounded-[8px] rounded-[10px] lg:rounded-[14px] px-3 lg:px-4 py-[6px] sm:py-[10px] lg:py-[13px] tracking-wider hover:scale-105 hover:shadow-[0px_4px_20px_rgba(0,255,255,0.6)] transition-all duration-300 ease-out ${
-              isMobile ? "w-full" : ""
-            }`}
-          >
-            Docs
-          </button>
-        </div>
-      </a>
-    </div>
+      
       <div
         className={`flex ${
           isMobile ? "w-full" : ""
         } items-center justify-center gap-2 sm:gap-4`}
       >
-        <Link href="/disclaimer" className={isMobile ? "w-full" : ""}>
+        <Link href="/analysts" className={isMobile ? "w-full" : ""}>
           <div
             className={`gradient-background max-[360px]:rounded-[9px] rounded-[11px] lg:rounded-[15px] max-[360px]:p-[1px] p-[2px] flex items-center justify-center overflow-hidden ${
               isMobile ? "w-full" : ""
             } ${
-              isActive("/disclaimer")
+              isActive("/analysts")
                 ? "shadow-[0px_0px_15px_rgba(170,201,250,0.7)]"
                 : ""
             }`}
@@ -147,18 +114,53 @@ const Navbar = () => {
                 if (isMobile) setMobileMenuOpen(false);
               }}
               className={`${
-                isActive("/disclaimer")
+                isActive("/analysts")
                   ? "bg-transparent text-black"
                   : "bg-[#000612] hover:bg-transparent hover:text-black"
               } max-[360px]:text-[8px] text-[10px] min-[500px]:text-sm sm:font-semibold flex items-center justify-center max-[360px]:rounded-[8px] rounded-[10px] lg:rounded-[14px] px-3 lg:px-4 py-[6px] sm:py-[10px] lg:py-[13px] tracking-wider hover:scale-105 hover:shadow-[0px_4px_20px_rgba(0,255,255,0.6)] transition-all duration-300 ease-out ${
                 isMobile ? "w-full" : ""
               }`}
             >
-              Disclaimer
+              Analysts
             </button>
           </div>
         </Link>
       </div>
+
+      <div
+        className={`flex ${
+          isMobile ? "w-full" : ""
+        } items-center justify-center gap-2 sm:gap-4`}
+      >
+        <Link href="https://app.maxxit.ai/pricing" target="_blank" className={isMobile ? "w-full" : ""}>
+          <div
+            className={`gradient-background max-[360px]:rounded-[9px] rounded-[11px] lg:rounded-[15px] max-[360px]:p-[1px] p-[2px] flex items-center justify-center overflow-hidden ${
+              isMobile ? "w-full" : ""
+            } ${
+              isActive("https://app.maxxit.ai/pricing")
+                ? "shadow-[0px_0px_15px_rgba(170,201,250,0.7)]"
+                : ""
+            }`}
+          >
+            <button
+              onClick={() => {
+                handleButtonClick();
+                if (isMobile) setMobileMenuOpen(false);
+              }}
+              className={`${
+                isActive("https://app.maxxit.ai/pricing")
+                  ? "bg-transparent text-black"
+                  : "bg-[#000612] hover:bg-transparent hover:text-black"
+              } max-[360px]:text-[8px] text-[10px] min-[500px]:text-sm sm:font-semibold flex items-center justify-center max-[360px]:rounded-[8px] rounded-[10px] lg:rounded-[14px] px-3 lg:px-4 py-[6px] sm:py-[10px] lg:py-[13px] tracking-wider hover:scale-105 hover:shadow-[0px_4px_20px_rgba(0,255,255,0.6)] transition-all duration-300 ease-out ${
+                isMobile ? "w-full" : ""
+              }`}
+            >
+              Pricing
+            </button>
+          </div>
+        </Link>
+      </div>
+
       <div
         className={`flex ${
           isMobile ? "w-full" : ""
@@ -200,9 +202,9 @@ const Navbar = () => {
             <Image
               src={maxxit}
               alt="logo"
-              className="w-8 sm:w-14 lg:w-20"
+              className="w-8 sm:w-12 lg:w-16"
             />
-            <div className="text-2xl sm:text-6xl lg:text-7xl font-napzerRounded bg-gradient-to-b from-[#AAC9FA] to-[#E1EAF9] bg-clip-text text-transparent">
+            <div className="text-2xl sm:text-5xl lg:text-6xl font-napzerRounded bg-gradient-to-b from-[#AAC9FA] to-[#E1EAF9] bg-clip-text text-transparent">
               maxxit
             </div>
           </Link>

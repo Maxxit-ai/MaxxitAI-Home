@@ -5,7 +5,8 @@ import { FaChevronRight } from "react-icons/fa";
 import Link from "next/link";
 import StarGrid from "./StarGrid";
 import gsap from "gsap";
-// import intro from "@/app/assets/videos/Maxxit_intro.mp4"
+import Image from "next/image";
+import HeroImg from "../../../../public/img/HeroImg.png";
 
 const HeroSection = () => {
   const heroRef = useRef(null);
@@ -29,9 +30,9 @@ const HeroSection = () => {
       1
     );
 
-    // Animate the video
+    // Animate the image
     tl.fromTo(
-      ".hero-video-container",
+      ".hero-image-container",
       { scale: 0.95, opacity: 0 },
       { scale: 1, opacity: 1, duration: 1 },
       1.2
@@ -73,18 +74,19 @@ const HeroSection = () => {
               real-time crypto insights.
             </p>
 
-            <div className="hero-video-container w-full max-w-4xl mx-auto relative">
+            <div className="hero-image-container w-full max-w-6xl mx-auto relative aspect-video">
               <div className="hero__glow absolute inset-0 -z-10 bg-blue-500/30 opacity-0 blur-2xl filter" />
-              <div className="p-[3px] rounded-xl overflow-hidden relative bg-gradient-to-br from-[#63A7FA] via-[#6ff2f2] to-[#4185F3]">
+              <div className="p-[2px] sm:p-[3px] rounded-xl overflow-hidden relative bg-gradient-to-br from-[#63A7FA] via-[#6ff2f2] to-[#4185F3]">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#63A7FA]/30 via-[#6ff2f2]/30 to-[#4185F3]/30 opacity-50 z-0"></div>
-                <div className="relative z-10 rounded-lg overflow-hidden border-2 border-[#000612]">
-                  <video
-                    className="rounded-lg w-full max-w-full h-auto"
-                    src="/videos/Maxxit_intro.mp4"
-                    autoPlay
-                    controls
-                    loop
-                    playsInline
+                <div className="relative z-10 rounded-lg overflow-hidden border-2 border-[#000612] aspect-video">
+                  <Image
+                    src={HeroImg}
+                    alt="Maxxit AI - Insights that Lead with Proven Intelligence"
+                    className="rounded-lg w-full h-full object-cover"
+                    priority
+                    placeholder="blur"
+                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 85vw, 1200px"
+                    fill
                   />
                 </div>
               </div>
@@ -104,11 +106,11 @@ const HeroSection = () => {
                 </button>
               </Link>
 
-              <Link href={"/about"} className="button gradient-background rounded-[10px] xs:rounded-[15px] p-[1px] pb-[1.5px] pl-[1.5px] flex items-center justify-center overflow-hidden w-max">
-                <button className="bg-[#000612] font-semibold rounded-[9px] xs:rounded-[14px] w-[85px] xs:w-[125px] bw:w-[170px] px-[8px] xs:px-[9px] bw:px-[15px] py-[8px] xs:py-[9px] bw:py-[14px] tracking-wider flex items-center justify-evenly group text-[10px] xs:text-sm bw:text-base text-nowrap">
+              <Link href={"/analysts"} className="button gradient-background rounded-[10px] xs:rounded-[15px] p-[1px] pb-[1.5px] pl-[1.5px] flex items-center justify-center overflow-hidden w-max">
+                <button className="bg-[#000612] font-semibold rounded-[9px] xs:rounded-[14px] w-[115px] xs:w-[155px] bw:w-[200px] px-[8px] xs:px-[9px] bw:px-[15px] py-[8px] xs:py-[9px] bw:py-[14px] tracking-wider flex items-center justify-evenly group text-[10px] xs:text-sm bw:text-base text-nowrap">
                   <FaChevronRight className="hidden group-hover:inline-block right-arrow" />
                   <span className="transition-all duration-1000 ease-in-out group-hover:translate-x-[2px]">
-                    How It Works?
+                    Share Your Signals
                   </span>
                 </button>
               </Link>
