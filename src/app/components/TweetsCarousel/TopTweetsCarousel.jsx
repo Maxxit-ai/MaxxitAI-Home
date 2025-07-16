@@ -66,6 +66,21 @@ export default function TopTweetsCarousel() {
 
   // Format PnL value
   const formatPnL = (pnl) => {
+    // Handle null, undefined, or invalid values
+    if (pnl === null || pnl === undefined || isNaN(pnl)) {
+      return "0.00"
+    }
+    
+    // Handle Infinity values
+    if (!isFinite(pnl)) {
+      return "∞"
+    }
+    
+    // Handle negative values
+    if (pnl < 0) {
+      return `-${Math.abs(pnl).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+    }
+    
     return pnl.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })
   }
 
@@ -154,16 +169,16 @@ export default function TopTweetsCarousel() {
                 <div className="flex items-center mb-4">
                   <div className="relative h-10 w-10 rounded-full overflow-hidden border border-[#1a2035]">
                     <Image
-                      src={tweet.influencer.avatar || "/placeholder.svg"}
-                      alt={tweet.influencer.name}
+                      src={tweet?.influencer?.avatar || "/placeholder.svg"}
+                      alt={tweet?.influencer?.name || "Influencer"}
                       width={40}
                       height={40}
                       className="object-cover"
                     />
                   </div>
                   <div className="ml-3">
-                    <p className="text-white font-medium truncate max-w-[180px]">{tweet.influencer.name}</p>
-                    <p className="text-white/60 text-sm truncate max-w-[180px]">@{tweet.influencer.handle}</p>
+                    <p className="text-white font-medium truncate max-w-[180px]">{tweet?.influencer?.name || "Unknown"}</p>
+                    <p className="text-white/60 text-sm truncate max-w-[180px]">@{tweet?.influencer?.handle || "unknown"}</p>
                   </div>
                   <div className="ml-auto">
                     <svg
@@ -183,29 +198,35 @@ export default function TopTweetsCarousel() {
                     <div className="flex flex-col space-y-1 mt-1 text-left">
                       <div className="text-sm">
                         <span className="text-purple-400 font-medium">Coin: </span>
-                        <span className="text-white/80">{tweet.coin}</span>
+                        <span className="text-white/80">{tweet?.coin || "N/A"}</span>
                       </div>
                       <div className="text-sm">
                         <span className="text-cyan-300/80 font-medium">Token ID: </span>
-                        <span className="text-white/70">{tweet.tokenId}</span>
+                        <span className="text-white/70">{tweet?.tokenId || "N/A"}</span>
                       </div>
                       <div className="text-xs text-white/60 mt-1">
                         <span className="text-orange-300/80 font-medium">Signal Date: </span>
-                        <span className="bg-[#1a2035] px-2 py-1 rounded-full">{formatDate(tweet.timestamp)}</span>
+                        <span className="bg-[#1a2035] px-2 py-1 rounded-full">{formatDate(tweet?.timestamp || new Date())}</span>
                       </div>
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="text-lg font-medium text-white"><span className="text-green-400">{formatPnL(tweet.pnl)}%</span></div>
+                    <div className="text-lg font-medium text-white">
+                      <span className="text-green-400">
+                        {formatPnL(tweet?.pnl || 0)}%
+                      </span>
+                    </div>
                     <div
-                      className={`flex items-center font-medium justify-end text-sm ${tweet.positive ? "text-green-400" : "text-red-400"}`}
+                      className={`flex items-center font-medium justify-end text-sm ${
+                        (tweet?.pnl || 0) >= 0 ? "text-green-400" : "text-red-400"
+                      }`}
                     >
-                      {tweet.positive ? (
+                      {(tweet?.pnl || 0) >= 0 ? (
                         <ArrowUpRight className="h-4 w-4 mr-1" />
                       ) : (
                         <ArrowDownRight className="h-4 w-4 mr-1" />
                       )}
-                      {tweet.positive ? "Profit" : "Loss"}
+                      {(tweet?.pnl || 0) >= 0 ? "Profit" : "Loss"}
                     </div>
                   </div>
                 </div>
